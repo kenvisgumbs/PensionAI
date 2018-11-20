@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Public Service Pension Fund: Home" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="pspfai.Home" %>
+﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Home.aspx.bk.aspx.cs" Inherits="pspfai.Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="plugins/revolution/css/settings.css" rel="stylesheet" type="text/css">
@@ -14,7 +14,7 @@
                 <ul>
 
                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/jumbo1.jpg">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="https://via.placeholder.com/1920x1080">
 
                         <div class="tp-caption"
                             data-paddingbottom="[0,0,0,0]"
@@ -32,9 +32,9 @@
                             data-y="['middle','middle','middle','middle']"
                             data-textalign="['top','top','top','top']"
                             data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h1>Public Service Employees'
+                            <h1>Well Come to Our Services
                                 <br>
-                                Retirement System</h1>
+                                You Get Sulotion in Here</h1>
                         </div>
 
                         <div class="tp-caption"
@@ -53,7 +53,7 @@
                             data-y="['middle','middle','middle','middle']"
                             data-textalign="['top','top','top','top']"
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <div class="text">The Public Employees' Retirement System is Open to All Government & Employees of Statutory Bodies.</div>
+                            <div class="text">Libero mauris aliquet sem sollicitudin nihil, quam elit indum dolor lorem a conmen etiam neque</div>
                         </div>
 
                         <div class="tp-caption tp-resizeme"
@@ -209,7 +209,50 @@
     </section>
     <!--End Service Section-->
 
-    <!--Start contact us (loans) area-->
+    <!--Start about sec-->
+    <section class="about-sec video" id="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="left-content-area">
+                        <!-- left content area -->
+                        <div class="img-wrapper">
+                            <img src="https://via.placeholder.com/625x420" alt="clients story">
+                            <div class="hover">
+                                <a href="https://www.youtube.com/watch?v=EfTUpvxEbqc" class="video-play video-play-btn" target="_self"><i class="flaticon-music-player-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //. left content area -->
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="right-content-area">
+                        <!-- right content area -->
+                        <div class="sec-title text-left">
+                            <h2>we create 25000+ business place for growth your profite. </h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, mi ultricies interdum pede eu vestibulumteunon libero fringilla, fermentum commodo eget etiam, rhoncus constetuerligula ac ultrices, ipsum at aspernatur ante mi. Aliquet est, duis elit. Tortor id,ivamus fugit dictum pellentesque, in in luctus hendrerit mi nisl rutrum, accumsan ac, cquat accumsan eros nisl non etiam eget. </p>
+
+                        <div class="about-item">
+                            <ul>
+                                <li><i class="fa fa-arrow-circle-right"></i>We have 25000 Happy Client</li>
+                                <li><i class="fa fa-arrow-circle-right"></i>24/7 Customer Support </li>
+                                <li><i class="fa fa-arrow-circle-right"></i>75 Over Services Provided</li>
+                            </ul>
+                            <ul>
+                                <li><i class="fa fa-arrow-circle-right"></i>Free Advice Provied</li>
+                                <li><i class="fa fa-arrow-circle-right"></i>Research Company Growth </li>
+                                <li><i class="fa fa-arrow-circle-right"></i>Achived Gobal Trust</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End about sec-->
+
+    <!--Start contact area-->
     <section class="contact-area">
         <div class="container">
             <div class="row">
@@ -352,7 +395,75 @@
     </section>
     <!--End service style 2-->
 
-      <!--Start fact counter area-->
+    <!--Start consltation area-->
+    <section class="consltation-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sec-title text-center">
+                        <h2>Get Free Consltation</h2>
+                        <span class="border"></span>
+                        <p>Lorem ipsum dolor  amet mi ultricies interdum pede eu vestibulum vulputate maurimtum
+                            <br>
+                            commod rhoncus consectetuer reduce producet</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <div class="form-sec">
+                        <form name="contact_form" class="default-form contact-form" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="text" name="name" placeholder="Your Name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="email" name="email" placeholder="Email" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="tel" name="phone" placeholder="Phone (optional)" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <select class="services-select" name="services">
+                                            <option value="AL">Services</option>
+                                            <option value="WY">Services 1</option>
+                                            <option value="WY">Services 2</option>
+                                            <option value="WY">Services 3</option>
+                                            <option value="WY">Services 4</option>
+                                            <option value="WY">Services 5</option>
+                                            <option value="WY">Services 6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <textarea name="form_message" class="form-control textarea required" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="form-group text-left">
+                                        <button type="submit" class="thm-btn bg-clr2">submit now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-offset-2 col-xs-12">
+                    <div class="right-img">
+                        <figure>
+                            <img src="https://via.placeholder.com/405x450" alt="callto action"></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End consltation area-->
+
+    <!--Start fact counter area-->
     <section class="fact-counter-area">
         <div class="container">
             <div class="row">
@@ -396,6 +507,260 @@
         </div>
     </section>
     <!--End fact counter area-->
+
+    <!--Start tema area-->
+    <section class="team-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sec-title text-center">
+                        <h2>Meet Our Team</h2>
+                        <span class="border"></span>
+                        <p>Lorem ipsum dolor  amet mi ultricies interdum pede eu vestibulum vulputate maurimtum
+                            <br>
+                            commod rhoncus consectetuer reduce producet</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-single text-center">
+                        <figure>
+                            <img src="https://via.placeholder.com/270x300" alt="team"></figure>
+                        <div class="overlay">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="text-bottom">
+                            <h5>Madaline Gibson</h5>
+                            <h6>Insurance Advisor</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-single text-center">
+                        <figure>
+                            <img src="https://via.placeholder.com/270x300" alt="team"></figure>
+                        <div class="overlay">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="text-bottom">
+                            <h5>Alejandra Pollich</h5>
+                            <h6>Insurance Advisor</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-single text-center">
+                        <figure>
+                            <img src="https://via.placeholder.com/270x300" alt="team"></figure>
+                        <div class="overlay">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="text-bottom">
+                            <h5>Dixie Armstrong</h5>
+                            <h6>Insurance Advisor</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-single text-center">
+                        <figure>
+                            <img src="https://via.placeholder.com/270x300" alt="team"></figure>
+                        <div class="overlay">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="text-bottom">
+                            <h5>Jeanette Gottlieb</h5>
+                            <h6>Insurance Advisor</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End tema area-->
+
+    <!--Client Section-->
+    <section class="client-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sec-title text-center">
+                        <h2>Wha`s Client Feedback</h2>
+                        <span class="border"></span>
+                        <p>Lorem ipsum dolor  amet mi ultricies interdum pede eu vestibulum vulputate maurimtum
+                            <br>
+                            commod rhoncus consectetuer reduce producet</p>
+                    </div>
+                </div>
+                <div class="testimonial-carousel">
+                    <div class="single-item text-center">
+                        <div class="img-holder">
+                            <img src="https://via.placeholder.com/70x70" alt="Client Photo">
+                        </div>
+                        <div class="text-holder">
+                            <h5>Alexandrine Rath</h5>
+                            <h6>Ceo of Hpi Group</h6>
+                            <p>Molestie rhoncus lorem diam vel, metus Consectetur mauris, cras adipiscing wisi urna vestibulum nam pretium</p>
+                        </div>
+                    </div>
+
+                    <div class="single-item text-center">
+                        <div class="img-holder">
+                            <img src="https://via.placeholder.com/70x70" alt="Client Photo">
+                        </div>
+                        <div class="text-holder">
+                            <h5>Bethany Kertzmann</h5>
+                            <h6>Ceo of Hpi Group</h6>
+                            <p>Molestie rhoncus lorem diam vel, metus Consectetur mauris, cras adipiscing wisi urna vestibulum nam pretium</p>
+                        </div>
+                    </div>
+                    <div class="single-item text-center">
+                        <div class="img-holder">
+                            <img src="https://via.placeholder.com/70x70" alt="Client Photo">
+                        </div>
+                        <div class="text-holder">
+                            <h5>Thamina Hossen</h5>
+                            <h6>Ceo of Hpi Group</h6>
+                            <p>Molestie rhoncus lorem diam vel, metus Consectetur mauris, cras adipiscing wisi urna vestibulum nam pretium</p>
+                        </div>
+                    </div>
+
+                    <div class="single-item text-center">
+                        <div class="img-holder">
+                            <img src="https://via.placeholder.com/70x70" alt="Client Photo">
+                        </div>
+                        <div class="text-holder">
+                            <h5>Alexandrine Rath</h5>
+                            <h6>Ceo of Hpi Group</h6>
+                            <p>Molestie rhoncus lorem diam vel, metus Consectetur mauris, cras adipiscing wisi urna vestibulum nam pretium</p>
+                        </div>
+                    </div>
+                    <div class="single-item text-center">
+                        <div class="img-holder">
+                            <img src="https://via.placeholder.com/70x70" alt="Client Photo">
+                        </div>
+                        <div class="text-holder">
+                            <h5>Bethany Kertzmann</h5>
+                            <h6>Ceo of Hpi Group</h6>
+                            <p>Molestie rhoncus lorem diam vel, metus Consectetur mauris, cras adipiscing wisi urna vestibulum nam pretium</p>
+                        </div>
+                    </div>
+                    <div class="single-item text-center">
+                        <div class="img-holder">
+                            <img src="https://via.placeholder.com/70x70" alt="Client Photo">
+                        </div>
+                        <div class="text-holder">
+                            <h5>Thamina Hossen</h5>
+                            <h6>Ceo of Hpi Group</h6>
+                            <p>Molestie rhoncus lorem diam vel, metus Consectetur mauris, cras adipiscing wisi urna vestibulum nam pretium</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Client Section-->
+
+    <!--Price table sec-->
+    <section class="price-table">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sec-title text-center">
+                        <h2>Best Pricing Plan</h2>
+                        <span class="border"></span>
+                        <p>Lorem ipsum dolor  amet mi ultricies interdum pede eu vestibulum vulputate maurimtum
+                            <br>
+                            commod rhoncus consectetuer reduce producet</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="table-block text-center">
+                        <div class="icon-box">
+                            <i class="flaticon-folder"></i>
+                        </div>
+                        <div class="table-det">
+                            <h2><span>$</span>20.45</h2>
+                            <h3>Personal Plan</h3>
+                            <ul>
+                                <li>Normal Server Power</li>
+                                <li>Unlimited Montly Traffic</li>
+                                <li>Cloud Technology</li>
+                                <li>Unlimited Disic Space</li>
+                            </ul>
+                            <div class="button">
+                                <a class="thm-btn bg-clr3" href="#">Get Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="table-block text-center active">
+                        <div class="icon-box">
+                            <i class="flaticon-folder"></i>
+                        </div>
+                        <div class="table-det">
+                            <h2><span>$</span>38.12</h2>
+                            <h3>Business Plan</h3>
+                            <ul>
+                                <li>Normal Server Power</li>
+                                <li>Unlimited Montly Traffic</li>
+                                <li>Cloud Technology</li>
+                                <li>Unlimited Disic Space</li>
+                            </ul>
+                            <div class="button">
+                                <a class="thm-btn bg-clr4" href="#">Get Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="table-block text-center">
+                        <div class="icon-box">
+                            <i class="flaticon-folder"></i>
+                        </div>
+                        <div class="table-det">
+                            <h2><span>$</span>55.00</h2>
+                            <h3>Super Service Plan</h3>
+                            <ul>
+                                <li>Normal Server Power</li>
+                                <li>Unlimited Montly Traffic</li>
+                                <li>Cloud Technology</li>
+                                <li>Unlimited Disic Space</li>
+                            </ul>
+                            <div class="button">
+                                <a class="thm-btn bg-clr3" href="#">Get Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Price table sec-->
 
     <!--Blog Section-->
     <section class="blog-section">
