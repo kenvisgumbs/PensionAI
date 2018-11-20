@@ -181,6 +181,7 @@
     <Content Include="Services.aspx" />
     <Content Include="Single-Project.aspx" />
     <Content Include="Test.aspx" />
+    <Content Include="TEST2.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -302,6 +303,13 @@
     </Compile>
     <Compile Include="Test.aspx.designer.cs">
       <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TEST2.aspx.cs">
+      <DependentUpon>TEST2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TEST2.aspx.designer.cs">
+      <DependentUpon>TEST2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
