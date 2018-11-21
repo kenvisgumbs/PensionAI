@@ -9,6 +9,7 @@ namespace pspfai
 {
     public partial class PSPFAI : System.Web.UI.MasterPage
     {
+        public string ContentPageName { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
 

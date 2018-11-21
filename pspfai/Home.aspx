@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Public Service Pension Fund: Home" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="pspfai.Home" %>
-
+<%@ MasterType VirtualPath="~/PSPFAI.Master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="plugins/revolution/css/settings.css" rel="stylesheet" type="text/css">
     <link href="plugins/revolution/css/layers.css" rel="stylesheet" type="text/css">
@@ -53,7 +53,7 @@
                             data-y="['middle','middle','middle','middle']"
                             data-textalign="['top','top','top','top']"
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <div class="text">The Public Employees' Retirement System is Open to All Government & Employees of Statutory Bodies.</div>
+                            <div class="text">The Public Employees' Retirement System is applicable to All Employees of Government & Governmental Agencies.</div>
                         </div>
 
                         <div class="tp-caption tp-resizeme"
@@ -158,11 +158,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="sec-title text-center">
-                        <h2>why people choose us</h2>
+                        <h2>Our Vision</h2>
                         <span class="border"></span>
-                        <p>Lorem ipsum dolor  amet mi ultricies interdum pede eu vestibulum vulputate maurimtum
+                        <p>To be an Effective Provider of Retirement Benefits to Ensure Peace of Mind to
                             <br>
-                            commod rhoncus consectetuer reduce producet</p>
+                            Contributors and a Level of Service that Exceeds Expectations.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
@@ -172,7 +172,7 @@
                                 <i class="flaticon-cute-rocket-launching"></i>
                             </div>
                             <a href="services-details.aspx">
-                                <h5>Fast Loan Approvel</h5>
+                                <h5>Fast Loans</h5>
                             </a>
                             <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida</p>
                         </div>
@@ -185,7 +185,7 @@
                                 <i class="flaticon-support"></i>
                             </div>
                             <a href="services-details.aspx">
-                                <h5>24/7 Customer Support</h5>
+                                <h5>Contact Us</h5>
                             </a>
                             <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida </p>
                         </div>
@@ -198,7 +198,7 @@
                                 <i class="flaticon-seo-performance-marketing-graphic"></i>
                             </div>
                             <a href="services-details.aspx">
-                                <h5>Free Business Marketing</h5>
+                                <h5>Financials</h5>
                             </a>
                             <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida </p>
                         </div>
@@ -216,7 +216,7 @@
                 <!--Start heading item-->
                 <div class="col-md-10 col-sm-8 col-xs-12">
                     <div class="heading-text text-left">
-                        <h1>check our latest plan for your  perfect business. </h1>
+                        <h1>Check out our latest Loan options; perfect for your needs. </h1>
                     </div>
                 </div>
                 <!--End single item-->
@@ -224,7 +224,7 @@
                 <!--Start btn item-->
                 <div class="col-md-2 col-sm-4 col-xs-12">
                     <div class="btn-cont text-right">
-                        <a href="#" class="thm-btn bg-clr2">Contact Us</a>
+                        <a href="#" class="thm-btn bg-clr2">Loans</a>
                     </div>
                 </div>
             </div>
@@ -238,7 +238,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="sec-title text-center">
-                        <h2>our awsome services</h2>
+                        <h2>Our services</h2>
                         <span class="border"></span>
                         <p>Lorem ipsum dolor  amet mi ultricies interdum pede eu vestibulum vulputate maurimtum
                             <br>
@@ -251,11 +251,11 @@
                             <div class="icon-box">
                                 <figure>
                                     <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
-                                <i class="flaticon-car-directions"></i>
+                                <i class="flaticon-rocking-chair-with-dollar-sign-silhouette"></i>
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5>Car Loan Provied</h5>
+                                    <h5>Pensions</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -268,11 +268,11 @@
                             <div class="icon-box">
                                 <figure>
                                     <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
-                                <i class="flaticon-crawling-baby-silhouette"></i>
+                                <i class="flaticon-retirement"></i>
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5>Childens Planing</h5>
+                                    <h5>Gratuity Payments</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -289,7 +289,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5>Mutual Funds</h5>
+                                    <h5>Refunds</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -302,11 +302,11 @@
                             <div class="icon-box">
                                 <figure>
                                     <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
-                                <i class="flaticon-seo-performance-marketing-graphic"></i>
+                                <i class="flaticon-family"></i>
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5>Marketing Strateccies</h5>
+                                    <h5>Survivor's Pension</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -319,11 +319,11 @@
                             <div class="icon-box">
                                 <figure>
                                     <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
-                                <i class="flaticon-gmo"></i>
+                                <i class="flaticon-cheque"></i>
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5>Market Recharch</h5>
+                                    <h5>Early Retirement</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -336,11 +336,11 @@
                             <div class="icon-box">
                                 <figure>
                                     <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
-                                <i class="flaticon-support"></i>
+                                <i class="flaticon-doctor-stethoscope"></i>
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5>Life Time Support</h5>
+                                    <h5>Medical Boarding</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -359,36 +359,36 @@
                 <!--Start single item-->
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="single-item text-left">
-                        <h1><span class="timer" data-from="1" data-to="3500" data-speed="5000" data-refresh-interval="50">3500</span><i class="fa fa-plus" aria-hidden="true"></i></h1>
+                        <h1><span class="timer" data-from="1" data-to="500" data-speed="5000" data-refresh-interval="50">500</span><i class="fa fa-plus" aria-hidden="true"></i></h1>
                         <span class="border"></span>
-                        <h3>Business Platform</h3>
+                        <h3>Pensioners</h3>
                     </div>
                 </div>
                 <!--End single item-->
                 <!--Start single item-->
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="single-item text-left">
-                        <h1><span class="timer" data-from="1" data-to="20" data-speed="5000" data-refresh-interval="50">20</span><i class="text-m">M</i></h1>
+                        <h1><span class="timer" data-from="1" data-to="1200" data-speed="5000" data-refresh-interval="50">1200</span><i class="fa fa-plus" aria-hidden="true"></i></h1>
                         <span class="border"></span>
-                        <h3>Happy Client With Us</h3>
+                        <h3>Contributors</h3>
                     </div>
                 </div>
                 <!--End single item-->
                 <!--Start single item-->
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="single-item text-left">
-                        <h1><span class="timer" data-from="1" data-to="4780" data-speed="5000" data-refresh-interval="50">4780</span></h1>
+                        <h1><span class="timer" data-from="1" data-to="50" data-speed="5000" data-refresh-interval="50">50</span><i class="text-m">M</i></h1>
                         <span class="border"></span>
-                        <h3>Total Project Done</h3>
+                        <h3>Reserves</h3>
                     </div>
                 </div>
                 <!--End single item-->
                 <!--Start single item-->
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="single-item text-left">
-                        <h1><span class="timer" data-from="1" data-to="3500" data-speed="5000" data-refresh-interval="50">3500</span><i class="fa fa-plus" aria-hidden="true"></i></h1>
+                        <h1><span class="timer" data-from="1" data-to="10" data-speed="5000" data-refresh-interval="50">10</span><i class="text-m">M</i></h1>
                         <span class="border"></span>
-                        <h3>Provided Services</h3>
+                        <h3>Loans</h3>
                     </div>
                 </div>
                 <!--End single item-->
@@ -403,7 +403,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="sec-title text-center">
-                        <h2>Our Latest Post</h2>
+                        <h2>ANNUAL REPORTS</h2>
                         <span class="border"></span>
                         <p>Lorem ipsum dolor  amet mi ultricies interdum pede eu vestibulum vulputate maurimtum
                             <br>
@@ -418,15 +418,16 @@
                                     <img src="https://via.placeholder.com/370x215" alt=""></a>
                             </figure>
                             <div class="date-box">
-                                <span class="date-day">20</span>
-                                <span class="date-year">Dec</span>
+                                <span class="date-day">31</span>
+                                <span class="date-month">Dec</span>
+                                <span class="date-year">2016</span>
                             </div>
                         </div>
                         <div class="text-area">
                             <div class="content-text text-left">
                                 <div class="title">
                                     <a href="blog-single.aspx">
-                                        <h5>France Prepares to Stake Place</h5>
+                                        <h5>2016 Annual Report</h5>
                                     </a>
                                 </div>
                                 <div class="text">
@@ -448,14 +449,15 @@
                             </figure>
                             <div class="date-box">
                                 <span class="date-day">21</span>
-                                <span class="date-year">Nov</span>
+                                <span class="date-month">Nov</span>
+                                <span class="date-year">2015</span>
                             </div>
                         </div>
                         <div class="text-area">
                             <div class="content-text text-left">
                                 <div class="title">
                                     <a href="blog-single.aspx">
-                                        <h5>Checking a Website’s Security</h5>
+                                        <h5>2015 Annual Report</h5>
                                     </a>
                                 </div>
                                 <div class="text">
@@ -478,14 +480,15 @@
                             </figure>
                             <div class="date-box">
                                 <span class="date-day">18</span>
-                                <span class="date-year">Jun</span>
+                                <span class="date-month">Jun</span>
+                                <span class="date-year">2014</span>
                             </div>
                         </div>
                         <div class="text-area">
                             <div class="content-text text-left">
                                 <div class="title">
                                     <a href="blog-single.aspx">
-                                        <h5>It’s Complicated: The Path Israeli</h5>
+                                        <h5>2014 Annual Report</h5>
                                     </a>
                                 </div>
                                 <div class="text">

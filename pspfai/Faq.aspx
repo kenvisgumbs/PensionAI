@@ -25,10 +25,10 @@
                     <div class="accordion accordion-block">
                         <div class="accord-btn">
                             <i class="left-num">01</i>
-                            <h4>Which do you like better, curtains or blinds?</h4>
+                            <h4>Is the Public Service Pension Fund only applicable to Government Employees?</h4>
                         </div>
                         <div class="accord-content">
-                            <p>Lorem ipsum dolor sit amet, laoreet mattis, vivamus morbi eleifend nec montes mollis, massa lacinia nullam.Sed ut justo sodalursus neque nascetmagna urna eget. Ante velit sed nullam.</p>
+                            <p>No, employees of Governmental agencies are also covered by the Pension Fund. To date these are: Anguilla Tourist Board, Anguilla Development Board, Health Authority of Anguilla, Water Corporation of Anguilla, Anguilla Financial Services Commission, Anguilla Community College, Anguilla Air and Sea Port Authority, and Public Utilities Commission.</p>
                         </div>
                     </div>
 

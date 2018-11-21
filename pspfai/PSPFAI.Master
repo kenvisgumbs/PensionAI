@@ -126,8 +126,13 @@
                                     </div>
                                     <div class="navbar-collapse collapse clearfix">
                                         <ul class="navigation clearfix">
-                                            <li class="home current"><a href="Home.aspx">Home</a></li>
-                                            <li><a href="about.aspx">About</a></li>
+                                            <li class="home <% if(ContentPageName == "HOME") {%> current <%}%>"><a href="Home.aspx">Home</a></li>
+                                            <li class="dropdown"><a href="about.aspx">About</a>
+                                                    <ul>
+                                                    <li><a href="faq.aspx">FAQ</a></li>
+                                                   
+                                                </ul>
+                                            </li>
                                             <li class="dropdown"><a href="#">Services</a>
                                                 <ul>
                                                     <li><a href="services.aspx">Our Services</a></li>
@@ -258,7 +263,7 @@
             <section class="footer-bottom-area">
                 <div class="container">
                     <div class="copyright-text text-center">
-                        <p>Copyright &copy; 2018 <a href="#">Busizone.</a> All Right Reserved</p>
+                        <p>Copyright &copy; <%=DateTime.Now.Year.ToString() %> <a href="Home.apsx">Public Service Pension Fund.</a> All Rights Reserved.</p>
                     </div>
                 </div>
             </section>

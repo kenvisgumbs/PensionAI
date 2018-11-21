@@ -29,23 +29,19 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-call:before { content: "\f100"; }
-.flaticon-clock:before { content: "\f101"; }
-.flaticon-pin:before { content: "\f102"; }
+.flaticon-retirement:before { content: "\f100"; }
+.flaticon-rocking-chair-with-dollar-sign-silhouette:before { content: "\f101"; }
+.flaticon-phone:before { content: "\f102"; }
 .flaticon-cute-rocket-launching:before { content: "\f103"; }
 .flaticon-support:before { content: "\f104"; }
-.flaticon-music-player-play:before { content: "\f105"; }
-.flaticon-car-directions:before { content: "\f106"; }
-.flaticon-crawling-baby-silhouette:before { content: "\f107"; }
-.flaticon-money:before { content: "\f108"; }
-.flaticon-gmo:before { content: "\f109"; }
-.flaticon-folder:before { content: "\f10a"; }
-.flaticon-placeholder:before { content: "\f10b"; }
-.flaticon-old-typical-phone:before { content: "\f10c"; }
-.flaticon-worldwide:before { content: "\f10d"; }
-.flaticon-left-quotes-sign:before { content: "\f10e"; }
-.flaticon-broken-link:before { content: "\f10f"; }
-.flaticon-plant:before { content: "\f110"; }
-.flaticon-plan:before { content: "\f111"; }
-.flaticon-search:before { content: "\f112"; }
-.flaticon-seo-performance-marketing-graphic:before { content: "\f113"; }
+.flaticon-seo-performance-marketing-graphic:before { content: "\f105"; }
+.flaticon-money:before { content: "\f106"; }
+.flaticon-bars:before { content: "\f107"; }
+.flaticon-cheque:before { content: "\f108"; }
+.flaticon-doctor-stethoscope:before { content: "\f109"; }
+.flaticon-family:before { content: "\f10a"; }
+.flaticon-manager:before { content: "\f10b"; }
+.flaticon-save-money:before { content: "\f10c"; }
+.flaticon-loan:before { content: "\f10d"; }
+.flaticon-car-front:before { content: "\f10e"; }
+.flaticon-male-worker-behind-a-desk:before { content: "\f10f"; }

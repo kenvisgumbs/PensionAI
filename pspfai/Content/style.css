@@ -1421,6 +1421,7 @@ select:focus {
 
 .sec-title p {
   margin-top: 9px;
+  text-transform:none;
 }
 .service-section .service-block {
     float: left;
@@ -1846,6 +1847,7 @@ select:focus {
 .contact-area .heading-text h1{
   color: #fff;
   font-size: 33px;
+  padding: 5px 0;
 }
 
 .contact-area .btn-cont a{
@@ -2235,9 +2237,15 @@ select:focus {
 }
 
 .blog-section .item-holder .date-box .date-year{
+  background: #21a53b;
+  border-radius:0;
+}
+
+.blog-section .item-holder .date-box .date-month{
   background: #25292f;
   border-radius:0;
 }
+
 .blog-section .item-holder .text-area{
   border-radius: 5px;
   background: #fff;
@@ -2808,6 +2816,11 @@ select:focus {
 }
 
 .blog-details .item-holder .date-box .date-year {
+    background: #21a53b;
+    border-radius: 0;
+}
+
+.blog-details .item-holder .date-box .date-month {
     background: #25292f;
     border-radius: 0;
 }
@@ -3360,7 +3373,7 @@ select:focus {
 }
 .footer-bottom-area p {
     color: #cccccc;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 }
 .footer-bottom-area p a{
