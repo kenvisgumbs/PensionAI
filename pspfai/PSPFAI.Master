@@ -85,7 +85,7 @@
                                     </li>
                                     <li>
                                         <div class="iocn-holder">
-                                            <span class="flaticon-call"></span>
+                                            <span class="flaticon-phone"></span>
                                         </div>
                                         <div class="text-holder">
                                             <h6>Phone</h6>
@@ -97,7 +97,7 @@
                                             <span class="flaticon-clock"></span>
                                         </div>
                                         <div class="text-holder">
-                                            <h6>Mon - Fri  08.00 - 16.00</h6>
+                                            <h6>Mon - Fri  8AM - 4PM</h6>
                                             <p>Saturday & Sunday Closed</p>
                                         </div>
                                     </li>
@@ -127,10 +127,10 @@
                                     <div class="navbar-collapse collapse clearfix">
                                         <ul class="navigation clearfix">
                                             <li class="home <% Response.Write( globalUtil.getCurrent(ContentPageName, "HOME")); %>"><a href="Home.aspx">Home</a></li>
-                                            <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "ABOUT")); %>"><a href="about.aspx">About</a>
-                                                    <ul>
-                                                    <li><a href="faq.aspx">FAQ</a></li>
-                                                   
+                                            <li class="dropdown"><a href="about.aspx">About</a>
+                                                <ul>
+                                                    <li><a href="#">Directors</a></li>
+                                                    <li><a href="#">Staff</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown"><a href="#">Services</a>
@@ -141,18 +141,14 @@
                                                 </ul>
 
                                             </li>
-                                            <li class="dropdown"><a href="#">Pages</a>
+                                            <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "RESOURCES")); %>"><a href="#">Resources</a>
                                                 <ul>
                                                     <li><a href="faq.aspx">Our Faq</a></li>
+                                                    <li><a href="#">Forms</a></li>
                                                     <li><a href="404.aspx">Error Page</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="dropdown"><a href="#">Projects</a>
-                                                <ul>
-                                                    <li><a href="project.aspx">Projects</a></li>
-                                                    <li><a href="single-project.aspx">Single Projects</a></li>
-                                                </ul>
-                                            </li>
+                                          
                                             <li class="dropdown"><a href="#">Blog</a>
                                                 <ul>
                                                     <li><a href="blog.aspx">Blgo Style 1</a></li>
@@ -192,10 +188,8 @@
                         <!--Start single footer widget-->
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="single-footer-widget pd-bottom">
-                                <div class="footer-logo">
-                                    <a href="index-2.aspx">
-                                        <img src="Content/Images/footer/footer-logo.png" alt="Awesome Footer Logo">
-                                    </a>
+                                <div class="title">
+                                    <h5>Contact Info</h5>
                                 </div>
                                 <div class="our-info">
                                     <p>Lorem ipsum dolor sit amet, semnger esapie tempus,aliquam silitud aquam vitae, fugiat poere incididunt, nbero. Nunc camcorper  vphasellus </p>

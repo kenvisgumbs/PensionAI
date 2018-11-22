@@ -44,7 +44,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="contact-info text-center">
-                        <i class="flaticon-worldwide"></i>
+                        <i class="flaticon-america"></i>
                         <h5>Offcial Website</h5>
                         <p>
                             www.busizone.com , info@gmail.com<br>

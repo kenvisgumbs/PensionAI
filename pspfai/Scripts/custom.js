@@ -61,6 +61,7 @@ function mainmenu() {
         $('.main-menu li.dropdown .dropdown-btn').click(function() {
             $(this).prev('ul').slideToggle(500);
         });
+        //$('.main-menu li.dropdown').mouseenter(function () { $(this).addClass('open') });
     }
 
 }

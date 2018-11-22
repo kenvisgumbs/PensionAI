@@ -415,7 +415,7 @@
                         <div class="image-box">
                             <figure>
                                 <a href="blog-single.aspx">
-                                    <img src="https://via.placeholder.com/370x215" alt=""></a>
+                                    <img src="Content/Images/resources/annualreports2016.jpg" alt=""></a>
                             </figure>
                             <div class="date-box">
                                 <span class="date-day">31</span>
@@ -445,7 +445,7 @@
                         <div class="image-box">
                             <figure>
                                 <a href="blog-single.aspx">
-                                    <img src="https://via.placeholder.com/370x215" alt=""></a>
+                                    <img src="Content/Images/resources/annualreports.jpg" alt=""></a>
                             </figure>
                             <div class="date-box">
                                 <span class="date-day">21</span>
@@ -476,7 +476,7 @@
                         <div class="image-box">
                             <figure>
                                 <a href="blog-single.aspx">
-                                    <img src="https://via.placeholder.com/370x215" alt=""></a>
+                                    <img src="Content/Images/resources/annualreports.jpg" alt=""></a>
                             </figure>
                             <div class="date-box">
                                 <span class="date-day">18</span>
