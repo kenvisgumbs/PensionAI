@@ -4,13 +4,13 @@ $(window).on("load", function() {
 
 // ========================= Google Map Style =========================================== //
 
-var myLatlng = new google.maps.LatLng(51.5015588, -0.1276913);
+var myLatlng = new google.maps.LatLng(18.2116082, -63.0530796);
         var mapOptions ={
-        zoom:14,
+        zoom:19,
         disableDefaultUI:true,
-        scrollwheel:false,
+        scrollwheel: false,
+        mapTypeId: 'satellite',
            styles: 
-
           [
         {
             "featureType": "water",
@@ -192,7 +192,7 @@ var myLatlng = new google.maps.LatLng(51.5015588, -0.1276913);
         var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
         var image = '';
-        var myLatLng = new google.maps.LatLng(51.5015588, -0.1276913);
+        var myLatLng = new google.maps.LatLng(18.2116084, -63.0530799);
         var beachMarker = new google.maps.Marker({
           position:myLatLng,
           map:map,

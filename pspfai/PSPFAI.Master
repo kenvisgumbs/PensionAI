@@ -284,6 +284,8 @@
             <script src="Scripts/validation.js"></script>
             <!-- mixit up -->
             <script src="Scripts/jquery.mixitup.min.js"></script>
+            <asp:ContentPlaceHolder ID="MapScriptPlaceholder" runat="server">
+            </asp:ContentPlaceHolder>
             <!-- fancy box -->
             <script src="Scripts/jquery.fancybox.pack.js"></script>
             <script src="Scripts/jquery.appear.js"></script>
@@ -297,7 +299,7 @@
             <!-- jQuery ui js -->
             <script src="assets/jquery-ui-1.11.4/jquery-ui.js"></script>
 
-            <asp:ContentPlaceHolder ID="RevolutionSliderContent" runat="server">
+            <asp:ContentPlaceHolder ID="FooterScriptContent" runat="server">
             </asp:ContentPlaceHolder>
 
             <!-- thm custom script -->

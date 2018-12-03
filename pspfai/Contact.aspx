@@ -2,8 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!--Page Title-->
     <section class="page-title" style="background: url(https://via.placeholder.com/1920x275);">
         <div class="container text-center">
@@ -27,74 +27,81 @@
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="contact-info text-center">
-                        <i class="flaticon-placeholder"></i>
-                        <h5>Office Address</h5>
-                        <p>2540 Hermann Ridge Apt. 223, North Romainestad, ND 62927-0427</p>
+                        <i class="flaticon-family"></i>
+                        <h5>Pension Office</h5>
+                        <p>James Ronald Webster Building,<br />The Valley, AI2640, Anguilla</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="contact-info text-center">
-                        <i class="flaticon-old-typical-phone"></i>
+                        <i class="flaticon-family"></i>
                         <h5>Phone Number</h5>
                         <p>
-                            (052) 611-5711, (633) 497-1888<br>
-                            (062) 109-9222, (517) 548-4152
+                            +1 (264) 498-5079<br />
+                            +1 (264) 498-5079
                         </p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="contact-info text-center">
-                        <i class="flaticon-worldwide"></i>
-                        <h5>Offcial Website</h5>
-                        <p>
-                            www.busizone.com , info@gmail.com<br>
-                            facebook/busizone.com
+                        <i class="flaticon-family"></i>
+                        <h5>Social</h5>
+                        <p style="text-transform: lowercase !important;">
+                            www.pspf.ai, info@pspf.ai<br>
+                            facebook/pspfai
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="form-sec">
-                    <form name="contact_form" class="default-form contact-form" method="post">
+                    <div  class="default-form contact-form" >
                         <div class="row">
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <input type="text" name="name" placeholder="Your Name" required="">
+                                    <asp:TextBox ID="txtName" placeholder="Your Name"  required="required" runat="server"></asp:TextBox>
+                                    <!-- <input type="text" name="name" placeholder="Your Name" required=""> -->
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <input type="email" name="email" placeholder="Email" required="">
+                                    <asp:TextBox ID="txtEmail" placeholder="Email"  required="required" runat="server"></asp:TextBox>
+                                    <!-- <input type="email" name="email" placeholder="Email" required=""> -->
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <input type="tel" name="name" placeholder="Phone" required="">
+                                    <asp:TextBox ID="txtPhone" placeholder="Phone"  required="required" runat="server"></asp:TextBox>
+                                    <!-- <input type="tel" name="name" placeholder="Phone" required=""> -->
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <input type="url" name="name" placeholder="Website" required="">
+                                    <asp:TextBox ID="txtWebsite" placeholder="Website"  required="required" runat="server"></asp:TextBox>
+                                    <!-- <input type="url" name="name" placeholder="Website" required=""> -->
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <textarea name="form_message" class="form-control textarea required" placeholder="Message"></textarea>
+                                    <asp:TextBox ID="txtMessage" placeholder="Message" TextMode="MultiLine" Rows="30" required="required" runat="server"></asp:TextBox>
+                                    <!-- <textarea name="form_message" class="form-control textarea required" placeholder="Message"></textarea> -->
                                 </div>
                                 <div class="form-group text-left">
-                                    <button type="submit" class="thm-btn bg-clr4">submit now</button>
+                                    <asp:Button CssClass="thm-btn bg-clr4" ID="btnSubmit" runat="server" Text="submit now" OnClick="btnSubmit_Click" />
+                                    <!-- <button type="submit" class="thm-btn bg-clr4">submit now</button> -->
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!--End contact us-->
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="RevolutionSliderContent" runat="server">
+
+<asp:Content ID="Content3" ContentPlaceHolderID="FooterScriptContent" runat="server">
     <!--gmap script-->
-    <script type="text/javascript" src="js/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key= API KEY HERE"></script>
+    <script type="text/javascript" src="Scripts/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXrkGlBen34zFQKbPca5BbspXvguMsVzY"></script>
 </asp:Content>

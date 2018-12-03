@@ -4,5 +4,5 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     TEST
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="RevolutionSliderContent" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="FooterScriptContent" runat="server">
 </asp:Content>

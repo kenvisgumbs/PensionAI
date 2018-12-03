@@ -130,5 +130,5 @@
     <!--End service style 2-->
 
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="RevolutionSliderContent" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="FooterScriptContent" runat="server">
 </asp:Content>

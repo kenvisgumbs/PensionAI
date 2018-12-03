@@ -46,6 +46,7 @@
 /* Imported styles */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700,700i|Roboto:400,400i,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
 
 @import url(imp.css);
@@ -79,11 +80,11 @@
 html,
 body { height: 100% }
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: #888888;
-  line-height: 26px;
-  font-weight: 400;
+    font-family: 'Open Sans', 'Roboto', sans-serif; /*added 'Open Sans'*/
+    font-size: 15px; /*Change: 16px to 14px*/
+    color: #888888;
+    line-height: 26px;
+    font-weight: 400;
 }
 
 body.hp-2 {
@@ -99,9 +100,9 @@ h1, h2, h3 {
 }
 
 h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  text-transform: capitalize;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    margin: 0;
+    text-transform: capitalize;
 }
 
 a,
@@ -129,10 +130,10 @@ li {
     text-transform: capitalize;
 }
 
-p{
-  font-family: 'Roboto', sans-serif;
-  text-transform: capitalize;
-  color: #888888;
+p {
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    text-transform: capitalize;
+    color: #888888;
 }
 button, input, select, textarea {
     font-family: 'Roboto', sans-serif;
@@ -1496,7 +1497,7 @@ select:focus {
   line-height: 32px;
 }
 .service-section .icon-area p{
-  font-size: 16px;
+  font-size: 14px; /*Change: 15px to 14px*/
   color: #888888;
   line-height: 26px;
   font-weight: 400;
@@ -3532,7 +3533,7 @@ select:focus {
     font-size: 24px;
     font-weight: 700;
     color: #000;
-    font-family: "Roboto";
+    font-family: "Open Sans", "Roboto"; /*Change: Added Open Sans*/
     margin-bottom: 30px;
 }
 
@@ -3573,13 +3574,13 @@ select:focus {
 .contact-us .form-group textarea{
   color: #272727;
   display: block;
-  font-size: 16px;
+  font-size: 15px; /*Change: 16px to 15px*/
   height: 50px;
   padding: 10px 20px;
   width: 100%;
   font-weight: 400;
   text-transform: capitalize;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', 'Roboto', sans-serif; /*Change: Added Open Sans*/
   border: 1px solid #d9d9d9;
   -webkit-transition: all 500ms ease;
      -moz-transition: all 500ms ease;

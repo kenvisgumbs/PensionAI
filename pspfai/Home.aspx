@@ -507,7 +507,7 @@
     </section>
     <!--End Blog Section-->
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="RevolutionSliderContent" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="FooterScriptContent" runat="server">
     <!--Revolution Slider-->
     <script src="plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
     <script src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
