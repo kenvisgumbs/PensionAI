@@ -13,7 +13,7 @@
             <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
                 <ul>
 
-                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/jumbo1.jpg">
 
                         <div class="tp-caption"
@@ -79,7 +79,7 @@
                         </div>
                     </li>
 
-                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="0" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="https://via.placeholder.com/1920x1080">
 
                         <div class="tp-caption"
@@ -415,7 +415,7 @@
                         <div class="image-box">
                             <figure>
                                 <a href="blog-single.aspx">
-                                    <img src="https://via.placeholder.com/370x215" alt=""></a>
+                                    <img src="Content/Images/resources/annualreports2016.jpg" alt=""></a>
                             </figure>
                             <div class="date-box">
                                 <span class="date-day">31</span>
@@ -445,7 +445,7 @@
                         <div class="image-box">
                             <figure>
                                 <a href="blog-single.aspx">
-                                    <img src="https://via.placeholder.com/370x215" alt=""></a>
+                                    <img src="Content/Images/resources/annualreports.jpg" alt=""></a>
                             </figure>
                             <div class="date-box">
                                 <span class="date-day">21</span>
@@ -476,7 +476,7 @@
                         <div class="image-box">
                             <figure>
                                 <a href="blog-single.aspx">
-                                    <img src="https://via.placeholder.com/370x215" alt=""></a>
+                                    <img src="Content/Images/resources/annualreports.jpg" alt=""></a>
                             </figure>
                             <div class="date-box">
                                 <span class="date-day">18</span>

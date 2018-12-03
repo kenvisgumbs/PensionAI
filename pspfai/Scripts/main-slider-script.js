@@ -10,7 +10,7 @@
                 jsFileLocation:"plugins/revolution/js/",
                 sliderLayout:"fullwidth",
                 dottedOverlay:"yes",
-                delay:1000000,
+                delay:10000,
                 navigation: {
                     keyboardNavigation:"off",
                     keyboard_direction: "horizontal",
@@ -26,8 +26,9 @@
                         drag_block_vertical: false
                     },
                     arrows: {
-                        style:"metis",
-                        enable:true,
+                        style:"zeus",
+                        enable: true,
+                        tmp: '<div class="tp-title-wrap"><div class="tp-arr-imgholder"></div></div>',
                         hide_onmobile:true,
                         hide_under:600,
                         hide_onleave:false,
@@ -60,7 +61,8 @@
                      type:"scroll",
                  },
                  shadow:0,
-                 spinner:"off",
+                 spinner: "spinner3",
+                 hideTimerBar: "off",
                  stopLoop:"off",
                  stopAfterLoops:-1,
                  stopAtSlide:-1,

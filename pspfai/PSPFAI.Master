@@ -32,8 +32,8 @@
     <form id="form1" runat="server">
         <div class="boxed_wrapper">
 
-            <!--Start Preloader -->
-            <div class="preloader"></div>
+            <!--Start Preloader 
+            <div class="preloader"></div>-->
             <!--End Preloader -->
 
             <!--Start Top bar area -->
@@ -85,7 +85,7 @@
                                     </li>
                                     <li>
                                         <div class="iocn-holder">
-                                            <span class="flaticon-call"></span>
+                                            <span class="flaticon-phone"></span>
                                         </div>
                                         <div class="text-holder">
                                             <h6>Phone</h6>
@@ -94,7 +94,7 @@
                                     </li>
                                     <li>
                                         <div class="iocn-holder">
-                                            <span class="flaticon-clock"></span>
+                                            <span class="flaticon-clock-1"></span>
                                         </div>
                                         <div class="text-holder">
                                             <h6>Mon - Fri  08.00 - 16.00</h6>
@@ -129,9 +129,8 @@
                                             <li class="home <% Response.Write( globalUtil.getCurrent(ContentPageName, "HOME")); %>"><a href="Home.aspx">Home</a></li>
                                             <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "ABOUT")); %>"><a href="about.aspx">About</a>
                                                     <ul>
-                                                    <li><a href="faq.aspx">FAQ</a></li>
-                                                   
-                                                </ul>
+                                                        <li><a href="faq.aspx">FAQ</a></li>
+                                                    </ul>
                                             </li>
                                             <li class="dropdown"><a href="#">Services</a>
                                                 <ul>
@@ -141,16 +140,11 @@
                                                 </ul>
 
                                             </li>
-                                            <li class="dropdown"><a href="#">Pages</a>
-                                                <ul>
+                                            <li class="dropdown"><a href="#">Resources</a>
+                                                <ul> 
+                                                    <li><a href="#">Forms</a></li>
                                                     <li><a href="faq.aspx">Our Faq</a></li>
                                                     <li><a href="404.aspx">Error Page</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown"><a href="#">Projects</a>
-                                                <ul>
-                                                    <li><a href="project.aspx">Projects</a></li>
-                                                    <li><a href="single-project.aspx">Single Projects</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown"><a href="#">Blog</a>
@@ -161,7 +155,7 @@
                                                     <li><a href="blog-single.aspx">Single News</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.aspx">Contact</a></li>
+                                            <li class="<% Response.Write( globalUtil.getCurrent(ContentPageName, "CONTACT")); %>"><a href="contact.aspx">Contact</a></li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -192,10 +186,8 @@
                         <!--Start single footer widget-->
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="single-footer-widget pd-bottom">
-                                <div class="footer-logo">
-                                    <a href="index-2.aspx">
-                                        <img src="Content/Images/footer/footer-logo.png" alt="Awesome Footer Logo">
-                                    </a>
+                               <div class="title">
+                                    <h5>Contact</h5>
                                 </div>
                                 <div class="our-info">
                                     <p>Lorem ipsum dolor sit amet, semnger esapie tempus,aliquam silitud aquam vitae, fugiat poere incididunt, nbero. Nunc camcorper  vphasellus </p>

@@ -30,18 +30,21 @@ function revolutionSliderActiver () {
         $("#slider1").revolution({
             sliderType:"standard",
             sliderLayout:"auto",
-            delay:5000,
-            
+            delay:500,
+            stopAtSlide: -1,
+            stopAfterLoops: -1,
+            stopLoop: 'off',
             navigationType:"bullet",
             navigationArrows:"0",
             navigationStyle:"preview3",
-            
             dottedOverlay:'yes',
-            
+            spinner:'spinner3',
             hideTimerBar:"off",
             onHoverStop:"off",
             navigation: {
-                arrows:{enable:true}
+                arrows: {
+                    enable: true, style: 'zeus',
+                    tmp: '<div class="tp-title-wrap"><div class="tp-arr-imgholder"></div></div>'}
             }, 
             responsiveLevels:[1920,1280,975,600,300],
             gridwidth: [1170, 720, 500, 500, 300],
@@ -61,6 +64,7 @@ function mainmenu() {
         $('.main-menu li.dropdown .dropdown-btn').click(function() {
             $(this).prev('ul').slideToggle(500);
         });
+        //$('.main-menu li.dropdown').mouseenter(function () { $(this).addClass('open') });
     }
 
 }
