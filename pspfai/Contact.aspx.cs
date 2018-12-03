@@ -19,7 +19,7 @@ namespace pspfai
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            string to = "hennis.felicia@gmail.com"; //To address     
+            string to = "kenvis.gumbs@gmail.com"; //To address     
             string from = "info@pspf.ai"; //From address     
             MailMessage message = new MailMessage(from, to);
 
