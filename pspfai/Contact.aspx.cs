@@ -14,12 +14,12 @@ namespace pspfai
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.Master.ContentPageName = "CONTACT";
+            //this.Master.ContentPageName = "CONTACT";
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            string to = "kenvis.gumbs@gmail.com"; //To address     
+            string to = "visa_blaze@hotmail.com"; //To address     
             string from = "info@pspf.ai"; //From address     
             MailMessage message = new MailMessage(from, to);
 

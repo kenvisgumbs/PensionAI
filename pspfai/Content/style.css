@@ -133,11 +133,11 @@ li {
 p {
     font-family: 'Open Sans', 'Roboto', sans-serif;
     text-transform: capitalize;
-    color: #888888;
+    color: #696969; /*Change: From #888888 to #696969*/
 }
 button, input, select, textarea {
     font-family: 'Roboto', sans-serif;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/ /*Change: Removed/Commented*/
 }
 button{
   border: none;
@@ -724,13 +724,13 @@ select:focus {
   text-transform: capitalize;
   margin: -2px 0 5px;
 }
-.header-contact-info ul li .text-holder p {
-  color: #888888;
-  font-size: 16px;
-  font-weight: 300;
-  margin: 0;
-  line-height: 16px;
-}
+    .header-contact-info ul li .text-holder p {
+        color: #717171; /*Change: FROM #8888888 to #717171*/
+        font-size: 16px;
+        font-weight: 300;
+        margin: 0;
+        line-height: 16px;
+    }
 .top-social-links {
   float: right;
   margin: 15px 0;
@@ -1496,12 +1496,11 @@ select:focus {
   padding: 10px 0px;
   line-height: 32px;
 }
-.service-section .icon-area p{
-  font-size: 14px; /*Change: 15px to 14px*/
-  color: #888888;
-  line-height: 26px;
-  font-weight: 400;
-
+.service-section .icon-area p {
+    font-size: 14px; /*Change: 15px to 14px*/
+    color: #717171; /*Change: FROM #888888 to #717171*/
+    line-height: 26px;
+    font-weight: 400;
 }
 
 /*** 
@@ -1766,11 +1765,11 @@ select:focus {
     padding-bottom: 15px;
 }
 
-.about-sec .right-content-area p {
-  color: #888888;
-  font-size: 16px;
-  line-height: 28px; 
-}
+    .about-sec .right-content-area p {
+        color: #717171; /*Change: FROM #888888 TO #717171*/
+        font-size: 16px;
+        line-height: 28px;
+    }
 
 
 .about-sec .right-content-area .about-item {
@@ -1784,11 +1783,11 @@ select:focus {
     float: left;
 }
 
-.about-sec .right-content-area .about-item ul li{
-  font-size: 16px;
-  color:#888888;
-  line-height: 31px;
-}
+    .about-sec .right-content-area .about-item ul li {
+        font-size: 16px;
+        color: #717171; /*Change: FROM #888888 to #717171*/
+        line-height: 31px;
+    }
 
 .about-sec .right-content-area .about-item ul li > i {
     font-size: 16px;
@@ -2076,12 +2075,12 @@ select:focus {
   color: #21a53b;
 }
 
-.client-sec .single-item .text-holder p {
-    color: #888888;
-    padding-top: 25px;
-    z-index: 1111;
-    position: relative;
-}
+    .client-sec .single-item .text-holder p {
+        color: #717171; /*Change: FROM #888888 to #717171*/
+        padding-top: 25px;
+        z-index: 1111;
+        position: relative;
+    }
 
 .client-sec .testimonial-carousel {
     display: block;
@@ -2153,13 +2152,13 @@ select:focus {
   margin-bottom: 20px;
 }
 
-.price-table .table-block .table-det ul li {
-    font-size: 16px;
-    font-family: Roboto;
-    padding: 12px 0;
-    border-bottom: 1px solid #f2f2f2;
-    color:#888888;
-}
+    .price-table .table-block .table-det ul li {
+        font-size: 16px;
+        font-family: Roboto;
+        padding: 12px 0;
+        border-bottom: 1px solid #f2f2f2;
+        color: #717171; /*Change: FROM #888888 to #717171*/
+    }
 
 .price-table .table-block .table-det ul li:last-child{
   border: none;
@@ -2264,26 +2263,26 @@ select:focus {
     padding-bottom: 15px;
 }
 
-.blog-section .content-text .text p{
-  font-size: 16px;
-  line-height: 26px;
-  color: #888888;
-  font-weight: 400;
-  padding-bottom: 15px;
-}
+    .blog-section .content-text .text p {
+        font-size: 16px;
+        line-height: 26px;
+        color: #717171; /*Change: FROM #888888 to #717171*/
+        font-weight: 400;
+        padding-bottom: 15px;
+    }
 
-.blog-section .read-more-btn a{
-  font-size: 16px;
-  line-height: 26px;
-  color: #888888;
-  font-weight: 400;
-  padding-bottom: 15px;
-  -webkit-transition: all 0.5s ease-out;
-     -moz-transition: all 0.5s ease-out;
-      -ms-transition: all 0.5s ease-out;
-       -o-transition: all 0.5s ease-out;
-          transition: all 0.5s ease-out;
-}
+    .blog-section .read-more-btn a {
+        font-size: 16px;
+        line-height: 26px;
+        color: #717171; /*Change: FROM #888888 to #717171*/
+        font-weight: 400;
+        padding-bottom: 15px;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -ms-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+    }
 
 .blog-section .read-more-btn a:hover{
   color: #21a53b;
@@ -2352,15 +2351,15 @@ select:focus {
   padding-bottom: 8px;
 }
 
-.blog-section.style2 .read-more-btn a{
-  font-size: 14px;
-  line-height: 14px;
-  padding: 15px 30px;
-  color: #888888;
-  border: 1px solid #e5e5e5;
-  font-weight: 600;
-  border-radius: 5px;
-}
+    .blog-section.style2 .read-more-btn a {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 15px 30px;
+        color: #717171; /*Change: FROM #888888 to #717171*/
+        border: 1px solid #e5e5e5;
+        font-weight: 600;
+        border-radius: 5px;
+    }
 
 .blog-section.style2 .read-more-btn a:hover{
   color: #fff;
@@ -2374,11 +2373,11 @@ select:focus {
     padding-bottom: 20px;
 }
 
-.content-text .author-com ul li {
-    display: inline-block;
-    font-size: 14px;
-    color: #888888;
-}
+    .content-text .author-com ul li {
+        display: inline-block;
+        font-size: 14px;
+        color: #717171; /*Change: FROM #888888 to #717171*/
+    }
 
 .content-text .author-com ul li a {
     margin-left: 15px;
@@ -2396,17 +2395,17 @@ select:focus {
 .right-side-bar .search-box{
     position: relative;
 }
-.right-side-bar .search-box input{
-    position: relative;
-    height: 50px;
-    width: 100%;
-    color: #888888;
-    padding: 0px 15px;
-    background: #ffffff;
-    font-weight: 400;
-    font-size: 16px;
-    border: 1px solid #e5e5e5;
-}
+    .right-side-bar .search-box input {
+        position: relative;
+        height: 50px;
+        width: 100%;
+        color: #717171; /*Change: FROM #888888 to #717171*/
+        padding: 0px 15px;
+        background: #ffffff;
+        font-weight: 400;
+        font-size: 16px;
+        border: 1px solid #e5e5e5;
+    }
 .right-side-bar .search-box input:focus{
   border-color: #f5365e;
 }
@@ -2512,10 +2511,10 @@ select:focus {
 .right-side-bar .blog-sidebar i{
   margin-right: 10px;
 }
-.right-side-bar .blog-sidebar span{
-  font-size: 13px;
-  color: #888888;
-}
+    .right-side-bar .blog-sidebar span {
+        font-size: 13px;
+        color: #717171; /*Change: FROM #888888 to #717171*/
+    }
 .right-side-bar .archives-area{
   margin-top: 50px;
 }
@@ -3579,7 +3578,7 @@ select:focus {
   padding: 10px 20px;
   width: 100%;
   font-weight: 400;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/ /*Change: Removed/Commented*/
   font-family: 'Open Sans', 'Roboto', sans-serif; /*Change: Added Open Sans*/
   border: 1px solid #d9d9d9;
   -webkit-transition: all 500ms ease;
