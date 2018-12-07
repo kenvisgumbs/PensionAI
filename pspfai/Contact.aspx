@@ -27,14 +27,14 @@
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="contact-info text-center">
-                        <i class="flaticon-family"></i>
+                        <i class="flaticon-placeholder"></i>
                         <h5>Pension Office</h5>
                         <p>James Ronald Webster Building,<br />The Valley, AI2640, Anguilla</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="contact-info text-center">
-                        <i class="flaticon-family"></i>
+                        <i class="flaticon-old-typical-phone"></i>
                         <h5>Phone Number</h5>
                         <p>
                             +1 (264) 498-5079<br />
@@ -44,7 +44,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="contact-info text-center">
-                        <i class="flaticon-family"></i>
+                        <i class="flaticon-america"></i>
                         <h5>Social</h5>
                         <p style="text-transform: lowercase !important;">
                             www.pspf.ai, info@pspf.ai<br>

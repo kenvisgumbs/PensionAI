@@ -65,5 +65,17 @@ namespace pspfai {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSubmit;
+        
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new pspfai.PSPFAI Master {
+            get {
+                return ((pspfai.PSPFAI)(base.Master));
+            }
+        }
     }
 }
