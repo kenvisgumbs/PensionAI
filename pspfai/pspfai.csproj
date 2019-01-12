@@ -114,6 +114,7 @@
     <Content Include="Content\Images\icon\preloader.gif" />
     <Content Include="Content\Images\icon\submenu-icon.png" />
     <Content Include="Content\Images\jumbo\jumbo1.jpg" />
+    <Content Include="Content\Images\jumbo\slider_staff.jpg" />
     <Content Include="Content\Images\loading.gif" />
     <Content Include="Content\Images\next.png" />
     <Content Include="Content\Images\prev.png" />

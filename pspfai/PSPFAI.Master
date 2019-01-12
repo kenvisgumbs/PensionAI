@@ -140,7 +140,7 @@
                                                 </ul>
 
                                             </li>
-                                            <li class="dropdown"><a href="#">Resources</a>
+                                            <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "RESOURCES")); %>"><a href="#">Resources</a>
                                                 <ul> 
                                                     <li><a href="#">Forms</a></li>
                                                     <li><a href="faq.aspx">Our Faq</a></li>

@@ -13,6 +13,73 @@
             <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
                 <ul>
 
+                     <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/slider_staff.jpg">
+
+                        <div class="tp-caption"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['-80','-90','-100','-100']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <h1>Public Service Pension Fund'
+                                <br>
+                                Dedicated Staff</h1>
+                        </div>
+
+                        <div class="tp-caption"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['550','550','550','500']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['10','10','10','10']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="text">The Public Pension Fund Staff are ready to assist with all your needs.</div>
+                        </div>
+
+                        <div class="tp-caption tp-resizeme"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['100','100','100','110']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="btns-box">
+                                <a href="#" class="thm-btn bg-clr2">Contact Us</a>
+                                <a href="contact.aspx" class="thm-btn bg-clr1">Get Services</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <%--End Slider 1--%>
                     <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/jumbo1.jpg">
 
