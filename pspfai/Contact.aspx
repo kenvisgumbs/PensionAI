@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="pspfai.Contact" %>
 <%@ MasterType VirtualPath="~/PSPFAI.Master" %>
+<%@ Register Assembly="BotDetect" Namespace="BotDetect.Web.UI" TagPrefix="BotDetect" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
@@ -57,7 +59,7 @@
                 <div class="form-sec">
                     <div  class="default-form contact-form" >
                         <div class="row">
-                            <div class="col-md-6 col-sm-12 col-xs-12">
+                           <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <asp:TextBox ID="txtName" placeholder="Your Name"  required="required" runat="server"></asp:TextBox>
                                     <!-- <input type="text" name="name" placeholder="Your Name" required=""> -->
@@ -65,19 +67,19 @@
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtEmail" placeholder="Email"  required="required" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtEmail" placeholder="Email" TextMode="Email" required="required" runat="server"></asp:TextBox>
                                     <!-- <input type="email" name="email" placeholder="Email" required=""> -->
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtPhone" placeholder="Phone"  required="required" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtPhone" placeholder="Phone" TextMode="Phone" required="required" runat="server"></asp:TextBox>
                                     <!-- <input type="tel" name="name" placeholder="Phone" required=""> -->
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtWebsite" placeholder="Website"  required="required" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtWorkPhone" placeholder="Work Phone" TextMode="Phone"  required="required" runat="server"></asp:TextBox>
                                     <!-- <input type="url" name="name" placeholder="Website" required=""> -->
                                 </div>
                             </div>
@@ -86,11 +88,24 @@
                                     <asp:TextBox ID="txtMessage" placeholder="Message" TextMode="MultiLine" Rows="30" required="required" runat="server"></asp:TextBox>
                                     <!-- <textarea name="form_message" class="form-control textarea required" placeholder="Message"></textarea> -->
                                 </div>
-                                <div class="form-group text-left">
-                                    <asp:Button CssClass="thm-btn bg-clr4" ID="btnSubmit" runat="server" Text="submit now" OnClick="btnSubmit_Click" />
-                                    <!-- <button type="submit" class="thm-btn bg-clr4">submit now</button> -->
+                            </div>
+                             <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                                   <asp:Label ID="CaptchaLabel" runat="server" AssociatedControlID="CaptchaCode">
+                                                      Type the characters from the picture:
+                                                    </asp:Label>
+                                                    <BotDetect:WebFormsSimpleCaptcha ID="PSPFCaptcha" runat="server" />
+                                                    <asp:TextBox ID="CaptchaCode" runat="server" CssClass="captcha" required="required"/>
+                                                    <asp:Label ID="CaptchaErrorLabel" ForeColor="Red" runat="server"/>
                                 </div>
                             </div>
+                             <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <asp:Button CssClass="thm-btn bg-clr4" ID="btnSubmit" runat="server" Text="submit now" />
+                                    <!-- <button type="submit" class="thm-btn bg-clr4">submit now</button> -->
+                               </div>
+                            </div>
+                        
                         </div>
                     </div>
                 </div>

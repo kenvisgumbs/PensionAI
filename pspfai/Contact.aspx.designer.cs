@@ -40,13 +40,13 @@ namespace pspfai {
         protected global::System.Web.UI.WebControls.TextBox txtPhone;
         
         /// <summary>
-        /// txtWebsite control.
+        /// txtWorkPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtWebsite;
+        protected global::System.Web.UI.WebControls.TextBox txtWorkPhone;
         
         /// <summary>
         /// txtMessage control.
@@ -56,6 +56,42 @@ namespace pspfai {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMessage;
+        
+        /// <summary>
+        /// CaptchaLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label CaptchaLabel;
+        
+        /// <summary>
+        /// PSPFCaptcha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BotDetect.Web.UI.WebFormsSimpleCaptcha PSPFCaptcha;
+        
+        /// <summary>
+        /// CaptchaCode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox CaptchaCode;
+        
+        /// <summary>
+        /// CaptchaErrorLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label CaptchaErrorLabel;
         
         /// <summary>
         /// btnSubmit control.

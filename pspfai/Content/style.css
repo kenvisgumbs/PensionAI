@@ -3588,10 +3588,19 @@ select:focus {
           transition: all 500ms ease;
   border-radius: 5px;
 }
-.contact-us .form-group textarea{
-  resize: none;
-  height: 130px;
-  border-radius: 5px;
+
+.contact-us .form-group input[type="text"].captcha{
+    width: 250px;
+    height:30px;
+    border-radius:0px;
+    padding:10px 5px;
+    margin-top: 5px;
+}
+
+.contact-us .form-group textarea {
+        resize: none;
+        height: 130px;
+        border-radius: 5px;
 }
 .contact-us .form-group button{
   display: inline-block;

@@ -9,8 +9,10 @@
             <h2>Faq's</h2>
             <ul class="title-manu">
                 <li><a href="Home.aspx">home</a></li>
+                 <li>//</li>
+                <li><a href="resources.aspx">Resources</a></li>
                 <li>//</li>
-                <li><a href="project.aspx">Faq's</a></li>
+                <li><a href="#">Faq's</a></li>
             </ul>
         </div>
     </section>
@@ -25,7 +27,7 @@
                     <div class="accordion accordion-block">
                         <div class="accord-btn">
                             <i class="left-num">01</i>
-                            <h4>Is the Public Service Pension Fund only applicable to Government Employees?</h4>
+                            <h4>Is the PSPF only applicable to Government Employees?</h4>
                         </div>
                         <div class="accord-content">
                             <p>No, employees of Governmental agencies are also covered by the Pension Fund. To date these are: Anguilla Tourist Board, Anguilla Development Board, Health Authority of Anguilla, Water Corporation of Anguilla, Anguilla Financial Services Commission, Anguilla Community College, Anguilla Air and Sea Port Authority, and Public Utilities Commission.</p>
