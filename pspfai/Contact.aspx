@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="pspfai.Contact" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="pspfai.Contact" MaintainScrollPositionOnPostback="true" %>
 <%@ MasterType VirtualPath="~/PSPFAI.Master" %>
 <%@ Register Assembly="BotDetect" Namespace="BotDetect.Web.UI" TagPrefix="BotDetect" %>
 
@@ -92,7 +92,7 @@
                              <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                                    <asp:Label ID="CaptchaLabel" runat="server" AssociatedControlID="CaptchaCode">
-                                                      Type the characters from the picture:
+                                                    Type the Captcha Code Below.
                                                     </asp:Label>
                                                     <BotDetect:WebFormsSimpleCaptcha ID="PSPFCaptcha" runat="server" />
                                                     <asp:TextBox ID="CaptchaCode" runat="server" CssClass="captcha" required="required"/>

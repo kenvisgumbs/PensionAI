@@ -136,6 +136,7 @@
     <Content Include="Content\owl.theme.default.min.css" />
     <Content Include="Content\responsive.css" />
     <Content Include="Content\style.css" />
+    <Content Include="EmailTemplate.html" />
     <Content Include="Faq.aspx" />
     <Content Include="fonts\Flaticon.svg" />
     <Content Include="fonts\fontawesome-webfont3295.svg" />
