@@ -246,15 +246,12 @@
                                 <div class="title">
                                     <h5>Annual Reports</h5>
                                 </div>
-                                <p>Subscribe here to receive an email when annual reports are published.</p>
-                                <div class="form-group">
-                                    <asp:TextBox ID="txtEmail" placeholder="email@domain.com" runat="server" ValidationGroup="Reports" TextMode="Email" required="required"></asp:TextBox>
-                                        <%--<input type="email" name="email" placeholder="Enter your email" required="">--%>
-                               </div>
-                               <div class="form-group">
-                                    <asp:Button CssClass="thm-btn bg-clr4" ID="btnSubmit" ValidationGroup="Reports" runat="server" Text="Register"
-                                    />
-                                </div>
+                                <p>Subscribe and receive email alerts whenever annual reports are published.</p>
+                              
+                                    <div class="form-group">
+                                        <input type="button" class="thm-btn bg-clr4" onclick="window.location='http://eepurl.com/gd5DtT'" value="Subscribe" name="Subscribe" />
+                                    </div>
+                                
                             </div>
                         </div>
                         <!--End single footer widget-->

@@ -85,20 +85,20 @@
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtOrganization" placeholder="Organization" required="required" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtOrganization" placeholder="Organization" runat="server"></asp:TextBox>
                                     <!-- <input type="url" name="name" placeholder="Website" required=""> -->
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtWorkPhone" placeholder="Work Phone" TextMode="Phone"  required="required" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtWorkPhone" placeholder="Work Phone" TextMode="Phone" runat="server"></asp:TextBox>
                                     <!-- <input type="url" name="name" placeholder="Website" required=""> -->
                                 </div>
                             </div>
                             
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtMessage" placeholder="Message" TextMode="MultiLine" Rows="30" required="required" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtMessage" placeholder="Message"  TextMode="MultiLine" Rows="30" required="required" runat="server"></asp:TextBox>
                                     <!-- <textarea name="form_message" class="form-control textarea required" placeholder="Message"></textarea> -->
                                 </div>
                             </div>
@@ -109,7 +109,7 @@
                                                     </asp:Label>
                                                     <BotDetect:WebFormsSimpleCaptcha ID="PSPFCaptcha" runat="server" />
                                                     <asp:TextBox ID="CaptchaCode" runat="server" CssClass="captcha" required="required"/>
-                                                    <asp:Label ID="CaptchaErrorLabel" ForeColor="Red" runat="server"/>
+                                                    <asp:Label ID="CaptchaErrorLabel" ForeColor="Red" Text="." runat="server"/>
                                 </div>
                             </div>
                              <div class="col-md-12 col-sm-12 col-xs-12">
@@ -127,6 +127,25 @@
         </div>
     </section>
     <!--End contact us-->
+    
+
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">
+     //window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us20.list-manage.com", "uuid": "c5fcfe19ef08397fe371130c3", "lid": "2188849241", "uniqueMethods": true }) })
+</script>
+<script type="text/javascript">
+    
+    function showRegisterPopUp() {
+        document.cookie = 'MCEvilPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+        window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us20.list-manage.com", "uuid": "c5fcfe19ef08397fe371130c3", "lid": "2188849241", "uniqueMethods": true }) })
+        
+
+        //document.getElementById("open-popup").onclick = function() { showRegisterPopUp() };
+    };
+</script>
+    
+<input id="open-popup" type="button" value="test" onclick="return showRegisterPopUp();" />
+
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="FooterScriptContent" runat="server">
@@ -134,3 +153,4 @@
     <script type="text/javascript" src="Scripts/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXrkGlBen34zFQKbPca5BbspXvguMsVzY"></script>
 </asp:Content>
+
