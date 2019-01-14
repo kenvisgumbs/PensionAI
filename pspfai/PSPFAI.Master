@@ -190,7 +190,13 @@
                                     <h5>Contact</h5>
                                 </div>
                                 <div class="our-info">
-                                    <p>Lorem ipsum dolor sit amet, semnger esapie tempus,aliquam silitud aquam vitae, fugiat poere incididunt, nbero. Nunc camcorper  vphasellus </p>
+                                    <ul class="footer-address">
+                                        <li><i class="fa fa-building"></i>James Ronald Webster Building</li>
+                                        <li><i class="fa fa-paper-plane"></i>P.O.Box 60, The Valley, Anguilla, BWI</li>
+                                        <li><i class="fa fa-envelope"></i>info@pspf.ai</li>
+                                        <li><i class="fa fa-phone"></i>+1 (264) 498-5079</li>
+                                       
+                                    </ul>
                                 </div>
                                 <ul class="footer-social-links">
                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -207,14 +213,14 @@
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="single-footer-widget wedo pd-left pd-bottom">
                                 <div class="title">
-                                    <h5>Our Service</h5>
+                                    <h5>Our Services</h5>
                                 </div>
                                 <ul class="we-do-list">
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Bank Loan <span class="post-count">3</span></a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Childen Planing <span class="post-count">12</span></a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Market Research <span class="post-count">33</span></a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Seo Marketing <span class="post-count">24</span></a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Business Advices <span class="post-count">40</span></a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Pensions <span class="post-count">3</span></a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Gratuity Payments <span class="post-count">12</span></a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Refunds <span class="post-count">33</span></a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Survivor Payments <span class="post-count">24</span></a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Early Retirement <span class="post-count">40</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -223,11 +229,12 @@
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="single-footer-widget wedo pd-left pd-bottom">
                                 <div class="title">
-                                    <h5>Latest News</h5>
+                                    <h5>Quick Resources</h5>
                                 </div>
-                                <a href="#" class="news-link">Phasellus Risus Aliqua <span>15 augest 2018</span></a>
-                                <a href="#" class="news-link">France Prepares to Stake <span>23 july 2018</span></a>
-                                <a href="#" class="news-link">France Prepares to Stake <span>23 july 2018</span></a>
+                                <a href="#" class="news-link">Loan Application</a>
+                                <a href="#" class="news-link">Registration Form</a>
+                                <a href="#" class="news-link">Refund Form</a>
+                                <a href="#" class="news-link">PSPF Handbook <span>23<sup>rd</sup> july 2014</span></a>
 
                             </div>
                         </div>
@@ -237,12 +244,17 @@
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="single-footer-widget pd-top pd-left">
                                 <div class="title">
-                                    <h5>Resouces</h5>
+                                    <h5>Annual Reports</h5>
                                 </div>
-                                <p>illum perim adigio redab dutim</p>
-                                
-                                <asp:Button CssClass="thm-btn bg-clr4" ID="btnSubmit" runat="server" Text="Contact Us"
-                                    ValidationGroup="save" />
+                                <p>Subscribe here to receive an email when annual reports are published.</p>
+                                <div class="form-group">
+                                    <asp:TextBox ID="txtEmail" placeholder="email@domain.com" runat="server" ValidationGroup="Reports" TextMode="Email" required="required"></asp:TextBox>
+                                        <%--<input type="email" name="email" placeholder="Enter your email" required="">--%>
+                               </div>
+                               <div class="form-group">
+                                    <asp:Button CssClass="thm-btn bg-clr4" ID="btnSubmit" ValidationGroup="Reports" runat="server" Text="Register"
+                                    />
+                                </div>
                             </div>
                         </div>
                         <!--End single footer widget-->

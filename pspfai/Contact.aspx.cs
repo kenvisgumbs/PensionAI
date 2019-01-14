@@ -94,7 +94,9 @@ namespace pspfai
             }
 
             body = body.Replace("{name}", txtName.Text); //replacing Parameters
+            body = body.Replace("{surname}", txtSurname.Text);
             body = body.Replace("{phone}", txtPhone.Text);
+            body = body.Replace("{organization}", txtOrganization.Text);
             body = body.Replace("{workphone}", txtWorkPhone.Text);
             body = body.Replace("{email}", txtEmail.Text);
             body = body.Replace("{message}", txtMessage.Text);

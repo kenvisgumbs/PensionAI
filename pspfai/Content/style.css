@@ -571,7 +571,7 @@ select:focus {
 }
 .top-bar-area h6{
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   color: #323232;
   line-height: 29px;
 }
@@ -581,7 +581,7 @@ select:focus {
   float: left;
   color: #323232;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   padding-right: 15px;
 }
 
@@ -622,7 +622,7 @@ select:focus {
 
 .top-bar-area.style-two h6{
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   color: #fff;
   line-height: 29px;
 }
@@ -720,7 +720,7 @@ select:focus {
 .header-contact-info ul li .text-holder h6 {
   color: #222222;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700 !important;
   text-transform: capitalize;
   margin: -2px 0 5px;
 }
@@ -1423,6 +1423,9 @@ select:focus {
 .sec-title p {
   margin-top: 9px;
   text-transform:none;
+  font-size:20px;
+  font-weight:600;
+
 }
 .service-section .service-block {
     float: left;
@@ -3218,8 +3221,32 @@ select:focus {
 }
 .single-footer-widget .footer-social-links {
   overflow: hidden;
-  margin-top: 25px;
+  margin-top: 15px;
 }
+
+.single-footer-widget .footer-address {
+    overflow: hidden;
+    margin:0px; padding:0px;
+    list-style:none;
+}
+
+.single-footer-widget .footer-address li{
+    color: #ffffff;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px 0px 4px 0px;
+    text-transform:none;
+   
+}
+
+.single-footer-widget .footer-address li i {
+    color: #cccccc;
+    padding:0px;
+    padding-right: 15px;
+    margin:0px;
+    text-align: center;
+}
+
 .single-footer-widget .footer-social-links li {
   display: inline-block;
   margin-right: 5px;
@@ -3298,20 +3325,22 @@ select:focus {
     color: #21a53b;
 }
 .single-footer-widget p {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 18px;
     color: #dddddd;
+    text-transform:none;
 }
 
-.single-footer-widget .news-link {
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 26px;
-    color: #dddddd;
-    float: left;
-    margin-bottom: 10px;
-}
+
+    .single-footer-widget .news-link {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #dddddd;
+        float: left;
+        margin-bottom: 10px;
+    }
 
 .single-footer-widget .news-link span{
   width: 100%;
@@ -3357,11 +3386,11 @@ select:focus {
     width: 100%;
     line-height: 26px;
     font-weight: 400;
-    padding: 10px 20px;
+    padding: 10px 10px;
     background: #fff;
     border: 1px solid#30333a;
     box-shadow: none;
-    text-transform: capitalize;
+    text-transform:none !important;
     font-family: 'Roboto', sans-serif;
     transition: all 500ms ease;
 }
@@ -3566,28 +3595,30 @@ select:focus {
     margin-bottom: 20px;
     margin-right: 10px;
 }
-.contact-us .form-group input[type="text"],
-.contact-us .form-group input[type="email"],
-.contact-us .form-group input[type="tel"],
-.contact-us .form-group input[type="url"],
-.contact-us .form-group textarea{
-  color: #272727;
-  display: block;
-  font-size: 15px; /*Change: 16px to 15px*/
-  height: 50px;
-  padding: 10px 20px;
-  width: 100%;
-  font-weight: 400;
-  /*text-transform: capitalize;*/ /*Change: Removed/Commented*/
-  font-family: 'Open Sans', 'Roboto', sans-serif; /*Change: Added Open Sans*/
-  border: 1px solid #d9d9d9;
-  -webkit-transition: all 500ms ease;
-     -moz-transition: all 500ms ease;
-      -ms-transition: all 500ms ease;
-       -o-transition: all 500ms ease;
-          transition: all 500ms ease;
-  border-radius: 5px;
-}
+
+    .contact-us .form-group select,
+    .contact-us .form-group input[type="text"],
+    .contact-us .form-group input[type="email"],
+    .contact-us .form-group input[type="tel"],
+    .contact-us .form-group input[type="url"],
+    .contact-us .form-group textarea {
+        color: #272727;
+        display: block;
+        font-size: 15px; /*Change: 16px to 15px*/
+        height: 50px;
+        padding: 10px 20px;
+        width: 100%;
+        font-weight: 400;
+        /*text-transform: capitalize;*/ /*Change: Removed/Commented*/
+        font-family: 'Open Sans', 'Roboto', sans-serif; /*Change: Added Open Sans*/
+        border: 1px solid #d9d9d9;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+        border-radius: 5px;
+    }
 
 .contact-us .form-group input[type="text"].captcha{
     width: 250px;

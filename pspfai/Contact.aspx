@@ -31,7 +31,7 @@
                     <div class="contact-info text-center">
                         <i class="flaticon-placeholder"></i>
                         <h5>Pension Office</h5>
-                        <p>James Ronald Webster Building,<br />The Valley, AI2640, Anguilla</p>
+                        <p>James Ronald Webster Building,<br />The Valley, AI-2640, Anguilla, BWI</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
@@ -40,7 +40,7 @@
                         <h5>Phone Number</h5>
                         <p>
                             +1 (264) 498-5079<br />
-                            +1 (264) 498-5079
+                            +1 (264) 497-2451
                         </p>
                     </div>
                 </div>
@@ -61,8 +61,14 @@
                         <div class="row">
                            <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtName" placeholder="Your Name"  required="required" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtName" placeholder="Name(s)" ValidationGroup="Contact"  required="required" runat="server"></asp:TextBox>
                                     <!-- <input type="text" name="name" placeholder="Your Name" required=""> -->
+                                </div>
+                            </div>
+                             <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <asp:TextBox ID="txtSurname" placeholder="Surname" required="required" runat="server"></asp:TextBox>
+                                    <!-- <input type="email" name="email" placeholder="Email" required=""> -->
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
@@ -79,10 +85,17 @@
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
+                                    <asp:TextBox ID="txtOrganization" placeholder="Organization" required="required" runat="server"></asp:TextBox>
+                                    <!-- <input type="url" name="name" placeholder="Website" required=""> -->
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group">
                                     <asp:TextBox ID="txtWorkPhone" placeholder="Work Phone" TextMode="Phone"  required="required" runat="server"></asp:TextBox>
                                     <!-- <input type="url" name="name" placeholder="Website" required=""> -->
                                 </div>
                             </div>
+                            
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <asp:TextBox ID="txtMessage" placeholder="Message" TextMode="MultiLine" Rows="30" required="required" runat="server"></asp:TextBox>
@@ -101,7 +114,8 @@
                             </div>
                              <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <asp:Button CssClass="thm-btn bg-clr4" ID="btnSubmit" runat="server" Text="submit now" />
+                                    <asp:Button CssClass="thm-btn bg-clr4" ValidationGroup="Contact" ID="btnSubmit" runat="server" Text="submit" />
+                                    <input class="thm-btn bg-clr4" type="reset" value="Clear" />
                                     <!-- <button type="submit" class="thm-btn bg-clr4">submit now</button> -->
                                </div>
                             </div>

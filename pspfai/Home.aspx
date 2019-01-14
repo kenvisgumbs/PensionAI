@@ -227,9 +227,9 @@
                     <div class="sec-title text-center">
                         <h2>Our Vision</h2>
                         <span class="border"></span>
-                        <p>To be an Effective Provider of Retirement Benefits to Ensure Peace of Mind to
+                        <p>To be an effective provider of retirement benefits to ensure peace of mind to
                             <br>
-                            Contributors and a Level of Service that Exceeds Expectations.</p>
+                            contributors and a level of service that exceeds expectations.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
