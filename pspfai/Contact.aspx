@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="pspfai.Contact" MaintainScrollPositionOnPostback="true" %>
+﻿<%@ Page Title="Public Service Pension Fund: Contact" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="pspfai.Contact" MaintainScrollPositionOnPostback="true" %>
 <%@ MasterType VirtualPath="~/PSPFAI.Master" %>
 <%@ Register Assembly="BotDetect" Namespace="BotDetect.Web.UI" TagPrefix="BotDetect" %>
 
@@ -127,25 +127,6 @@
         </div>
     </section>
     <!--End contact us-->
-    
-
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-<script type="text/javascript">
-     //window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us20.list-manage.com", "uuid": "c5fcfe19ef08397fe371130c3", "lid": "2188849241", "uniqueMethods": true }) })
-</script>
-<script type="text/javascript">
-    
-    function showRegisterPopUp() {
-        document.cookie = 'MCEvilPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-        window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us20.list-manage.com", "uuid": "c5fcfe19ef08397fe371130c3", "lid": "2188849241", "uniqueMethods": true }) })
-        
-
-        //document.getElementById("open-popup").onclick = function() { showRegisterPopUp() };
-    };
-</script>
-    
-<input id="open-popup" type="button" value="test" onclick="return showRegisterPopUp();" />
-
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="FooterScriptContent" runat="server">

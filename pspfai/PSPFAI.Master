@@ -132,10 +132,14 @@
                                                         <li><a href="faq.aspx">FAQ</a></li>
                                                     </ul>
                                             </li>
-                                            <li class="dropdown"><a href="#">Services</a>
+                                            <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "SERVICES")); %>"><a href="services.aspx">Services</a>
                                                 <ul>
-                                                    <li><a href="services.aspx">Our Services</a></li>
-                                                    <li><a href="services-1.aspx">Our Services 2</a></li>
+                                                    <li><a href="services-details.aspx?type=pensions">Pensions</a></li>
+                                                    <li><a href="services-details.aspx?type=gratuity">Gratuity</a></li>
+                                                    <li><a href="services-details.aspx?type=refunds">Refunds</a></li>
+                                                    <li><a href="services-details.aspx?type=survivor">Survivor</a></li>
+                                                    <li><a href="services-details.aspx?type=early">Early Retirement</a></li>
+                                                    <li><a href="services-details.aspx?type=boarding">Medical</a></li>
                                                     <li><a href="services-details.aspx">Single Services</a></li>
                                                 </ul>
 
@@ -249,7 +253,7 @@
                                 <p>Subscribe and receive email alerts whenever annual reports are published.</p>
                               
                                     <div class="form-group">
-                                        <input type="button" class="thm-btn bg-clr4" onclick="window.location='http://eepurl.com/gd5DtT'" value="Subscribe" name="Subscribe" />
+                                        <input type="button" class="thm-btn bg-clr4" onclick="return showRegisterPopUp();" value="Subscribe" name="Subscribe" />
                                     </div>
                                 
                             </div>
@@ -305,6 +309,17 @@
 
             <!-- thm custom script -->
             <script src="Scripts/custom.js"></script>
+
+            <!--mailchimp drop in -->
+            <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+            <script type="text/javascript">
+    
+                function showRegisterPopUp() {
+       
+                    window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us20.list-manage.com", "uuid": "c5fcfe19ef08397fe371130c3", "lid": "2188849241", "uniqueMethods": true }) })
+    
+                };
+            </script>
         </div>
     </form>
 </body>

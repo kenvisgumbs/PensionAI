@@ -1,5 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Services-Details.aspx.cs" Inherits="pspfai.Services_Details" %>
-
+﻿<%@ Page Title="Public Service Pension Fund: Services" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Services-Details.aspx.cs" Inherits="pspfai.Services_Details" %>
+<%@ MasterType VirtualPath="~/PSPFAI.Master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

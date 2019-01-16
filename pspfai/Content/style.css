@@ -3122,7 +3122,7 @@ select:focus {
     left: 50%;
     top: 114%;
     width: 2px;
-    height: 96px;
+    height: 140px;
     background: #e7e7e7;
 }
 
@@ -3143,20 +3143,23 @@ select:focus {
     text-transform: none;
     padding-top: 13px;
     padding-left: 80px;
+    height:60px;
 }
 
 .accordion .accord-content {
     position: relative;
     border-top: medium none;
-    padding: 18px 0px 10px 80px;
+    padding: 10px 0px 10px 80px;
+    height:150px;
 }
 
 .accordion .accord-content p {
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
     color: #888888;
-    line-height: 25px;
+    line-height: 22px;
     font-weight: 400;
+    text-transform:none;
 }
 
 /*** 
