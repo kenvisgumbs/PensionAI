@@ -132,7 +132,7 @@
                                                         <li><a href="faq.aspx">FAQ</a></li>
                                                     </ul>
                                             </li>
-                                            <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "SERVICES")); %>"><a href="services.aspx">Benefits</a>
+                                            <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "SERVICES")); %>"><a href="benefits.aspx">Benefits</a>
                                                 <ul>
                                                     <li><a href="benefit-details.aspx?type=pension">Pensions</a></li>
                                                     <li><a href="benefit-details.aspx?type=gratuity">Gratuity</a></li>
