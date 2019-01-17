@@ -10,7 +10,7 @@
 namespace pspfai {
     
     
-    public partial class Services {
+    public partial class Benefit_Details {
         
         /// <summary>
         /// Master property.

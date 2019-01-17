@@ -188,8 +188,8 @@
     <Content Include="Scripts\owl.carousel.min.js" />
     <Content Include="Scripts\validation.js" />
     <Content Include="Services-1.aspx" />
-    <Content Include="Services-Details.aspx" />
-    <Content Include="Services.aspx" />
+    <Content Include="Benefit-Details.aspx" />
+    <Content Include="Benefits.aspx" />
     <Content Include="Single-Project.aspx" />
     <Content Include="Test.aspx" />
     <Content Include="Web.config" />
@@ -286,19 +286,19 @@
     <Compile Include="Services-1.aspx.designer.cs">
       <DependentUpon>Services-1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Services-Details.aspx.cs">
-      <DependentUpon>Services-Details.aspx</DependentUpon>
+    <Compile Include="Benefit-Details.aspx.cs">
+      <DependentUpon>Benefit-Details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Services-Details.aspx.designer.cs">
-      <DependentUpon>Services-Details.aspx</DependentUpon>
+    <Compile Include="Benefit-Details.aspx.designer.cs">
+      <DependentUpon>Benefit-Details.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Services.aspx.cs">
-      <DependentUpon>Services.aspx</DependentUpon>
+    <Compile Include="Benefits.aspx.cs">
+      <DependentUpon>Benefits.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Services.aspx.designer.cs">
-      <DependentUpon>Services.aspx</DependentUpon>
+    <Compile Include="Benefits.aspx.designer.cs">
+      <DependentUpon>Benefits.aspx</DependentUpon>
     </Compile>
     <Compile Include="Single-Project.aspx.cs">
       <DependentUpon>Single-Project.aspx</DependentUpon>

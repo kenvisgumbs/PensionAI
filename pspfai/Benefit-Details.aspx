@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Public Service Pension Fund: Services" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Services-Details.aspx.cs" Inherits="pspfai.Services_Details" %>
+﻿<%@ Page Title="Public Service Pension Fund: Benefits" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Benefit-Details.aspx.cs" Inherits="pspfai.Benefit_Details" %>
 <%@ MasterType VirtualPath="~/PSPFAI.Master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -8,26 +8,34 @@
     <!--Page Title-->
     <section class="page-title" style="background: url(https://via.placeholder.com/1920x275);">
         <div class="container text-center">
-            <h2>Service Details</h2>
+            <h2><% =subPage%> Benefit Details</h2>
             <ul class="title-manu">
                 <li><a href="Home.aspx">home</a></li>
                 <li>//</li>
                 <li><a href="services.aspx">services</a></li>
                 <li>//</li>
-                <li>Service Details</li>
+                <li><% =subPage %> Benefit Details</li>
             </ul>
         </div>
     </section>
     <!--End Page Title-->
 
     <!--Start service style 2-->
+    <% if (subPage == "pension")
+        {%>
     <section class="services-details">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-area text-left">
-                        <h4>Details About Fast Loan Approvel </h4>
-                        <p>Lorem ipsum dolor sit amet, sit leo porta, molestie tortor dui arcu mattis tristique, varius accumsan pretium habitant eget lectus, arcu nibh. Minim lacus sodales, lacus eum praesent mi ut, natoque nulla neque netus quam diam tempus, lobortis sed. Nunc morbi vitae arcu fermentum, ut leo egestas mauris bibendum, morbi a. Vestibulum accumsan, et donec vehicula, elit nunc dapibus elementum orci eu. Pede interdum id sed pharetra massa, nunc arcu condimentum odio sapien, eumod donec varius purus ipsum dolor, proin purus cillum dolor dolor.congue, et massa, ornare morbi vitae justo et. A vitae tempor cras ante libero, metus veritatis. Diam taciti id. Sollicitudin donec eros metus sit. Sit sagittis ad, mauris nec donec quisque, rhoncus ipsum sed arcu fusce, felis nunc eget morbi lacus, quis malesuada nonummy egestas quam lacus. Ante amet varius posuere</p>
+                        <h4>Details About <%=subPage %> Benefit</h4>
+                        <p>
+                            A pension is a type of retirement plan where an Employee contributes to a fund that also includes contributions by the Employer. 
+                            The Employee's pension payments at retirement are determined by the length of the employee's service and the annual income earned leading up to retirement. 
+                            To qualify for Pension, an Employee <strong>must</strong> have 10 years of continuous contributions. The Pension Administrator reviews all applications for Pension and determines elligibilily according
+                            to the Pension Statutes of Anguilla. 
+                            
+</p>
                     </div>
                 </div>
                 <div class="col-md-5 col-sm-12">
@@ -62,6 +70,7 @@
             </div>
         </div>
     </section>
+    <% } else if(subPage=="gratuity") { }%>  <!--end pension-->
     <!--End service style 2-->
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="FooterScriptContent" runat="server">

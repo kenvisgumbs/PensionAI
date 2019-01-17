@@ -2579,8 +2579,10 @@ select:focus {
 }
 
 .services-details .text-area p{
-  font-size: 16px;
+  font-size: 17px;
+  line-height:26px;
   color: #888888;
+  text-transform:none;
 
 }
 

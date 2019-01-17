@@ -132,15 +132,15 @@
                                                         <li><a href="faq.aspx">FAQ</a></li>
                                                     </ul>
                                             </li>
-                                            <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "SERVICES")); %>"><a href="services.aspx">Services</a>
+                                            <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "SERVICES")); %>"><a href="services.aspx">Benefits</a>
                                                 <ul>
-                                                    <li><a href="services-details.aspx?type=pensions">Pensions</a></li>
-                                                    <li><a href="services-details.aspx?type=gratuity">Gratuity</a></li>
-                                                    <li><a href="services-details.aspx?type=refunds">Refunds</a></li>
-                                                    <li><a href="services-details.aspx?type=survivor">Survivor</a></li>
-                                                    <li><a href="services-details.aspx?type=early">Early Retirement</a></li>
-                                                    <li><a href="services-details.aspx?type=boarding">Medical</a></li>
-                                                    <li><a href="services-details.aspx">Single Services</a></li>
+                                                    <li><a href="benefit-details.aspx?type=pension">Pensions</a></li>
+                                                    <li><a href="benefit-details.aspx?type=gratuity">Gratuity</a></li>
+                                                    <li><a href="benefit-details.aspx?type=refund">Refunds</a></li>
+                                                    <li><a href="benefit-details.aspx?type=survivor">Survivor</a></li>
+                                                    <li><a href="benefit-details.aspx?type=early">Early Retirement</a></li>
+                                                    <li><a href="benefit-details.aspx?type=medical">Medical Boarding</a></li>
+                                                    <li><a href="benefit-details.aspx">Single Services</a></li>
                                                 </ul>
 
                                             </li>
@@ -220,11 +220,11 @@
                                     <h5>Our Services</h5>
                                 </div>
                                 <ul class="we-do-list">
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Pensions <span class="post-count">3</span></a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Gratuity Payments <span class="post-count">12</span></a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Refunds <span class="post-count">33</span></a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Survivor Payments <span class="post-count">24</span></a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Early Retirement <span class="post-count">40</span></a></li>
+                                    <li><a href="benefit-details.aspx?type=pension"><i class="fa fa-angle-right" aria-hidden="true"></i>Pensions <span class="post-count">3</span></a></li>
+                                    <li><a href="benefit-details.aspx?type=gratuity"><i class="fa fa-angle-right" aria-hidden="true"></i>Gratuity Payments <span class="post-count">12</span></a></li>
+                                    <li><a href="benefit-details.aspx?type=refund"><i class="fa fa-angle-right" aria-hidden="true"></i>Refunds <span class="post-count">33</span></a></li>
+                                    <li><a href="benefit-details.aspx?type=survivor"><i class="fa fa-angle-right" aria-hidden="true"></i>Survivor Payments <span class="post-count">24</span></a></li>
+                                    <li><a href="benefit-details.aspx?type=early"><i class="fa fa-angle-right" aria-hidden="true"></i>Early Retirement <span class="post-count">40</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -317,7 +317,7 @@
                 function showRegisterPopUp() {
        
                     window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us20.list-manage.com", "uuid": "c5fcfe19ef08397fe371130c3", "lid": "2188849241", "uniqueMethods": true }) })
-    
+                    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
                 };
             </script>
         </div>
