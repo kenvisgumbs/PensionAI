@@ -129,10 +129,12 @@
                                             <li class="home <% Response.Write( globalUtil.getCurrent(ContentPageName, "HOME")); %>"><a href="Home.aspx">Home</a></li>
                                             <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "ABOUT")); %>"><a href="about.aspx">About</a>
                                                     <ul>
-                                                        <li><a href="faq.aspx">FAQ</a></li>
+                                                        <li><a href="board.aspx">THE BOARD</a></li>
+                                                        <li><a href="staff.aspx">The Staff</a></li>
+                                                        <!--<li><a href="faq.aspx">FAQ</a></li>-->
                                                     </ul>
                                             </li>
-                                            <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "SERVICES")); %>"><a href="benefits.aspx">Benefits</a>
+                                            <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "SERVICES")); %>"><a href="benefits.aspx">Plan Benefits</a>
                                                 <ul>
                                                     <li><a href="benefit-details.aspx?type=pension">Pensions</a></li>
                                                     <li><a href="benefit-details.aspx?type=gratuity">Gratuity</a></li>
@@ -148,10 +150,11 @@
                                                 <ul> 
                                                     <li><a href="#">Forms</a></li>
                                                     <li><a href="faq.aspx">Our Faq</a></li>
+                                                    <li><a href="#">Annual Reports</a></li>
                                                     <li><a href="404.aspx">Error Page</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="dropdown"><a href="#">Blog</a>
+                                            <li class="dropdown"><a href="#">PRESS</a>
                                                 <ul>
                                                     <li><a href="blog.aspx">Blgo Style 1</a></li>
                                                     <li><a href="blog-1.aspx">Blgo Style 2</a></li>

@@ -125,7 +125,7 @@ If you were employed in the public service before January 1, 2004, your retireme
 
                     <div class="accordion accordion-block">
                         <div class="accord-btn">
-                            <i class="left-num border">10</i>
+                            <i class="left-num">10</i>
                             <h4>What if I resign before the Normal Retirement Age?</h4>
                         </div>
                         <div class="accord-content">
@@ -203,7 +203,7 @@ Service prior to 2004 the yearly accrual rate is 2% and for service from 2004 on
 
                         <div class="accordion accordion-block">
                         <div class="accord-btn">
-                            <i class="left-num border">17</i>
+                            <i class="left-num">17</i>
                             <h4>Can I contribute while on Leave without Salary?</h4>
                         </div>
                         <div class="accord-content">
