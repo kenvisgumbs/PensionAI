@@ -2237,20 +2237,20 @@ select:focus {
     line-height: 26px;
     font-weight: 600;
     padding: 5px 16px;
-    background: #21a53b;
+    background: #cccccc;
     font-family: "Roboto";
     display: block;
     text-align: center;
-    border-radius: 5px 0 0 0;
+    border-radius: 1px 0 0 0;
 }
 
 .blog-section .item-holder .date-box .date-year{
-  background: #21a53b;
+  background: #cccccc;
   border-radius:0;
 }
 
 .blog-section .item-holder .date-box .date-month{
-  background: #25292f;
+  background: #888888;
   border-radius:0;
 }
 
