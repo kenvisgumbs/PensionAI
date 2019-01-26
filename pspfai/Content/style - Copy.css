@@ -47,7 +47,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700,700i|Roboto:400,400i,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
 
 @import url(imp.css);
@@ -337,31 +336,16 @@ button{
 }
 
 .sec-title h2 {
-    color: #222222;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 40px;
-    text-transform: capitalize;
-    margin: 0 0 1px;
-    
+  color: #222222;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: capitalize;
+  margin: 0 0 1px;
 }
- 
-.sec-title h2.welcome{
-    font-weight: 400;
-    font-size: 42px;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 2px;
-    text-shadow: 0 0 rgba(0, 108, 102, 0.6);
-    line-height: 120%;
-    color: #21a53b !important;
-    text-transform: uppercase;
-    margin: 15px 0px;
-    text-align: inherit;
-}
-
 .sec-title .border{
-  height: 1px;
-  width: 75px;
+  height: 2px;
+  width: 50px;
   display: inline-block;
   background: #21a53b;
 }
@@ -1426,7 +1410,7 @@ select:focus {
 
 .service-section{
   position: relative;
-  padding: 60px 0px 70px;
+  padding: 92px 0px 70px;
   background: #f6f8f9;
 }
 
@@ -2260,25 +2244,6 @@ select:focus {
     border-radius: 1px 0 0 0;
 }
 
-.blog-section .item-holder .report-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-.blog-section .item-holder .report-box h2 {
-    font-weight: bold;
-    font-size: 40px;
-    font-family: 'Lato', sans-serif;
-    text-shadow: 0 0 rgba(0, 108, 102, 0.6);
-    line-height: 38px;
-    text-transform: uppercase;
-    padding: 70px 10px 10px 90px;
-    text-align: inherit;
-    color: #999999;
-}
-
 .blog-section .item-holder .date-box .date-year{
   background: #cccccc;
   border-radius:0;
@@ -2848,8 +2813,6 @@ select:focus {
   top: 0px;
   left: 0px;
 }
-
-
 .blog-details .item-holder .date-box span {
     font-size: 30px;
     color: #ffffff;
