@@ -6,17 +6,20 @@
 
 
     <!--Page Title-->
-    <section class="page-title" style="background: url(https://via.placeholder.com/1920x275);">
-        <div class="container text-center">
+    <section class="page-title" style="background: url(Content/Images/pages/pagehsample.jpg);">
+       <div class="floatover">
+        <div class="container">
             <h2><% =subPage%> Benefit Details</h2>
             <ul class="title-manu">
                 <li><a href="Home.aspx">home</a></li>
-                <li>//</li>
+                <li>|</li>
                 <li><a href="services.aspx">services</a></li>
-                <li>//</li>
+                <li>|</li>
                 <li><% =subPage %> Benefit Details</li>
             </ul>
         </div>
+
+       </div>
     </section>
     <!--End Page Title-->
 

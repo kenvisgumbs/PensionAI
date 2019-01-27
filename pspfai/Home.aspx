@@ -241,7 +241,7 @@
                             <div class="icon-box">
                                 <i class="flaticon-cute-rocket-launching"></i>
                             </div>
-                            <a href="services-details.aspx">
+                            <a href="loans.aspx">
                                 <h5>Fast Loans</h5>
                             </a>
                             <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida</p>
@@ -254,7 +254,7 @@
                             <div class="icon-box">
                                 <i class="flaticon-support"></i>
                             </div>
-                            <a href="services-details.aspx">
+                            <a href="contact.aspx">
                                 <h5>Contact Us</h5>
                             </a>
                             <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida </p>
@@ -267,7 +267,7 @@
                             <div class="icon-box">
                                 <i class="flaticon-seo-performance-marketing-graphic"></i>
                             </div>
-                            <a href="services-details.aspx">
+                            <a href="ar.aspx">
                                 <h5>Financials</h5>
                             </a>
                             <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida </p>

@@ -4,17 +4,20 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!--Page Title-->
-    <section class="page-title" style="background: url(https://via.placeholder.com/1920x275);">
-        <div class="container text-center">
+    <section class="page-title" style="background: url(Content/Images/pages/pagehsample.jpg);">
+       <div class="floatover">
+        <div class="container">
             <h2>Faq's</h2>
             <ul class="title-manu">
                 <li><a href="Home.aspx">home</a></li>
-                 <li>//</li>
+                 <li>|</li>
                 <li><a href="resources.aspx">Resources</a></li>
-                <li>//</li>
-                <li><a href="#">Faq's</a></li>
+                <li>|</li>
+                <li>Faq's</li>
             </ul>
         </div>
+
+       </div>
     </section>
     <!--End Page Title-->
 

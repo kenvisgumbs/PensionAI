@@ -94,6 +94,7 @@
     <Content Include="assets\jquery-ui-1.11.4\images\ui-icons_cd0a0a_256x240.html" />
     <Content Include="assets\jquery-ui-1.11.4\jquery-ui.css" />
     <Content Include="assets\jquery-ui-1.11.4\jquery-ui.js" />
+    <Content Include="ar.aspx" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
     <Content Include="Blog-1.aspx" />
@@ -208,6 +209,13 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ar.aspx.cs">
+      <DependentUpon>ar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ar.aspx.designer.cs">
+      <DependentUpon>ar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Blog-1.aspx.cs">
       <DependentUpon>Blog-1.aspx</DependentUpon>

@@ -5,15 +5,17 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <!--Page Title-->
-    <section class="page-title" style="background: url(https://via.placeholder.com/1920x275);">
-        <div class="container text-center">
-            <h2>Benefits</h2>
-            <ul class="title-manu">
-                <li><a href="Home.aspx">home</a></li>
-                <li>//</li>
-                <li>Benefits</li>
-            </ul>
-        </div>
+    <section class="page-title" style="background: url(Content/Images/pages/pagehsample.jpg);">
+         <div class="floatover">
+            <div class="container">
+                <h2>Benefits</h2>
+                <ul class="title-manu">
+                    <li><a href="Home.aspx">home</a></li>
+                    <li>|</li>
+                    <li>Benefits</li>
+                </ul>
+            </div>
+          </div>
     </section>
     <!--End Page Title-->
 
