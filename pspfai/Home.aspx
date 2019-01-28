@@ -81,7 +81,7 @@
 
                     <%--End Slider 1--%>
                     <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/jumbo1.jpg">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/sli1.jpg" />
 
                         <div class="tp-caption"
                             data-paddingbottom="[0,0,0,0]"
@@ -99,9 +99,9 @@
                             data-y="['middle','middle','middle','middle']"
                             data-textalign="['top','top','top','top']"
                             data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h1>Public Service Employees'
+                            <h1>Public Service Pension Fund'
                                 <br>
-                                Retirement System</h1>
+                                Dedicated Staff</h1>
                         </div>
 
                         <div class="tp-caption"
@@ -120,7 +120,7 @@
                             data-y="['middle','middle','middle','middle']"
                             data-textalign="['top','top','top','top']"
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <div class="text">The Public Employees' Retirement System is applicable to All Employees of Government & Governmental Agencies.</div>
+                            <div class="text">The Public Pension Fund Staff are ready to assist with all your needs.</div>
                         </div>
 
                         <div class="tp-caption tp-resizeme"
@@ -482,7 +482,7 @@
                         <div class="image-box">
                             <figure>
                                 <a href="blog-single.aspx">
-                                    <img src="Content/Images/resources/annualreports2016.jpg" alt=""></a>
+                                    <img src="Content/Images/resources/pspf-ar2016.jpg" alt=""></a>
                             </figure>
                             <div class="date-box">
                                 <span class="date-day">31</span>
@@ -512,7 +512,7 @@
                         <div class="image-box">
                             <figure>
                                 <a href="blog-single.aspx">
-                                    <img src="Content/Images/resources/annualreports.jpg" alt=""></a>
+                                    <img src="Content/Images/resources/pspf-ar2015.jpg" alt=""></a>
                             </figure>
                             <div class="date-box">
                                 <span class="date-day">21</span>
@@ -543,7 +543,7 @@
                         <div class="image-box">
                             <figure>
                                 <a href="blog-single.aspx">
-                                    <img src="Content/Images/resources/annualreports.jpg" alt=""></a>
+                                    <img src="Content/Images/resources/pspf-ar2014.jpg" alt=""></a>
                             </figure>
                             <div class="date-box">
                                 <span class="date-day">18</span>

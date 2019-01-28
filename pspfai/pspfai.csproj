@@ -123,11 +123,15 @@
     <Content Include="Content\Images\icon\preloader.gif" />
     <Content Include="Content\Images\icon\submenu-icon.png" />
     <Content Include="Content\Images\jumbo\jumbo1.jpg" />
+    <Content Include="Content\Images\jumbo\sli1.jpg" />
     <Content Include="Content\Images\jumbo\slider_staff.jpg" />
     <Content Include="Content\Images\loading.gif" />
     <Content Include="Content\Images\next.png" />
     <Content Include="Content\Images\prev.png" />
     <Content Include="Content\Images\resources\logo.png" />
+    <Content Include="Content\Images\resources\pspf-ar2014.jpg" />
+    <Content Include="Content\Images\resources\pspf-ar2015.jpg" />
+    <Content Include="Content\Images\resources\pspf-ar2016.jpg" />
     <Content Include="Content\imp.css" />
     <Content Include="Content\jquery.fancybox.css" />
     <Content Include="Content\lightbox.css" />

@@ -45,8 +45,10 @@
 
 /* Imported styles */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700,700i|Roboto:400,400i,500,700,900');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Roboto:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
 
 @import url(imp.css);
@@ -347,7 +349,7 @@ button{
   height: 2px;
   width: 50px;
   display: inline-block;
-  background: #21a53b;
+  background: #53c26a;
 }
 
 .sec-title.style-two .border{
@@ -3626,4 +3628,193 @@ select:focus {
 
 #search-box.input-group {
     border-radius: 0px;
+}
+
+.header-area {
+    background-color: #f0f3f5 !important;
+}
+
+.top-bar-area {
+    background-color: #f0f3f5 !important;
+}
+
+.mainmenu-area {
+    background: #53c26a!important;
+}
+
+    .mainmenu-area .mainmenu-bg {
+        background: #53c26a !important;
+    }
+
+.bg-clr2 {
+    background: #53c26a !important;
+}
+
+.fact-counter-area {
+    background: #53c26a !important;
+}
+
+.blog-section .item-holder .date-box span {
+    background: #53c26a;
+}
+
+.blog-section .item-holder .date-box .date-year {
+    background: #53c26a !important;
+}
+
+.bg-clr4 {
+    background: #53c26a;
+}
+
+.scroll-to-top {
+    background: #53c26a;
+    border: 2px solid #53c26a;
+}
+
+.main-menu .navigation li a {
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.sec-title h2 {
+    font-weight: 300;
+    font-size: 42px;
+    font-family: 'lato';
+    letter-spacing: 2px;
+    text-shadow: 0 0 rgb(83, 194, 106, 0.6);
+    line-height: 120%;
+    color: rgb(83, 194, 106);
+    text-transform: uppercase;
+    margin: 15px 0px;
+    text-align: inherit;
+}
+
+.sec-title p {
+    margin-top: 9px;
+    text-transform: none;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Roboto';
+    line-height: 200%;
+    letter-spacing: 2px
+}
+
+body {
+    font-size: 14px;
+}
+
+.service-section .icon-area h5 {
+    font-family: "lato";
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    line-height: 1;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.sec-title .border {
+    background: #53c26a;
+}
+
+.service-section .sec-title h2 {
+    color: #53c26a;
+}
+
+.service-section .icon-area p {
+    font-weight: 500;
+    font-family: 'roboto';
+    color: #818080;
+}
+
+p {
+    color: #818080;
+}
+
+.blog-section .content-text .title h5 {
+    position: relative;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #323232;
+    padding-bottom: 15px;
+    font-family: "lato";
+    letter-spacing: 5px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.blog-section .content-text .text p {
+    line-height: 23px;
+    color: #717171;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'roboto';
+    color: #818080;
+}
+
+.fact-counter-area .single-item h1 span {
+    font-weight: 500;
+}
+
+.service-section .icon-area h5 {
+    color: #373d40;
+}
+
+.free-consulation-button a {
+    background: #373d40;
+}
+
+.contact-area {
+    background: #373d40;
+}
+
+.main-menu .navigation > li.current > a {
+    background: #373d40;
+}
+
+.footer-area {
+    background: #373d40;
+}
+
+.single-footer-widget p {
+    line-height: 23px;
+    font-size: 15px;
+}
+
+.single-footer-widget .we-do-list li {
+    margin-bottom: 5px;
+}
+
+.single-footer-widget .news-link {
+    margin-bottom: 11px;
+    font-size: 15px;
+}
+
+.single-footer-widget .our-info p {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.single-footer-widget .we-do-list li a {
+    font-size: 15px;
+}
+
+.header-contact-info ul li .text-holder p {
+    color: #717171;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1px;
+}
+
+.header-contact-info ul li .text-holder h6 {
+    color: #4e4f50;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.top-bar-area h6 {
+    font-weight: 600;
 }
