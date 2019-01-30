@@ -8,7 +8,9 @@
             revapi486 = tpj("#rev_slider_one").show().revolution({
 			sliderType:"standard",
                 jsFileLocation:"plugins/revolution/js/",
-                sliderLayout:"fullwidth",
+                sliderLayout: "fullwidth",
+                navigationType: "bullet",     
+                navigationArrows: "solo", 
                 dottedOverlay:"yes",
                 delay:10000,
                 navigation: {
@@ -26,12 +28,12 @@
                         drag_block_vertical: false
                     },
                     arrows: {
-                        style:"zeus",
+                        style:"metis",
                         enable: true,
                         tmp: '<div class="tp-title-wrap"><div class="tp-arr-imgholder"></div></div>',
                         hide_onmobile:true,
                         hide_under:600,
-                        hide_onleave:false,
+                        hide_onleave:true,
                         tmp:'',
                         left: {
                             h_align:"left",

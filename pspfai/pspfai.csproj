@@ -94,6 +94,7 @@
     <Content Include="assets\jquery-ui-1.11.4\images\ui-icons_cd0a0a_256x240.html" />
     <Content Include="assets\jquery-ui-1.11.4\jquery-ui.css" />
     <Content Include="assets\jquery-ui-1.11.4\jquery-ui.js" />
+    <Content Include="ar.aspx" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
     <Content Include="Blog-1.aspx" />
@@ -192,8 +193,8 @@
     <Content Include="Scripts\owl.carousel.min.js" />
     <Content Include="Scripts\validation.js" />
     <Content Include="Services-1.aspx" />
-    <Content Include="Services-Details.aspx" />
-    <Content Include="Services.aspx" />
+    <Content Include="Benefit-Details.aspx" />
+    <Content Include="Benefits.aspx" />
     <Content Include="Single-Project.aspx" />
     <Content Include="Test.aspx" />
     <Content Include="Web.config" />
@@ -212,6 +213,13 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ar.aspx.cs">
+      <DependentUpon>ar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ar.aspx.designer.cs">
+      <DependentUpon>ar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Blog-1.aspx.cs">
       <DependentUpon>Blog-1.aspx</DependentUpon>
@@ -290,19 +298,19 @@
     <Compile Include="Services-1.aspx.designer.cs">
       <DependentUpon>Services-1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Services-Details.aspx.cs">
-      <DependentUpon>Services-Details.aspx</DependentUpon>
+    <Compile Include="Benefit-Details.aspx.cs">
+      <DependentUpon>Benefit-Details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Services-Details.aspx.designer.cs">
-      <DependentUpon>Services-Details.aspx</DependentUpon>
+    <Compile Include="Benefit-Details.aspx.designer.cs">
+      <DependentUpon>Benefit-Details.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Services.aspx.cs">
-      <DependentUpon>Services.aspx</DependentUpon>
+    <Compile Include="Benefits.aspx.cs">
+      <DependentUpon>Benefits.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Services.aspx.designer.cs">
-      <DependentUpon>Services.aspx</DependentUpon>
+    <Compile Include="Benefits.aspx.designer.cs">
+      <DependentUpon>Benefits.aspx</DependentUpon>
     </Compile>
     <Compile Include="Single-Project.aspx.cs">
       <DependentUpon>Single-Project.aspx</DependentUpon>

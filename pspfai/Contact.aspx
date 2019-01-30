@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="pspfai.Contact" MaintainScrollPositionOnPostback="true" %>
+﻿<%@ Page Title="Public Service Pension Fund: Contact" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="pspfai.Contact" MaintainScrollPositionOnPostback="true" %>
 <%@ MasterType VirtualPath="~/PSPFAI.Master" %>
 <%@ Register Assembly="BotDetect" Namespace="BotDetect.Web.UI" TagPrefix="BotDetect" %>
 
@@ -7,14 +7,19 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!--Page Title-->
-    <section class="page-title" style="background: url(https://via.placeholder.com/1920x275);">
-        <div class="container text-center">
+    <section class="page-title" style="background: url(Content/Images/pages/pagehsample.jpg);">
+       <div class="floatover"> 
+           
+           <div class="container">
+           
             <h2>Contact Us</h2>
             <ul class="title-manu">
                 <li><a href="Home.aspx">home</a></li>
-                <li>//</li>
+                <li>|</li>
                 <li>Contact Us</li>
             </ul>
+
+           </div>
         </div>
     </section>
     <!--End Page Title-->
@@ -31,7 +36,7 @@
                     <div class="contact-info text-center">
                         <i class="flaticon-placeholder"></i>
                         <h5>Pension Office</h5>
-                        <p>James Ronald Webster Building,<br />The Valley, AI2640, Anguilla</p>
+                        <p>James Ronald Webster Building,<br />The Valley, AI-2640, Anguilla, BWI</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
@@ -40,7 +45,7 @@
                         <h5>Phone Number</h5>
                         <p>
                             +1 (264) 498-5079<br />
-                            +1 (264) 498-5079
+                            +1 (264) 497-2451
                         </p>
                     </div>
                 </div>
@@ -61,8 +66,14 @@
                         <div class="row">
                            <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtName" placeholder="Your Name"  required="required" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtName" placeholder="Name(s)" ValidationGroup="Contact"  required="required" runat="server"></asp:TextBox>
                                     <!-- <input type="text" name="name" placeholder="Your Name" required=""> -->
+                                </div>
+                            </div>
+                             <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <asp:TextBox ID="txtSurname" placeholder="Surname" required="required" runat="server"></asp:TextBox>
+                                    <!-- <input type="email" name="email" placeholder="Email" required=""> -->
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
@@ -79,13 +90,20 @@
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtWorkPhone" placeholder="Work Phone" TextMode="Phone"  required="required" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtOrganization" placeholder="Organization" runat="server"></asp:TextBox>
                                     <!-- <input type="url" name="name" placeholder="Website" required=""> -->
                                 </div>
                             </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <asp:TextBox ID="txtWorkPhone" placeholder="Work Phone" TextMode="Phone" runat="server"></asp:TextBox>
+                                    <!-- <input type="url" name="name" placeholder="Website" required=""> -->
+                                </div>
+                            </div>
+                            
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <asp:TextBox ID="txtMessage" placeholder="Message" TextMode="MultiLine" Rows="30" required="required" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtMessage" placeholder="Message"  TextMode="MultiLine" Rows="30" required="required" runat="server"></asp:TextBox>
                                     <!-- <textarea name="form_message" class="form-control textarea required" placeholder="Message"></textarea> -->
                                 </div>
                             </div>
@@ -96,12 +114,13 @@
                                                     </asp:Label>
                                                     <BotDetect:WebFormsSimpleCaptcha ID="PSPFCaptcha" runat="server" />
                                                     <asp:TextBox ID="CaptchaCode" runat="server" CssClass="captcha" required="required"/>
-                                                    <asp:Label ID="CaptchaErrorLabel" ForeColor="Red" runat="server"/>
+                                                    <asp:Label ID="CaptchaErrorLabel" ForeColor="Red" Text="." runat="server"/>
                                 </div>
                             </div>
                              <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <asp:Button CssClass="thm-btn bg-clr4" ID="btnSubmit" runat="server" Text="submit now" />
+                                    <asp:Button CssClass="thm-btn bg-clr4" ValidationGroup="Contact" ID="btnSubmit" runat="server" Text="submit" />
+                                    <input class="thm-btn bg-clr4" type="reset" value="Clear" />
                                     <!-- <button type="submit" class="thm-btn bg-clr4">submit now</button> -->
                                </div>
                             </div>
@@ -120,3 +139,4 @@
     <script type="text/javascript" src="Scripts/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXrkGlBen34zFQKbPca5BbspXvguMsVzY"></script>
 </asp:Content>
+

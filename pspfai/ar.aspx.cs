@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace pspfai
 {
-    public partial class Services_Details : System.Web.UI.Page
+    public partial class AR : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            this.Master.ContentPageName = "RESOURCES";
         }
     }
 }

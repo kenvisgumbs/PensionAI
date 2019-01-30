@@ -11,7 +11,7 @@
     <section class="main-slider">
         <div class="rev_slider_wrapper fullwidthbanner-container" id="rev_slider_one_wrapper" data-source="gallery">
             <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
-                <ul>
+               <ul>
 
                      <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/slider_staff.jpg">
@@ -79,7 +79,7 @@
                         </div>
                     </li>
 
-                    <%--End Slider 1--%>
+                   
                     <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/sli1.jpg" />
 
@@ -101,7 +101,7 @@
                             data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                             <h1>Public Service Pension Fund'
                                 <br>
-                                Dedicated Staff</h1>
+                                Board of Directors</h1>
                         </div>
 
                         <div class="tp-caption"
@@ -120,7 +120,7 @@
                             data-y="['middle','middle','middle','middle']"
                             data-textalign="['top','top','top','top']"
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <div class="text">The Public Pension Fund Staff are ready to assist with all your needs.</div>
+                            <div class="text">Sound Corporate Governance is the only option</div>
                         </div>
 
                         <div class="tp-caption tp-resizeme"
@@ -147,7 +147,7 @@
                     </li>
 
                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="0" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="https://via.placeholder.com/1920x1080">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="0" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/boardsample.jpg">
 
                         <div class="tp-caption"
                             data-paddingbottom="[0,0,0,0]"
@@ -211,7 +211,10 @@
                             </div>
                         </div>
                     </li>
+
+                  
                 </ul>
+              
             </div>
         </div>
     </section>
@@ -225,11 +228,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="sec-title text-center">
-                        <h2>Our Vision</h2>
+                        <h2 class="welcome">Welcome to the Public Service Pension Fund</h2>
                         <span class="border"></span>
-                        <p>To be an Effective Provider of Retirement Benefits to Ensure Peace of Mind to
+                       <%-- <p>To be an effective provider of retirement benefits to ensure peace of mind to
                             <br>
-                            Contributors and a Level of Service that Exceeds Expectations.</p>
+                            contributors and a level of service that exceeds expectations.</p>--%>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
@@ -238,7 +241,7 @@
                             <div class="icon-box">
                                 <i class="flaticon-cute-rocket-launching"></i>
                             </div>
-                            <a href="services-details.aspx">
+                            <a href="loans.aspx">
                                 <h5>Fast Loans</h5>
                             </a>
                             <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida</p>
@@ -251,7 +254,7 @@
                             <div class="icon-box">
                                 <i class="flaticon-support"></i>
                             </div>
-                            <a href="services-details.aspx">
+                            <a href="contact.aspx">
                                 <h5>Contact Us</h5>
                             </a>
                             <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida </p>
@@ -264,7 +267,7 @@
                             <div class="icon-box">
                                 <i class="flaticon-seo-performance-marketing-graphic"></i>
                             </div>
-                            <a href="services-details.aspx">
+                            <a href="ar.aspx">
                                 <h5>Financials</h5>
                             </a>
                             <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida </p>
@@ -322,7 +325,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5>Pensions</h5>
+                                    <h5 class="reduce">Pensions</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -339,7 +342,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5>Gratuity Payments</h5>
+                                    <h5 class="reduce">Gratuity Payments</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -356,7 +359,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5>Refunds</h5>
+                                    <h5 class="reduce">Refunds</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -373,7 +376,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5>Survivor's Pension</h5>
+                                    <h5 class="reduce">Survivor's Pension</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -390,7 +393,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5>Early Retirement</h5>
+                                    <h5 class="reduce">Early Retirement</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -407,7 +410,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5>Medical Boarding</h5>
+                                    <h5 class="reduce">Medical Boarding</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -470,7 +473,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="sec-title text-center">
-                        <h2>ANNUAL REPORTS</h2>
+                        <h2>Annual Reports</h2>
                         <span class="border"></span>
                         <p>Lorem ipsum dolor  amet mi ultricies interdum pede eu vestibulum vulputate maurimtum
                             <br>
@@ -484,11 +487,14 @@
                                 <a href="blog-single.aspx">
                                     <img src="Content/Images/resources/pspf-ar2016.jpg" alt=""></a>
                             </figure>
-                            <div class="date-box">
-                                <span class="date-day">31</span>
+
+                            <div class="report-box">
+                                <h2>Annual Report 2016</h2>
+                            </div>
+                                <%--<span class="date-day">31</span>
                                 <span class="date-month">Dec</span>
                                 <span class="date-year">2016</span>
-                            </div>
+                            </div>--%>
                         </div>
                         <div class="text-area">
                             <div class="content-text text-left">
@@ -514,11 +520,14 @@
                                 <a href="blog-single.aspx">
                                     <img src="Content/Images/resources/pspf-ar2015.jpg" alt=""></a>
                             </figure>
-                            <div class="date-box">
+                               <div class="report-box">
+                                <h2>Annual Report 2015</h2>
+                            </div>
+                          <%--  <div class="date-box">
                                 <span class="date-day">21</span>
                                 <span class="date-month">Nov</span>
                                 <span class="date-year">2015</span>
-                            </div>
+                            </div>--%>
                         </div>
                         <div class="text-area">
                             <div class="content-text text-left">
@@ -545,11 +554,14 @@
                                 <a href="blog-single.aspx">
                                     <img src="Content/Images/resources/pspf-ar2014.jpg" alt=""></a>
                             </figure>
-                            <div class="date-box">
+                               <div class="report-box">
+                                <h2>Annual Report 2014</h2>
+                            </div>
+                           <%-- <div class="date-box">
                                 <span class="date-day">18</span>
                                 <span class="date-month">Jun</span>
                                 <span class="date-year">2014</span>
-                            </div>
+                            </div>--%>
                         </div>
                         <div class="text-area">
                             <div class="content-text text-left">

@@ -129,25 +129,34 @@
                                             <li class="home <% Response.Write( globalUtil.getCurrent(ContentPageName, "HOME")); %>"><a href="Home.aspx">Home</a></li>
                                             <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "ABOUT")); %>"><a href="about.aspx">About</a>
                                                     <ul>
-                                                        <li><a href="faq.aspx">FAQ</a></li>
+                                                        <li><a href="board.aspx">THE BOARD</a></li>
+                                                        <li><a href="staff.aspx">The Staff</a></li>
+                                                        <!--<li><a href="faq.aspx">FAQ</a></li>-->
                                                     </ul>
                                             </li>
-                                            <li class="dropdown"><a href="#">Services</a>
+                                            <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "SERVICES")); %>"><a href="benefits.aspx">Plan Benefits</a>
                                                 <ul>
-                                                    <li><a href="services.aspx">Our Services</a></li>
-                                                    <li><a href="services-1.aspx">Our Services 2</a></li>
-                                                    <li><a href="services-details.aspx">Single Services</a></li>
+                                                    <li><a href="benefit-details.aspx?type=pension">Pensions</a></li>
+                                                    <li><a href="benefit-details.aspx?type=gratuity">Gratuity</a></li>
+                                                    <li><a href="benefit-details.aspx?type=refund">Refunds</a></li>
+                                                    <li><a href="benefit-details.aspx?type=survivor">Survivor</a></li>
+                                                    <li><a href="benefit-details.aspx?type=early">Early Retirement</a></li>
+                                                    <li><a href="benefit-details.aspx?type=medical">Medical Boarding</a></li>
+                                                    <li><a href="benefit-details.aspx">Single Services</a></li>
                                                 </ul>
 
                                             </li>
                                             <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "RESOURCES")); %>"><a href="#">Resources</a>
                                                 <ul> 
-                                                    <li><a href="#">Forms</a></li>
+                                                    
+                                                    
+                                                    <li><a href="ar.aspx">Annual Reports</a></li>
                                                     <li><a href="faq.aspx">Our Faq</a></li>
+                                                    <li><a href="#">Forms</a></li>
                                                     <li><a href="404.aspx">Error Page</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="dropdown"><a href="#">Blog</a>
+                                            <li class="dropdown"><a href="#">PRESS</a>
                                                 <ul>
                                                     <li><a href="blog.aspx">Blgo Style 1</a></li>
                                                     <li><a href="blog-1.aspx">Blgo Style 2</a></li>
@@ -190,7 +199,13 @@
                                     <h5>Contact</h5>
                                 </div>
                                 <div class="our-info">
-                                    <p>Lorem ipsum dolor sit amet, semnger esapie tempus,aliquam silitud aquam vitae, fugiat poere incididunt, nbero. Nunc camcorper  vphasellus </p>
+                                    <ul class="footer-address">
+                                        <li><i class="fa fa-building"></i>James Ronald Webster Building</li>
+                                        <li><i class="fa fa-paper-plane"></i>P.O.Box 60, The Valley, Anguilla, BWI</li>
+                                        <li><i class="fa fa-envelope"></i>info@pspf.ai</li>
+                                        <li><i class="fa fa-phone"></i>+1 (264) 498-5079</li>
+                                       
+                                    </ul>
                                 </div>
                                 <ul class="footer-social-links">
                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -207,14 +222,14 @@
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="single-footer-widget wedo pd-left pd-bottom">
                                 <div class="title">
-                                    <h5>Our Service</h5>
+                                    <h5>Our Services</h5>
                                 </div>
                                 <ul class="we-do-list">
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Bank Loan <span class="post-count">3</span></a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Childen Planing <span class="post-count">12</span></a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Market Research <span class="post-count">33</span></a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Seo Marketing <span class="post-count">24</span></a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Business Advices <span class="post-count">40</span></a></li>
+                                    <li><a href="benefit-details.aspx?type=pension"><i class="fa fa-angle-right" aria-hidden="true"></i>Pensions <span class="post-count">3</span></a></li>
+                                    <li><a href="benefit-details.aspx?type=gratuity"><i class="fa fa-angle-right" aria-hidden="true"></i>Gratuity Payments <span class="post-count">12</span></a></li>
+                                    <li><a href="benefit-details.aspx?type=refund"><i class="fa fa-angle-right" aria-hidden="true"></i>Refunds <span class="post-count">33</span></a></li>
+                                    <li><a href="benefit-details.aspx?type=survivor"><i class="fa fa-angle-right" aria-hidden="true"></i>Survivor Payments <span class="post-count">24</span></a></li>
+                                    <li><a href="benefit-details.aspx?type=early"><i class="fa fa-angle-right" aria-hidden="true"></i>Early Retirement <span class="post-count">40</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -223,11 +238,12 @@
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="single-footer-widget wedo pd-left pd-bottom">
                                 <div class="title">
-                                    <h5>Latest News</h5>
+                                    <h5>Quick Resources</h5>
                                 </div>
-                                <a href="#" class="news-link">Phasellus Risus Aliqua <span>15 augest 2018</span></a>
-                                <a href="#" class="news-link">France Prepares to Stake <span>23 july 2018</span></a>
-                                <a href="#" class="news-link">France Prepares to Stake <span>23 july 2018</span></a>
+                                <a href="#" class="news-link">Loan Application</a>
+                                <a href="#" class="news-link">Registration Form</a>
+                                <a href="#" class="news-link">Refund Form</a>
+                                <a href="#" class="news-link">PSPF Handbook <span>23<sup>rd</sup> july 2014</span></a>
 
                             </div>
                         </div>
@@ -237,12 +253,14 @@
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="single-footer-widget pd-top pd-left">
                                 <div class="title">
-                                    <h5>Resouces</h5>
+                                    <h5>Annual Reports</h5>
                                 </div>
-                                <p>illum perim adigio redab dutim</p>
+                                <p>Subscribe and receive email alerts whenever annual reports are published.</p>
+                              
+                                    <div class="form-group">
+                                        <input type="button" class="thm-btn bg-clr4" onclick="return showRegisterPopUp();" value="Subscribe" name="Subscribe" />
+                                    </div>
                                 
-                                <asp:Button CssClass="thm-btn bg-clr4" ID="btnSubmit" runat="server" Text="Contact Us"
-                                    ValidationGroup="save" />
                             </div>
                         </div>
                         <!--End single footer widget-->
@@ -296,6 +314,17 @@
 
             <!-- thm custom script -->
             <script src="Scripts/custom.js"></script>
+
+            <!--mailchimp drop in -->
+            <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+            <script type="text/javascript">
+    
+                function showRegisterPopUp() {
+       
+                    window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us20.list-manage.com", "uuid": "c5fcfe19ef08397fe371130c3", "lid": "2188849241", "uniqueMethods": true }) })
+                    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+                };
+            </script>
         </div>
     </form>
 </body>
