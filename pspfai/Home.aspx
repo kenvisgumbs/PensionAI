@@ -325,7 +325,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5 class="reduce">Pensions</h5>
+                                    <h5>Pensions</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -342,7 +342,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5 class="reduce">Gratuity Payments</h5>
+                                    <h5>Gratuity Payments</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -359,7 +359,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5 class="reduce">Refunds</h5>
+                                    <h5>Refunds</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -376,7 +376,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5 class="reduce">Survivor's Pension</h5>
+                                    <h5>Survivor's Pension</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -393,7 +393,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5 class="reduce">Early Retirement</h5>
+                                    <h5>Early Retirement</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -410,7 +410,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5 class="reduce">Medical Boarding</h5>
+                                    <h5>Medical Boarding</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>

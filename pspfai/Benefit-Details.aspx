@@ -15,7 +15,7 @@
                 <li>|</li>
                 <li><a href="services.aspx">services</a></li>
                 <li>|</li>
-                <li><% =subPage %> Benefit Details</li>
+                <li class="current"><% =subPage %> Benefit Details</li>
             </ul>
         </div>
 

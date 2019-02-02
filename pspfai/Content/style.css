@@ -1430,6 +1430,28 @@ select:focus {
   background: #f6f8f9;
 }
 
+.service-section .text-area {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.service-section h4 {
+    font-size: 24px;
+    color: #323232;
+    font-weight: 700;
+    line-height: 30px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.service-section .text-area p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #888888;
+    text-transform: none;
+}
+
 .service-section .link-btn{
   margin-top: 30px;
 }
@@ -1520,11 +1542,6 @@ select:focus {
   padding: 10px 0px;
   line-height: 32px;
   text-transform:uppercase;
-}
-
-.service-section .icon-area h5.reduce {
-    font-size:20px;
-    font-weight:400;
 }
 .service-section .icon-area p {
     font-size: 14px; /*Change: 15px to 14px*/
@@ -2622,10 +2639,11 @@ select:focus {
     font-weight: 700;
     line-height: 30px;
     padding-bottom: 25px;
+    text-transform:uppercase;
 }
 
 .services-details .text-area p{
-  font-size: 17px;
+  font-size: 14px;
   line-height:26px;
   color: #888888;
   text-transform:none;
@@ -3518,6 +3536,11 @@ select:focus {
   font-family: 'lato', sans-serif;
   text-transform: uppercase;
 }
+
+.page-title .title-manu li.current {
+    color:lightgreen;
+}
+
 .page-title .title-manu li:nth-child(1){
   margin-left: 0px;
 }

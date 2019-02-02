@@ -1,19 +1,21 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="pspfai.About" %>
-
+﻿<%@ Page Title="Public Service Pension Fund: About" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="pspfai.About" %>
+<%@ MasterType VirtualPath="~/PSPFAI.Master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <!--Page Title-->
-    <section class="page-title" style="background: url(https://via.placeholder.com/1920x275);">
-        <div class="container text-center">
+     <section class="page-title" style="background: url(Content/Images/pages/pagehsample.jpg);">
+       <div class="floatover">
+        <div class="container">
             <h2>About Us</h2>
             <ul class="title-manu">
-                <li><a href="index-2.aspx">home</a></li>
-                <li>//</li>
-                <li>About Us</li>
+                <li><a href="Home.aspx">home</a></li>
+                <li> | </li>
+                <li class="current">About Us</li>
             </ul>
         </div>
+       </div>
     </section>
     <!--End Page Title-->
 
@@ -23,13 +25,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="sec-title text-center">
-                        <h2>why people choose us</h2>
+                    <div class="text-area text-left">
+                        <p>On 1 January 2004, the Public Service Pension Fund became the sole pension scheme for Government employees and government agencies. 
+                            The Pensions Act is found in Chapter P20 of the Revised Statutes of Anguilla. The Pension Fund is a contributory fund and all contributors 
+                            receive benefits upon Retirement, Resignation or Death.</p>
+                        <p>All Government employees holding pensionable posts must contribute
+                            to the Pension Fund. In addition, employees of Statutory Agencies also
+                            contribute to the Fund. Currently, over 1000 persons contribute to the Public Service 
+                            Pension Fund. There is a separate Fund for members of the Royal Anguilla Police Force called 
+                            the Police Pension Fund. Both Funds are administered by the Pension Board and Pension Fund office</p>
+                     </div>
+
+                   <%--  <div class="sec-title text-center">
+                        <h2>Mission</h2>
                         <span class="border"></span>
-                        <p>Lorem ipsum dolor  amet mi ultricies interdum pede eu vestibulum vulputate maurimtum
-                            <br>
-                            commod rhoncus consectetuer reduce producet</p>
-                    </div>
+                          <p>Dedicated to effectively managing the Pension Fund in an actuarially sound manner and provide meaningful retirement and related benefits to Contributors and their dependants.</p>
+
+                         <h2>Vision</h2>
+                          <span class="border"></span>
+                        <p>To be an effective provider of retirement benefits to ensure peace of mind to Contributors and a level of service that exceeds expectations.
+</p>
+                       
+                    </div>--%>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="service-block text-center">
