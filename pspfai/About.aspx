@@ -26,66 +26,35 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-area text-left">
-                        <p>On 1 January 2004, the Public Service Pension Fund became the sole pension scheme for Government employees and government agencies. 
+                        <h4>THE PUBLIC SERVICE PENSION FUND MISSION</h4>
+                           <p><strong>Dedicated to effectively managing the Pension Fund in an actuarially sound manner and provide meaningful retirement and related benefits to Contributors and their dependants.</strong></p>
+
+                         <h4>the public service pension fund Vision</h4>
+                       
+                        <p><strong>To be an effective provider of retirement benefits to ensure peace of mind to Contributors and a level of service that exceeds expectations.</strong>
+</p>   
+                      
+                        <h4>HISTORY</h4>
+                        <p class="mid">On 1 January 2004, the Public Service Pension Fund became the sole pension scheme for Government employees and government agencies. 
                             The Pensions Act is found in Chapter P20 of the Revised Statutes of Anguilla. The Pension Fund is a contributory fund and all contributors 
                             receive benefits upon Retirement, Resignation or Death.</p>
                         <p>All Government employees holding pensionable posts must contribute
                             to the Pension Fund. In addition, employees of Statutory Agencies also
                             contribute to the Fund. Currently, over 1000 persons contribute to the Public Service 
                             Pension Fund. There is a separate Fund for members of the Royal Anguilla Police Force called 
-                            the Police Pension Fund. Both Funds are administered by the Pension Board and Pension Fund office</p>
+                            the Police Pension Fund. Both Funds are administered by the Pension Board and Pension Fund office.</p>
+
+                        <h4>Current Pension Fund Contributors</h4>
+                        <p>All Government employees holding pensionable posts must contribute to the Pension Fund. 
+                            In addition, employees of Statutory Agencies also contribute to the Fund. Currently, over 1000 persons 
+                            contribute to the Public Service Pension Fund. There is a separate Fund for members of the Royal Anguilla Police Force 
+                            called the Police Pension Fund. Both Funds are administered by the Pension Board and Pension Fund office.
+                        </p>
+
+
                      </div>
 
-                   <%--  <div class="sec-title text-center">
-                        <h2>Mission</h2>
-                        <span class="border"></span>
-                          <p>Dedicated to effectively managing the Pension Fund in an actuarially sound manner and provide meaningful retirement and related benefits to Contributors and their dependants.</p>
-
-                         <h2>Vision</h2>
-                          <span class="border"></span>
-                        <p>To be an effective provider of retirement benefits to ensure peace of mind to Contributors and a level of service that exceeds expectations.
-</p>
-                       
-                    </div>--%>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="service-block text-center">
-                        <div class="icon-area">
-                            <div class="icon-box">
-                                <i class="flaticon-cute-rocket-launching"></i>
-                            </div>
-                            <a href="services-details.aspx">
-                                <h5>Fast Loan Approvel</h5>
-                            </a>
-                            <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="service-block text-center">
-                        <div class="icon-area">
-                            <div class="icon-box">
-                                <i class="flaticon-support"></i>
-                            </div>
-                            <a href="services-details.aspx">
-                                <h5>24/7 Customer Support</h5>
-                            </a>
-                            <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="service-block text-center">
-                        <div class="icon-area">
-                            <div class="icon-box">
-                                <i class="flaticon-seo-performance-marketing-graphic"></i>
-                            </div>
-                            <a href="services-details.aspx">
-                                <h5>Free Business Marketing</h5>
-                            </a>
-                            <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida </p>
-                        </div>
-                    </div>
+              
                 </div>
             </div>
         </div>
@@ -101,10 +70,10 @@
                     <div class="left-content-area">
                         <!-- left content area -->
                         <div class="img-wrapper">
-                            <img src="https://via.placeholder.com/625x420" alt="clients story">
-                            <div class="hover">
+                            <img src="Content/Images/Pages/about1.jpg" alt="">
+                           <%-- <div class="hover">
                                 <a href="https://www.youtube.com/watch?v=WvZQG4MLRvQ" class="video-play-btn mfp-iframe"><i class="flaticon-music-player-play"></i></a>
-                            </div>
+                            </div>--%>
                         </div>
                     </div>
                     <!-- //. left content area -->
@@ -112,22 +81,11 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="right-content-area">
                         <!-- right content area -->
-                        <div class="sec-title text-left">
-                            <h2>we create 25000+ business place for growth your profite. </h2>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, mi ultricies interdum pede eu vestibulumteunon libero fringilla, fermentum commodo eget etiam, rhoncus constetuerligula ac ultrices, ipsum at aspernatur ante mi. Aliquet est, duis elit. Tortor id,ivamus fugit dictum pellentesque, in in luctus hendrerit mi nisl rutrum, accumsan ac, cquat accumsan eros nisl non etiam eget. </p>
-
-                        <div class="about-item">
-                            <ul>
-                                <li><i class="fa fa-arrow-circle-right"></i>We have 25000 Happy Client</li>
-                                <li><i class="fa fa-arrow-circle-right"></i>24/7 Customer Support </li>
-                                <li><i class="fa fa-arrow-circle-right"></i>75 Over Services Provided</li>
-                            </ul>
-                            <ul>
-                                <li><i class="fa fa-arrow-circle-right"></i>Free Advice Provied</li>
-                                <li><i class="fa fa-arrow-circle-right"></i>Research Company Growth </li>
-                                <li><i class="fa fa-arrow-circle-right"></i>Achived Gobal Trust</li>
-                            </ul>
+                         <div class="img-wrapper">
+                            <img src="Content/Images/Pages/about2.jpg" alt="">
+                           <%-- <div class="hover">
+                                <a href="https://www.youtube.com/watch?v=WvZQG4MLRvQ" class="video-play-btn mfp-iframe"><i class="flaticon-music-player-play"></i></a>
+                            </div>--%>
                         </div>
                     </div>
                 </div>
