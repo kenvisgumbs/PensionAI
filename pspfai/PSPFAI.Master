@@ -130,7 +130,7 @@
                                             <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "ABOUT")); %>"><a href="about.aspx">About</a>
                                                     <ul>
                                                         <li><a href="board.aspx">THE BOARD</a></li>
-                                                        <li><a href="staff.aspx">The Staff</a></li>
+                                                        <li><a href="about.aspx#team">The Staff</a></li>
                                                         <!--<li><a href="faq.aspx">FAQ</a></li>-->
                                                     </ul>
                                             </li>

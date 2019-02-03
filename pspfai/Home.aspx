@@ -308,11 +308,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="sec-title text-center">
-                        <h2>Our services</h2>
+                        <h2>Our Benefits</h2>
                         <span class="border"></span>
-                        <p>Lorem ipsum dolor  amet mi ultricies interdum pede eu vestibulum vulputate maurimtum
+                        <p>There are no loosing options at the PSPF. We offer from Refunds of Contributions to
                             <br>
-                            commod rhoncus consectetuer reduce producet</p>
+                            Gratuity and/or Monthly Pensions after Retirment.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">

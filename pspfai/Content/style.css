@@ -1436,15 +1436,18 @@ select:focus {
     padding-bottom: 5px;
 }
 
-.service-section h4 {
-    font-size: 24px;
-    color: #323232;
-    font-weight: 700;
-    line-height: 30px;
-    /*padding-bottom: 10px;*/
-
-    text-transform: uppercase;
+.service-section .text-area li {
+    text-transform:none !important;
 }
+
+    .service-section h4 {
+        font-size: 24px;
+        color: #323232;
+        font-weight: 700;
+        line-height: 30px;
+        /*padding-bottom: 10px;*/
+        text-transform: uppercase;
+    }
 
 .service-section .text-area p {
     font-size: 14px;
