@@ -3912,3 +3912,7 @@ p {
 .top-bar-area h6 {
     font-weight: 600;
 }
+
+.service-section.style2 .service-block .service-det {
+    padding: 0px 30px 0px 55px;
+}
