@@ -16,7 +16,7 @@
             <ul class="title-manu">
                 <li><a href="Home.aspx">home</a></li>
                 <li>|</li>
-                <li>Contact Us</li>
+                <li class="current">Contact Us</li>
             </ul>
 
            </div>

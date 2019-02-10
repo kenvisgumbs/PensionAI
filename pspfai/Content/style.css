@@ -1427,12 +1427,45 @@ select:focus {
 
 .service-section{
   position: relative;
-  padding: 60px 0px 70px;
+  padding: 60px 0px 35px;
   background: #f6f8f9;
 }
 
-.service-section .link-btn{
-  margin-top: 30px;
+.service-section .text-area {
+    position: relative;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.service-section .text-area li {
+    text-transform:none !important;
+}
+
+    .service-section h4 {
+        font-size: 24px;
+        color: #323232;
+        font-weight: 700;
+        line-height: 30px;
+        /*padding-bottom: 10px;*/
+        text-transform: uppercase;
+    }
+
+.service-section .text-area p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #888888;
+    text-transform: none;
+    margin-bottom:25px;
+}
+
+.service-section .text-area p.mid{
+    margin-bottom: 10px !important;
+}
+
+
+
+.service-section .link-btn {
+    margin-top: 30px;
 }
 .service-section .sec-title{
   padding-bottom: 30px;
@@ -1522,16 +1555,15 @@ select:focus {
   line-height: 32px;
   text-transform:uppercase;
 }
-
-.service-section .icon-area h5.reduce {
-    font-size:20px;
-    font-weight:400;
-}
 .service-section .icon-area p {
     font-size: 14px; /*Change: 15px to 14px*/
     color: #717171; /*Change: FROM #888888 to #717171*/
     line-height: 26px;
     font-weight: 400;
+}
+
+.service-section .icon-area h5:hover {
+    color: rgb(33, 165, 59);
 }
 
 /*** 
@@ -1711,7 +1743,7 @@ select:focus {
 .about-sec{
   position: relative;
   width: 100%;
-  padding:92px 0 100px; 
+  padding:75px 0 100px; 
 }
 
 .about-sec .left-content-area .img-wrapper {
@@ -1790,7 +1822,7 @@ select:focus {
 
 
 .about-sec .right-content-area {
-  padding-top: 10px; 
+  /*padding-top: 10px;*/ 
 }
 .about-sec .right-content-area .sec-title {
     padding-bottom: 15px;
@@ -1855,7 +1887,7 @@ select:focus {
     top: 60px;
     width: 96%;
     height: 1px;
-    background: #159eee;
+    /*background: #159eee;*/
 }
 .about-sec.video .right-content-area:before{
   display: none;
@@ -2623,10 +2655,11 @@ select:focus {
     font-weight: 700;
     line-height: 30px;
     padding-bottom: 25px;
+    text-transform:uppercase;
 }
 
 .services-details .text-area p{
-  font-size: 17px;
+  font-size: 14px;
   line-height:26px;
   color: #888888;
   text-transform:none;
@@ -3509,6 +3542,7 @@ select:focus {
   text-transform: uppercase;
   font-family: "lato", sans-serif;
 }
+
 .page-title .title-manu li{
   font-size: 14px;
   line-height: 22px;
@@ -3519,9 +3553,15 @@ select:focus {
   font-family: 'lato', sans-serif;
   text-transform: uppercase;
 }
+
+.page-title .title-manu li.current {
+    color: #aef5bc;
+}
+
 .page-title .title-manu li:nth-child(1){
   margin-left: 0px;
 }
+
 .page-title .title-manu li a{
   color: #ffffff;
   -webkit-transition: all 500ms ease;
@@ -3530,13 +3570,14 @@ select:focus {
        -o-transition: all 500ms ease;
           transition: all 500ms ease;
 }
-.page-title .title-manu li a:hover{
-  color: #21a53b;
-  -webkit-transition: all 500ms ease;
-     -moz-transition: all 500ms ease;
-      -ms-transition: all 500ms ease;
-       -o-transition: all 500ms ease;
-          transition: all 500ms ease;
+
+.page-title .title-manu li a:hover {
+    color: #aef5bc;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
 .page-title .floatover {

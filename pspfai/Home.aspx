@@ -308,11 +308,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="sec-title text-center">
-                        <h2>Our services</h2>
+                        <h2>Our Benefits</h2>
                         <span class="border"></span>
-                        <p>Lorem ipsum dolor  amet mi ultricies interdum pede eu vestibulum vulputate maurimtum
+                        <p>There are no loosing options at the PSPF. We offer from Refunds of Contributions to
                             <br>
-                            commod rhoncus consectetuer reduce producet</p>
+                            Gratuity and/or Monthly Pensions after Retirment.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
@@ -325,7 +325,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5 class="reduce">Pensions</h5>
+                                    <h5>Pensions</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -342,7 +342,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5 class="reduce">Gratuity Payments</h5>
+                                    <h5>Gratuity Payments</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -359,7 +359,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5 class="reduce">Refunds</h5>
+                                    <h5>Refunds</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -376,7 +376,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5 class="reduce">Survivor's Pension</h5>
+                                    <h5>Survivor's Pension</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -393,7 +393,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5 class="reduce">Early Retirement</h5>
+                                    <h5>Early Retirement</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -410,7 +410,7 @@
                             </div>
                             <div class="service-det">
                                 <a href="services-details.aspx">
-                                    <h5 class="reduce">Medical Boarding</h5>
+                                    <h5>Medical Boarding</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
