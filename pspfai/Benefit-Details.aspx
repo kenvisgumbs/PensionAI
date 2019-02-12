@@ -41,32 +41,39 @@
 </p>
                     </div>
                 </div>
+
+                
                 <div class="col-md-6 col-md-12">
-                    <h4>Criteria</h4>
-                    <ul><li>Must have at least 10 years of continuous service</li>
-<li>Hold a pensionable post</li>
-                        <li>Contributed to the pension fund</li>
-                        <li>Normal Retirement Age is 60, if appointed before January 1, 2004 and 65 years, if appointed on or after January 1, 2004</li>
+                    <h4 class="bendetails">Criteria</h4>
+                    <ul class="bendetails"><li><i class="fa fa-arrow-circle-right"></i>Must have at least 10 years of continuous service</li>
+<li><i class="fa fa-arrow-circle-right"></i>Hold a pensionable post</li>
+                        <li><i class="fa fa-arrow-circle-right"></i>Contributed to the pension fund</li>
+                        <li><i class="fa fa-arrow-circle-right"></i><strong>Normal Retirement</strong> Age is <strong>60</strong>, if appointed <strong>before</strong> January 1, 2004 and <br /><span style="padding-left:28px"><strong>65</strong> years, 
+                            if appointed <strong>on or after</strong> January 1, 2004</span></li>
                     </ul>
                     
 
                 </div>
 
                  <div class="col-md-6 col-md-12">
-                    <h4>Key Terms</h4>
-                    <strong>Pension</strong> - monthly payments only<br />
-<strong>Gratuity Reduced Pension</strong> - one-time lump sum payment and a reduced monthly payment</br>
-<strong>Discounted Gratuity Reduced Pension</strong> - one-time discounted (based on years to normal retirement age) lump sum payment and a reduced monthly payment</br>
-<strong>Pensionable Emoluments</strong> - Annual Salary 
-
+                    <h4 class="bendetails">Key Terms</h4>
+                   <p class="bendetails"><strong>Pension</strong> - monthly payments only</p>
+<p class="bendetails"><strong>Gratuity Reduced Pension</strong> - one-time lump sum payment and a reduced monthly payment</p>
+<p class="bendetails"><strong>Discounted Gratuity Reduced Pension</strong> - one-time discounted (based on years to normal retirement age) lump sum payment and a reduced monthly payment</p>
+<p class="bendetails"><strong>Pensionable Emoluments</strong> - Annual Salary 
+</p> 
                 </div>
-
+                
                 <div class="col-md-6 col-sm-12">
-                    <div class="left-content-area">
+                    <div class="left-content-area bendetails">
                         <!-- left content area -->
-                        <h4>we create 25000+ business place for growth your profite. </h4>
-                        <p>Lorem ipsum dolor sit amet, mi ultricies interdum pede eu vestibulumteunon libero fringilla, fermentum commodo eget etiam, rhoncus constetuerligula ac ultrices, ipsum at aspernatur ante mi. Aliquet est, duis elit. Tortor id,ivamus fugit dictum pellentesque, in in luctus hendrerit mi nisl rutrum, accumsan ac, cquat accumsan eros nisl non etiam eget. </p>
-
+                        <h4 class="bendetails">Payment of Benefit &amp; Other Information</h4>
+                        <p>Pension payments begin to accrue on the day following the last day of service and are paid in arrears in monthly installments. Deferred pension 
+                            payments begin when the normal retirement age is attained.</p>
+                        <p>Pension payments are made on the 29<sup>th</sup> day of each month. Exceptions are for the months of February and December. 
+                            February payments will be made on the 28<sup>th</sup> and December payments on the 20<sup>th</sup>. If the scheduled payment date falls on a weekend or holiday, payments will be made on the closest working day.
+</p>
+                        <h5 class="bendetails">Key Documents</h5>
                         <div class="about-item">
                             <ul class="left-side">
                                 <li><i class="fa fa-arrow-circle-right"></i>We have 25000 Happy Client</li>
@@ -83,7 +90,7 @@
                     <!-- //. left content area -->
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <div class="right-content-area">
+                    <div class="right-content-area bendetails">
                         <!-- right content area -->
                         <div class="img-wrapper">
                             <img src="https://via.placeholder.com/570x405" alt="Services Image">

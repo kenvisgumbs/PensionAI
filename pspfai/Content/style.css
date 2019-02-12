@@ -134,7 +134,7 @@ li {
 
 p {
     font-family: 'Open Sans', 'Roboto', sans-serif;
-    text-transform: capitalize;
+    text-transform: none;
     color: #696969; /*Change: From #888888 to #696969*/
 }
 button, input, select, textarea {
@@ -331,10 +331,51 @@ button{
   width: 100%;
   z-index: -1;
 }
+
+/*styles for bootstrap containers*/
+
+.col-md-6 div.bendetails {
+    margin-top: 20px !important;
+    padding-bottom: 10px !important;
+}
+
+.col-md-6 h4.bendetails {
+    padding-bottom: 10px !important;
+    font-size:22px;
+}
+
+.col-md-6 h5.bendetails {
+
+    padding-bottom:0;
+    padding-top:10px;
+    font-size: 16px;
+    text-transform:uppercase;
+    font-weight:700;
+
+}
+
+.col-md-6 p.bendetails {
+    line-height:16px;
+}
+.col-md-6 ul.bendetails li{
+    margin: 0;
+    line-height:20px;
+    font-size: 15px;
+    text-transform:none;
+    font-weight:400;
+    padding-bottom: 5px;
+    display:block;
+}
+
+.col-md-6 ul.bendetails li i {
+    padding-right: 15px;
+    color: #21a53b
+}
+
 .sec-title {
-  margin-top: -1px;
-  padding-bottom: 30px;
-  position: relative;
+    margin-top: -1px;
+    padding-bottom: 30px;
+    position: relative;
 }
 
 .sec-title h2 {
