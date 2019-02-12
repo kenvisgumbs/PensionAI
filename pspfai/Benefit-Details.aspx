@@ -41,7 +41,27 @@
 </p>
                     </div>
                 </div>
-                <div class="col-md-5 col-sm-12">
+                <div class="col-md-6 col-md-12">
+                    <h4>Criteria</h4>
+                    <ul><li>Must have at least 10 years of continuous service</li>
+<li>Hold a pensionable post</li>
+                        <li>Contributed to the pension fund</li>
+                        <li>Normal Retirement Age is 60, if appointed before January 1, 2004 and 65 years, if appointed on or after January 1, 2004</li>
+                    </ul>
+                    
+
+                </div>
+
+                 <div class="col-md-6 col-md-12">
+                    <h4>Key Terms</h4>
+                    <strong>Pension</strong> - monthly payments only<br />
+<strong>Gratuity Reduced Pension</strong> - one-time lump sum payment and a reduced monthly payment</br>
+<strong>Discounted Gratuity Reduced Pension</strong> - one-time discounted (based on years to normal retirement age) lump sum payment and a reduced monthly payment</br>
+<strong>Pensionable Emoluments</strong> - Annual Salary 
+
+                </div>
+
+                <div class="col-md-6 col-sm-12">
                     <div class="left-content-area">
                         <!-- left content area -->
                         <h4>we create 25000+ business place for growth your profite. </h4>
@@ -62,11 +82,11 @@
                     </div>
                     <!-- //. left content area -->
                 </div>
-                <div class="col-md-7 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                     <div class="right-content-area">
                         <!-- right content area -->
                         <div class="img-wrapper">
-                            <img src="https://via.placeholder.com/670x405" alt="Services Image">
+                            <img src="https://via.placeholder.com/570x405" alt="Services Image">
                         </div>
                     </div>
                 </div>
