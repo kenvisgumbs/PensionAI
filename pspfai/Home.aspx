@@ -485,7 +485,7 @@
                         <div class="image-box">
                             <figure>
                                 <a href="blog-single.aspx">
-                                    <img src="Content/Images/resources/pspf-ar2016.jpg" alt=""></a>
+                                    <img src="Content/Images/resources/AR_bg.jpg" alt=""></a>
                             </figure>
 
                             <div class="report-box">
@@ -499,7 +499,7 @@
                         <div class="text-area">
                             <div class="content-text text-left">
                                 <div class="title">
-                                    <a href="blog-single.aspx">
+                                    <a target="_blank" href="Content/Reports/2016 Audited Accounts.pdf">
                                         <h5>2016 Annual Report</h5>
                                     </a>
                                 </div>
@@ -507,7 +507,7 @@
                                     <p>Nisl dolor accllentesque faucibus. numaris vel, tincidunt fusce tempor non, laoreet volat integer quam iaculis est malesuada </p>
                                 </div>
                                 <div class="read-more-btn">
-                                    <a href="blog-single.aspx">Read More</a>
+                                    <a target="_blank" href="Content/Reports/2016 Audited Accounts.pdf">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -517,8 +517,8 @@
                     <div class="item-holder">
                         <div class="image-box">
                             <figure>
-                                <a href="blog-single.aspx">
-                                    <img src="Content/Images/resources/pspf-ar2015.jpg" alt=""></a>
+                                <a target="_blank" href="Content/Reports/2015 Audited Accounts.pdf">
+                                    <img src="Content/Images/resources/AR_bg.jpg" alt=""></a>
                             </figure>
                                <div class="report-box">
                                 <h2>Annual Report 2015</h2>
@@ -540,7 +540,7 @@
                                     <p>Nisl dolor accllentesque faucibus. numaris vel, tincidunt fusce tempor non, laoreet volat integer quam iaculis est malesuada </p>
                                 </div>
                                 <div class="read-more-btn">
-                                    <a href="blog-single.aspx">Read More</a>
+                                    <a target="_blank" href="Content/Reports/2015 Audited Accounts.pdf">Read More</a>
                                 </div>
                             </div>
 
@@ -551,8 +551,8 @@
                     <div class="item-holder">
                         <div class="image-box">
                             <figure>
-                                <a href="blog-single.aspx">
-                                    <img src="Content/Images/resources/pspf-ar2014.jpg" alt=""></a>
+                                <a target="_blank" href="Content/Reports/2014 Audited Accounts.pdf">
+                                    <img src="Content/Images/resources/AR_bg.jpg" alt=""></a>
                             </figure>
                                <div class="report-box">
                                 <h2>Annual Report 2014</h2>
@@ -574,7 +574,7 @@
                                     <p>Nisl dolor accllentesque faucibus. numaris vel, tincidunt fusce tempor non, laoreet volat integer quam iaculis est malesuada </p>
                                 </div>
                                 <div class="read-more-btn">
-                                    <a href="blog-single.aspx">Read More</a>
+                                    <a target="_blank" href="Content/Reports/2014 Audited Accounts.pdf">Read More</a>
                                 </div>
                             </div>
 

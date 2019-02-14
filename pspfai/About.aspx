@@ -78,7 +78,7 @@
                     <div class="left-content-area">
                         <!-- left content area -->
                         <div class="img-wrapper">
-                            <img src="Content/Images/Pages/about1.jpg" alt="">
+                            <img src="Content/Images/Pages/graph1.jpg" alt="">
                            <%-- <div class="hover">
                                 <a href="https://www.youtube.com/watch?v=WvZQG4MLRvQ" class="video-play-btn mfp-iframe"><i class="flaticon-music-player-play"></i></a>
                             </div>--%>
@@ -90,7 +90,7 @@
                     <div class="right-content-area">
                         <!-- right content area -->
                          <div class="img-wrapper">
-                            <img src="Content/Images/Pages/about2.jpg" alt="">
+                            <img src="Content/Images/Pages/graph2.jpg" alt="">
                            <%-- <div class="hover">
                                 <a href="https://www.youtube.com/watch?v=WvZQG4MLRvQ" class="video-play-btn mfp-iframe"><i class="flaticon-music-player-play"></i></a>
                             </div>--%>

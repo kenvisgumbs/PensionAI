@@ -94,6 +94,12 @@
     <Content Include="assets\jquery-ui-1.11.4\images\ui-icons_cd0a0a_256x240.html" />
     <Content Include="assets\jquery-ui-1.11.4\jquery-ui.css" />
     <Content Include="assets\jquery-ui-1.11.4\jquery-ui.js" />
+    <Content Include="Content\Images\pages\about1.jpg" />
+    <Content Include="Content\Images\pages\about2.jpg" />
+    <Content Include="Content\Images\pages\graph1.jpg" />
+    <Content Include="Content\Images\pages\graph2.jpg" />
+    <Content Include="Content\Images\pages\pagehsample.jpg" />
+    <Content Include="Content\Images\resources\AR_bg.jpg" />
     <Content Include="reports.aspx" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
@@ -130,9 +136,6 @@
     <Content Include="Content\Images\next.png" />
     <Content Include="Content\Images\prev.png" />
     <Content Include="Content\Images\resources\logo.png" />
-    <Content Include="Content\Images\resources\pspf-ar2014.jpg" />
-    <Content Include="Content\Images\resources\pspf-ar2015.jpg" />
-    <Content Include="Content\Images\resources\pspf-ar2016.jpg" />
     <Content Include="Content\imp.css" />
     <Content Include="Content\jquery.fancybox.css" />
     <Content Include="Content\lightbox.css" />
