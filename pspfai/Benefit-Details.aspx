@@ -76,15 +76,15 @@
                         <h5 class="bendetails">Key Documents</h5>
                         <div class="about-item">
                             <ul class="left-side">
-                                <li><i class="fa fa-arrow-circle-right"></i>We have 25000 Happy Client</li>
-                                <li><i class="fa fa-arrow-circle-right"></i>24/7 Customer Support </li>
-                                <li><i class="fa fa-arrow-circle-right"></i>75 Over Services Provided</li>
+                                <li><i class="fa fa-arrow-circle-right"></i>Appointment Forms</li>
+                                <li><i class="fa fa-arrow-circle-right"></i>Contribution Forms</li>
+                                
                             </ul>
-                            <ul class="right-side">
+                          <%--  <ul class="right-side">
                                 <li><i class="fa fa-arrow-circle-right"></i>Free Advice Provied</li>
                                 <li><i class="fa fa-arrow-circle-right"></i>Research Company </li>
                                 <li><i class="fa fa-arrow-circle-right"></i>Achived Gobal Trust</li>
-                            </ul>
+                            </ul>--%>
                         </div>
                     </div>
                     <!-- //. left content area -->

@@ -7,7 +7,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <!--Main Slider-->
+    <!--Main Slider
+    update data-index tag for slider animation to function-->
     <section class="main-slider">
         <div class="rev_slider_wrapper fullwidthbanner-container" id="rev_slider_one_wrapper" data-source="gallery">
             <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
@@ -80,7 +81,7 @@
                     </li>
 
                    
-                    <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/sli1.jpg" />
 
                         <div class="tp-caption"
@@ -146,7 +147,7 @@
                         </div>
                     </li>
 
-                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1670" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="0" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/boardsample.jpg">
 
                         <div class="tp-caption"
