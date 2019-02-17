@@ -13,6 +13,19 @@ namespace pspfai
         {
 
             Wizard1.PreRender += new EventHandler(Wizard1_PreRender);
+            int year = DateTime.Now.Year - 17;
+
+            if (!Page.IsPostBack)
+            {
+
+                for (int Y = year; Y > (DateTime.Now.Year - 100); Y--)
+
+                {
+
+                    dob_year.Items.Add(new ListItem(Y.ToString(), Y.ToString()));
+
+                }
+            }
         }
         protected void Wizard1_PreRender(object sender, EventArgs e)
         {
