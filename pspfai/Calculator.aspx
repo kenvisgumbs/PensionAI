@@ -482,14 +482,14 @@
                                                     %></strong>.
                                                     <% if (RadioButtonList1.SelectedValue == "1")
                                                         { %>
-                                                    At retirement you will receive an Annual Pension equal to EC$
+                                                    At retirement you will receive an Annual Pension equal to EC
                                                     <strong>
                                                         <%= string.Format("{0:C}",(pension1 + pension2)) %>
                                                     </strong><%}
                                                                  else if (RadioButtonList1.SelectedValue == "2")
                                                                  {%>
-                                                    At retirement you will receive a <strong>Gratuity Payment</strong> equal to EC$<strong><%= string.Format("{0:C}",(pension1 /4 * 12.5) + (pension2/4 * 12.5))
-                                                           %></strong> and an <strong>Annual Reduced Pension</strong> equal to EC$<strong><%=string.Format("{0:C}",(((pension1 * 3 / 4)) + ((pension2 * 3 / 4)))) %></strong> 
+                                                    At retirement you will receive a <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}",(pension1 /4 * 12.5) + (pension2/4 * 12.5))
+                                                           %></strong> and an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}",(((pension1 * 3 / 4)) + ((pension2 * 3 / 4)))) %></strong> 
                                                                   <% }%>
                                                 </span>
                                             </fieldset
