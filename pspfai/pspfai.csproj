@@ -199,7 +199,7 @@
     <Content Include="Benefit-Details.aspx" />
     <Content Include="Benefits.aspx" />
     <Content Include="Single-Project.aspx" />
-    <Content Include="Test.aspx" />
+    <Content Include="Calculator.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -322,12 +322,12 @@
     <Compile Include="Single-Project.aspx.designer.cs">
       <DependentUpon>Single-Project.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Test.aspx.cs">
-      <DependentUpon>Test.aspx</DependentUpon>
+    <Compile Include="Calculator.aspx.cs">
+      <DependentUpon>Calculator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Test.aspx.designer.cs">
-      <DependentUpon>Test.aspx</DependentUpon>
+    <Compile Include="Calculator.aspx.designer.cs">
+      <DependentUpon>Calculator.aspx</DependentUpon>
     </Compile>
     <Compile Include="util.cs" />
   </ItemGroup>

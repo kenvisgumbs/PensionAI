@@ -10,7 +10,7 @@
 namespace pspfai {
     
     
-    public partial class Test {
+    public partial class Calculator {
         
         /// <summary>
         /// ScriptManager1 control.
@@ -218,5 +218,17 @@ namespace pspfai {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.WizardStep WizardStep5;
+        
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new pspfai.PSPFAI Master {
+            get {
+                return ((pspfai.PSPFAI)(base.Master));
+            }
+        }
     }
 }
