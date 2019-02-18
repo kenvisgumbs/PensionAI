@@ -3,8 +3,24 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+   <script type="text/javascript">
+        function UpdateDate() {
+            // Get the current selected index of your source
+            var d = document.getElementById("<%=dob_day.ClientID%>");
+            var dy = d.options[d.selectedIndex].value;
+            var m = document.getElementById("<%=dob_month.ClientID%>");
+             var mon = m.options[m.selectedIndex].value;
+            var y = document.getElementById("<%=dob_year.ClientID%>");
+             var yr = y.options[y.selectedIndex].value;
+            // Set the selected index of your target
+            document.getElementById("<%=TextBox1.ClientID%>").value = yr + '-' + mon + '-' + dy;
+        } </script>
+    
     <asp:ScriptManager ID="ScriptManager1" runat="server">
     </asp:ScriptManager>
+    
+
+    
     <style>
         #wizHeader li .prevStep {
             background-color: #669966;
@@ -183,7 +199,7 @@
         input[type="text"], input[type="number"], input[type="email"], input[type="search"], input[type="password"] {
             height: 23px;
             line-height: 1.875rem;
-            width:20%;
+            width: 20%;
         }
 
         input[type="text"], input[type="number"], input[type="email"], input[type="search"], input[type="password"], textarea, .form__input-outline {
@@ -201,6 +217,10 @@
             padding-right: 10px;
             margin-right: 15px;
             padding-top: 5px;
+        }
+
+        .hidden {
+            visibility: hidden;
         }
     </style>
     <!--Page Title-->
@@ -226,22 +246,38 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+
                     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                         <ContentTemplate>
+                            
+
                             <asp:Wizard ID="Wizard1" runat="server" Width="90%" DisplaySideBar="False">
                                 <WizardSteps>
+                                    <asp:WizardStep ID="WizardStep0" runat="server" Title="Get Started">
+                                        <div class="form__key">
+                                            <h5>PSPF Pension Calculator Basics</h5>
+                                            <h5>&nbsp;</h5>
+                                            <p>
+                                                This calculator is only used for estimating purposes. For offical calculations please contact our office at your earliest convenience.
+                                            </p>
+
+                                        </div>
+                                    </asp:WizardStep>
                                     <asp:WizardStep ID="WizardStep1" runat="server" Title="About You">
+                                        <script type="text/javascript">
+                                Sys.Application.add_load(UpdateDate);
+                            </script>
                                         <div class="form__key">
                                             * All information is required
 
                                         </div>
-                                        <div class="form__row t-date-of-birth ">
+                                        <div class="form__row t-date-of-birth">
                                             <fieldset class="form__group form__group--inline">
                                                 <legend>Your date of birth*
                                                 </legend>
 
                                                 <span class="form__group-item">
-                                                    <asp:DropDownList ID="dob_day" runat="server" required="required" CssClass="select dob">
+                                                    <asp:DropDownList ID="dob_day" onchange="UpdateDate()" runat="server" required="required" CssClass="select dob">
                                                         <asp:ListItem Value="">Day</asp:ListItem>
                                                         <asp:ListItem Value="1">1</asp:ListItem>
                                                         <asp:ListItem Value="2">2</asp:ListItem>
@@ -270,7 +306,7 @@
                                                         <asp:ListItem Value="25">25</asp:ListItem>
                                                         <asp:ListItem Value="26">26</asp:ListItem>
                                                         <asp:ListItem Value="27">27</asp:ListItem>
-                                                        <asp:ListItem Value="28">29</asp:ListItem>
+                                                        <asp:ListItem Value="28">28</asp:ListItem>
                                                         <asp:ListItem Value="29">29</asp:ListItem>
                                                         <asp:ListItem Value="30">30</asp:ListItem>
                                                         <asp:ListItem Value="31">31</asp:ListItem>
@@ -278,7 +314,7 @@
 
                                                 </span>
                                                 <span class="form__group-item">
-                                                    <asp:DropDownList ID="dob_month" runat="server" required="required" CssClass="select dob">
+                                                    <asp:DropDownList ID="dob_month" runat="server" onchange="UpdateDate()" required="required" CssClass="select dob">
                                                         <asp:ListItem Value="">Month</asp:ListItem>
                                                         <asp:ListItem Value="1">January</asp:ListItem>
                                                         <asp:ListItem Value="2">February</asp:ListItem>
@@ -296,10 +332,15 @@
 
                                                 </span>
                                                 <span class="form__group-item">
-                                                    <asp:DropDownList ID="dob_year" runat="server" required="required" CssClass="select dob">
+                                                    <asp:DropDownList ID="dob_year" runat="server" onchange="UpdateDate()" required="required" CssClass="select dob">
                                                         <asp:ListItem Value="">Year</asp:ListItem>
                                                     </asp:DropDownList>
+                                                    <asp:CompareValidator ID="CompareValidator4" runat="server" ErrorMessage="Invalid Date!" ControlToValidate="TextBox1" Operator="DataTypeCheck" Type="Date"></asp:CompareValidator>
+                                                 <span style="visibility:hidden;"><asp:TextBox ID="TextBox1" required="required" runat="server"></asp:TextBox></span>
+
+
                                                 </span>
+
                                             </fieldset>
                                         </div>
 
@@ -337,13 +378,14 @@
                                             </fieldset>
 
                                         </div>
+
                                     </asp:WizardStep>
                                     <asp:WizardStep ID="WizardStep2" runat="server" Title="Your Income">
                                         <div class="form__key">
                                             * All information is required
 
                                         </div>
-                                        <div class="form__row t-date-of-birth ">
+                                        <div class="form__row t-date-of-birth">
                                             <fieldset class="form__group form__group--inline">
                                                 <legend>Annual Salary at Retirement or Average Annual if in Post less than 3 Years*
                                                 </legend>
@@ -351,6 +393,8 @@
                                                 <span class="form__group-item">
                                                     <asp:TextBox ID="salary" required="required" runat="server"></asp:TextBox>
                                                     <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Currency Only!" ControlToValidate="salary" Operator="DataTypeCheck" Type="Currency"></asp:CompareValidator>
+
+
                                                 </span>
 
                                             </fieldset>
@@ -403,6 +447,7 @@
                                                         <asp:ListItem Text="Full Pension" Value="1" Selected="True" />
                                                         <asp:ListItem Text="Gratuity Reduced Pension" Value="2" />
                                                     </asp:RadioButtonList>
+
                                                 </span>
 
                                             </fieldset>
@@ -410,7 +455,7 @@
                                     </asp:WizardStep>
                                     <asp:WizardStep ID="WizardStep5" runat="server" Title="Results">
                                         <div class="form__key">
-                                           <br />
+                                           &nbsp;
 
                                         </div>
                                         <div class="form__row t-date-of-birth ">
@@ -423,8 +468,8 @@
                                                         { %>
                                                     At retirement you will receive an Annual Pension equal to 
                                                     <strong>
-                                                    <%= string.Format("{0:C}",(Convert.ToDouble(prior_2004.Text)/600 * Convert.ToDouble(salary.Text)) + (Convert.ToDouble(after_2004.Text)/960 * Convert.ToDouble(salary.Text))) %>
-                                                   </strong> <%} %>
+                                                        <%= string.Format("{0:C}",(Convert.ToDouble(prior_2004.Text)/600 * Convert.ToDouble(salary.Text)) + (Convert.ToDouble(after_2004.Text)/960 * Convert.ToDouble(salary.Text))) %>
+                                                    </strong><%} %>
                                                 </span>
                                             </fieldset>
                                         </div>
@@ -446,14 +491,13 @@
                                         <tr>
 
                                             <td>
-                                                <asp:Button ID="btnNext" runat="server" Text="Next >>" CssClass="button--compact button--primary"
+                                                <asp:Button ID="btnNext" runat="server" Text="Start >>" CssClass="button--compact button--primary"
                                                     CausesValidation="true"
                                                     CommandName="MoveNext" />
                                             </td>
                                         </tr>
                                     </table>
                                 </StartNavigationTemplate>
-
                                 <StepNavigationTemplate>
                                     <table cellpadding="3" cellspacing="3">
                                         <tr>
