@@ -3,18 +3,90 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script src="assets/amcharts4/core.js"></script>
+    <script src="assets/amcharts4/charts.js"></script>
+    <script src="assets/amcharts4/themes/animated.js"></script>
    <script type="text/javascript">
-       function UpdateDate() {
-           // Get the current selected index of your source
-           var d = document.getElementById("<%=dob_day.ClientID%>");
-           var dy = d.options[d.selectedIndex].value;
-           var m = document.getElementById("<%=dob_month.ClientID%>");
-           var mon = m.options[m.selectedIndex].value;
-           var y = document.getElementById("<%=dob_year.ClientID%>");
-           var yr = y.options[y.selectedIndex].value;
-           // Set the selected index of your target
-           document.getElementById("<%=TextBox1.ClientID%>").value = yr + '-' + mon + '-' + dy;
-       } </script>
+       function UpdateDate(cntrl) {
+
+           if (cntrl == "dob") {
+
+
+               // Get the current selected index of your source
+               var d = document.getElementById("<%=dob_day.ClientID%>");
+               var dy = d.options[d.selectedIndex].value;
+               var m = document.getElementById("<%=dob_month.ClientID%>");
+               var mon = m.options[m.selectedIndex].value;
+               var y = document.getElementById("<%=dob_year.ClientID%>");
+               var yr = y.options[y.selectedIndex].value;
+               // Set the selected index of your target
+               document.getElementById("<%=TextBox1.ClientID%>").value = yr + '-' + mon + '-' + dy;
+           }
+           else if (cntrl == "hire") {
+
+               // Get the current selected index of your source
+               var d = document.getElementById("<%=hire_day.ClientID%>");
+               var dy = d.options[d.selectedIndex].value;
+               var m = document.getElementById("<%=hire_month.ClientID%>");
+               var mon = m.options[m.selectedIndex].value;
+               var y = document.getElementById("<%=hire_year.ClientID%>");
+               var yr = y.options[y.selectedIndex].value;
+               // Set the selected index of your target
+               document.getElementById("<%=TextBox2.ClientID%>").value = yr + '-' + mon + '-' + dy;
+           }
+       }
+
+
+       function drawGraph(x1,y1,x2,y2,x3,y3,x4,y4,x5,y5){
+
+
+
+           am4core.useTheme(am4themes_animated);
+
+           var chart = am4core.create("chartdiv", am4charts.XYChart);
+
+
+           chart.data = [{
+               "salary": x1,
+               "pension": y1
+           }, {
+               "salary": x2,
+               "pension": y2
+           }, {
+               "salary": x3,
+               "pension": y3
+           }, {
+               "salary": x4,
+               "pension": y4
+           }, {
+               "salary": x5,
+               "pension": y5
+           }];
+
+           chart.padding(40, 40, 40, 40);
+
+           var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+           categoryAxis.renderer.grid.template.location = 0;
+           categoryAxis.dataFields.category = "salary";
+           categoryAxis.renderer.minGridDistance = 60;
+
+           var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+
+           var series = chart.series.push(new am4charts.ColumnSeries());
+           series.dataFields.categoryX = "salary";
+           series.dataFields.valueY = "pension";
+           series.tooltipText = "{valueY.value}"
+           series.columns.template.strokeOpacity = 0;
+
+           chart.cursor = new am4charts.XYCursor();
+
+           // as by default columns of the same series are of the same color, we add adapter which takes colors from chart.colors color set
+           series.columns.template.adapter.add("fill", function (fill, target) {
+               return chart.colors.getIndex(target.dataItem.index);
+           });
+
+       }
+   </script>
     
     <asp:ScriptManager ID="ScriptManager1" runat="server">
     </asp:ScriptManager>
@@ -231,6 +303,12 @@
             font-weight: 300;
             width: 80%;
         }
+
+        #chartdiv {
+            width: 100%;
+            max-height: 600px;
+            height: 100vh;
+        }
     </style>
     <!--Page Title-->
     <section class="page-title" style="background: url(Content/Images/pages/pagehsample.jpg);">
@@ -281,13 +359,27 @@
                                             * All information is required
 
                                         </div>
+                                        
+                                        <div class="form__row t-date-of-birth ">
+                                            <fieldset class="form__group form__group--inline">
+                                                <legend>Your Name
+                                                </legend>
+
+                                                <span class="form__group-item">
+                                                    <asp:TextBox ID="name" required="required" runat="server" Columns="40"></asp:TextBox>
+                                                </span>
+
+                                            </fieldset>
+
+                                        </div>
+
                                         <div class="form__row t-date-of-birth">
                                             <fieldset class="form__group form__group--inline">
                                                 <legend>Your date of birth*
                                                 </legend>
 
                                                 <span class="form__group-item">
-                                                    <asp:DropDownList ID="dob_day" onchange="UpdateDate()" runat="server" required="required" CssClass="select dob">
+                                                    <asp:DropDownList ID="dob_day" onchange="UpdateDate('dob')" runat="server" required="required" CssClass="select dob">
                                                         <asp:ListItem Value="">Day</asp:ListItem>
                                                         <asp:ListItem Value="1">1</asp:ListItem>
                                                         <asp:ListItem Value="2">2</asp:ListItem>
@@ -324,7 +416,7 @@
 
                                                 </span>
                                                 <span class="form__group-item">
-                                                    <asp:DropDownList ID="dob_month" runat="server" onchange="UpdateDate()" required="required" CssClass="select dob">
+                                                    <asp:DropDownList ID="dob_month" runat="server" onchange="UpdateDate('dob')" required="required" CssClass="select dob">
                                                         <asp:ListItem Value="">Month</asp:ListItem>
                                                         <asp:ListItem Value="1">January</asp:ListItem>
                                                         <asp:ListItem Value="2">February</asp:ListItem>
@@ -342,7 +434,7 @@
 
                                                 </span>
                                                 <span class="form__group-item">
-                                                    <asp:DropDownList ID="dob_year" runat="server" onchange="UpdateDate()" required="required" CssClass="select dob">
+                                                    <asp:DropDownList ID="dob_year" runat="server" onchange="UpdateDate('dob')" required="required" CssClass="select dob">
                                                         <asp:ListItem Value="">Year</asp:ListItem>
                                                     </asp:DropDownList>
                                                     <asp:CompareValidator ID="CompareValidator4" runat="server" ErrorMessage="Invalid Date!" ControlToValidate="TextBox1" Operator="DataTypeCheck" Type="Date"></asp:CompareValidator>
@@ -376,18 +468,79 @@
 
                                         </div>
 
-                                        <div class="form__row t-date-of-birth ">
+                                          <div class="form__row t-date-of-birth">
                                             <fieldset class="form__group form__group--inline">
-                                                <legend>Your Name
+                                                <legend>Your hire date*
                                                 </legend>
 
                                                 <span class="form__group-item">
-                                                    <asp:TextBox ID="name" required="required" runat="server" Columns="40"></asp:TextBox>
+                                                    <asp:DropDownList ID="hire_day" onchange="UpdateDate('hire')" runat="server" required="required" CssClass="select dob">
+                                                        <asp:ListItem Value="">Day</asp:ListItem>
+                                                        <asp:ListItem Value="1">1</asp:ListItem>
+                                                        <asp:ListItem Value="2">2</asp:ListItem>
+                                                        <asp:ListItem Value="3">3</asp:ListItem>
+                                                        <asp:ListItem Value="4">4</asp:ListItem>
+                                                        <asp:ListItem Value="5">5</asp:ListItem>
+                                                        <asp:ListItem Value="6">6</asp:ListItem>
+                                                        <asp:ListItem Value="7">7</asp:ListItem>
+                                                        <asp:ListItem Value="8">8</asp:ListItem>
+                                                        <asp:ListItem Value="9">9</asp:ListItem>
+                                                        <asp:ListItem Value="10">10</asp:ListItem>
+                                                        <asp:ListItem Value="11">11</asp:ListItem>
+                                                        <asp:ListItem Value="12">12</asp:ListItem>
+                                                        <asp:ListItem Value="13">13</asp:ListItem>
+                                                        <asp:ListItem Value="14">14</asp:ListItem>
+                                                        <asp:ListItem Value="15">15</asp:ListItem>
+                                                        <asp:ListItem Value="16">16</asp:ListItem>
+                                                        <asp:ListItem Value="17">17</asp:ListItem>
+                                                        <asp:ListItem Value="18">18</asp:ListItem>
+                                                        <asp:ListItem Value="19">19</asp:ListItem>
+                                                        <asp:ListItem Value="20">20</asp:ListItem>
+                                                        <asp:ListItem Value="21">21</asp:ListItem>
+                                                        <asp:ListItem Value="22">22</asp:ListItem>
+                                                        <asp:ListItem Value="23">23</asp:ListItem>
+                                                        <asp:ListItem Value="24">24</asp:ListItem>
+                                                        <asp:ListItem Value="25">25</asp:ListItem>
+                                                        <asp:ListItem Value="26">26</asp:ListItem>
+                                                        <asp:ListItem Value="27">27</asp:ListItem>
+                                                        <asp:ListItem Value="28">28</asp:ListItem>
+                                                        <asp:ListItem Value="29">29</asp:ListItem>
+                                                        <asp:ListItem Value="30">30</asp:ListItem>
+                                                        <asp:ListItem Value="31">31</asp:ListItem>
+                                                    </asp:DropDownList>
+
+                                                </span>
+                                                <span class="form__group-item">
+                                                    <asp:DropDownList ID="hire_month" runat="server" onchange="UpdateDate('hire')" required="required" CssClass="select dob">
+                                                        <asp:ListItem Value="">Month</asp:ListItem>
+                                                        <asp:ListItem Value="1">January</asp:ListItem>
+                                                        <asp:ListItem Value="2">February</asp:ListItem>
+                                                        <asp:ListItem Value="3">March</asp:ListItem>
+                                                        <asp:ListItem Value="4">April</asp:ListItem>
+                                                        <asp:ListItem Value="5">May</asp:ListItem>
+                                                        <asp:ListItem Value="6">June</asp:ListItem>
+                                                        <asp:ListItem Value="7">July</asp:ListItem>
+                                                        <asp:ListItem Value="8">August</asp:ListItem>
+                                                        <asp:ListItem Value="9">September</asp:ListItem>
+                                                        <asp:ListItem Value="10">October</asp:ListItem>
+                                                        <asp:ListItem Value="11">November</asp:ListItem>
+                                                        <asp:ListItem Value="12">December</asp:ListItem>
+                                                    </asp:DropDownList>
+
+                                                </span>
+                                                <span class="form__group-item">
+                                                    <asp:DropDownList ID="hire_year" runat="server" onchange="UpdateDate('hire')" required="required" CssClass="select dob">
+                                                        <asp:ListItem Value="">Year</asp:ListItem>
+                                                    </asp:DropDownList>
+                                                    <asp:CompareValidator ID="CompareValidator5" runat="server" ErrorMessage="Invalid Date!" ControlToValidate="TextBox2" Operator="DataTypeCheck" Type="Date"></asp:CompareValidator>
+                                                 <span style="visibility:hidden;"><asp:TextBox ID="TextBox2" required="required" runat="server"></asp:TextBox></span>
+
+
                                                 </span>
 
                                             </fieldset>
-
                                         </div>
+
 
                                     </asp:WizardStep>
                                     <asp:WizardStep ID="WizardStep2" runat="server" Title="Your Income">
@@ -473,8 +626,29 @@
                                                 <legend>Here are your results <%=name.Text %>
                                                 </legend>
                                                 <% 
-                                                    double pension1 = Convert.ToDouble(prior_2004.Text) / 600 * Convert.ToDouble(salary.Text);
-                                                    double pension2 = Convert.ToDouble(after_2004.Text) / 960 * Convert.ToDouble(salary.Text);
+
+                                                    double s1 = Convert.ToDouble(salary.Text);
+                                                    double pension1 = Convert.ToDouble(prior_2004.Text) / 600 * s1;
+                                                    double pension2 = Convert.ToDouble(after_2004.Text) / 960 * s1;
+
+
+                                                    double factor = Math.Floor(s1 / 3);
+
+                                                    double x1 = factor;
+                                                    double y1 = (Convert.ToDouble(prior_2004.Text) / 600 * x1) + (Convert.ToDouble(after_2004.Text) / 960 * x1);
+
+                                                    double x2 = factor*2;
+                                                    double y2 = (Convert.ToDouble(prior_2004.Text) / 600 * x2) + (Convert.ToDouble(after_2004.Text) / 960 * x2);
+
+                                                    double x3 = s1;
+                                                    double y3 = pension1 + pension2;
+
+                                                    double x4 = factor*4;
+                                                    double y4 = (Convert.ToDouble(prior_2004.Text) / 600 * x4) + (Convert.ToDouble(after_2004.Text) / 960 * x4);
+
+                                                    double x5 = factor*5;
+                                                    double y5 = (Convert.ToDouble(prior_2004.Text) / 600 * x5) + (Convert.ToDouble(after_2004.Text) / 960 * x5);
+
                                                     %>
                                                 <span class="form__group-item">
                                                     Your normal retirement date is <strong><%= 
@@ -484,8 +658,8 @@
                                                         { %>
                                                     At retirement you will receive an Annual Pension equal to EC
                                                     <strong>
-                                                        <%= string.Format("{0:C}",(pension1 + pension2)) %>
-                                                    </strong><%}
+                                                        <%= string.Format("{0:C}",(pension1 + pension2)) %></strong>. The graph below forecast your pension for salaries below and above <%=string.Format("{0:C}",s1) %> entered.
+                                                    <%}
                                                                  else if (RadioButtonList1.SelectedValue == "2")
                                                                  {%>
                                                     At retirement you will receive a <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}",(pension1 /4 * 12.5) + (pension2/4 * 12.5))
@@ -493,6 +667,21 @@
                                                                   <% }%>
                                                 </span>
                                             </fieldset
+                                        </div>
+                                        <div style="width:95%; padding:10px;">
+                                              <% if (RadioButtonList1.SelectedValue == "1")
+                                                  { %>
+
+                                            <div id="chartdiv"></div>
+   
+                                            <script type="text/javascript"> 
+
+                                                drawGraph(<%=x1%>,<%=y1%>,<%=x2%>,<%=y2%>,<%=x3%>,<%=y3%>,<%=x4%>,<%=y4%>,<%=x5%>,<%=y5%>);
+</script>
+
+                                            
+   
+                                            <%} %>
                                         </div>
 
                                     </asp:WizardStep>

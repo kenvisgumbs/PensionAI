@@ -25,6 +25,11 @@ namespace pspfai
                     dob_year.Items.Add(new ListItem(Y.ToString(), Y.ToString()));
 
                 }
+
+                for(int y = year; y > (DateTime.Now.Year - 66 + 16); y--)
+                {
+                    hire_year.Items.Add(new ListItem(y.ToString(), y.ToString()));
+                }
             }
 
             
