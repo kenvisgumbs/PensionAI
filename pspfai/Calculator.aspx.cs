@@ -26,9 +26,14 @@ namespace pspfai
 
                 }
 
-                for(int y = year; y > (DateTime.Now.Year - 66 + 16); y--)
+                for(int y = year+17; y > (DateTime.Now.Year - 66 + 16); y--)
                 {
                     hire_year.Items.Add(new ListItem(y.ToString(), y.ToString()));
+                }
+
+                for (int y = year + 15; y < (DateTime.Now.Year + 63); y++)
+                {
+                    resig_year.Items.Add(new ListItem(y.ToString(), y.ToString()));
                 }
             }
 

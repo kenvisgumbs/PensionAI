@@ -49,6 +49,15 @@ namespace pspfai {
         protected global::System.Web.UI.WebControls.WizardStep WizardStep0;
         
         /// <summary>
+        /// RadioButtonList2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList2;
+        
+        /// <summary>
         /// WizardStep1 control.
         /// </summary>
         /// <remarks>
@@ -166,6 +175,51 @@ namespace pspfai {
         protected global::System.Web.UI.WebControls.TextBox TextBox2;
         
         /// <summary>
+        /// resig_day control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList resig_day;
+        
+        /// <summary>
+        /// resig_month control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList resig_month;
+        
+        /// <summary>
+        /// resig_year control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList resig_year;
+        
+        /// <summary>
+        /// CompareValidator6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator6;
+        
+        /// <summary>
+        /// TextBox3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        
+        /// <summary>
         /// WizardStep2 control.
         /// </summary>
         /// <remarks>
@@ -220,6 +274,15 @@ namespace pspfai {
         protected global::System.Web.UI.WebControls.CompareValidator CompareValidator2;
         
         /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
         /// after_2004 control.
         /// </summary>
         /// <remarks>
@@ -236,6 +299,15 @@ namespace pspfai {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CompareValidator CompareValidator3;
+        
+        /// <summary>
+        /// Label2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
         /// WizardStep4 control.

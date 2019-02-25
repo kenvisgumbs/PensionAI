@@ -574,6 +574,7 @@
     <Content Include="Single-Project.aspx" />
     <Content Include="Calculator.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Chart.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="404.aspx.cs">
@@ -703,6 +704,13 @@
       <DependentUpon>Calculator.aspx</DependentUpon>
     </Compile>
     <Compile Include="util.cs" />
+    <Compile Include="Chart.aspx.cs">
+      <DependentUpon>Chart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chart.aspx.designer.cs">
+      <DependentUpon>Chart.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\Flaticon.eot" />
