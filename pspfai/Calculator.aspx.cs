@@ -26,7 +26,7 @@ namespace pspfai
 
                 }
 
-                for(int y = year+17; y > (DateTime.Now.Year - 66 + 16); y--)
+                for (int y = year + 17; y > (DateTime.Now.Year - 66 + 16); y--)
                 {
                     hire_year.Items.Add(new ListItem(y.ToString(), y.ToString()));
                 }
@@ -36,8 +36,59 @@ namespace pspfai
                     resig_year.Items.Add(new ListItem(y.ToString(), y.ToString()));
                 }
             }
+            else
+            {
+                //RadioButtonList1.Items.Add(new ListItem("Refund", "3"));
+                if (RadioButtonList2.SelectedValue == "1")
+                {
+                    if (RadioButtonList1.Items.Count != 2)
+                    {
+                        RadioButtonList1.Items.Clear();
+                        RadioButtonList1.Items.Add(new ListItem("Full Pension", "1"));
+                        RadioButtonList1.Items.Add(new ListItem("Gratuity Reduced Pension", "2"));
+                        RadioButtonList1.SelectedIndex = 0;
+                    }
 
-            
+
+                }
+                else
+                {
+                    if (TextBox1.Text == "") return;
+                    if (TextBox2.Text == "") return;
+                    if (TextBox3.Text == "") return;
+
+                  
+                    int yearsofservice = 0;
+                    DateTime d2 = Convert.ToDateTime(TextBox3.Text);
+                    DateTime d1 = Convert.ToDateTime(TextBox2.Text);
+
+
+                    while (DateTime.Compare(d1, d2) < 0)
+                    {
+                        yearsofservice++;
+                        d1 = d1.AddYears(1);
+                    }
+                    
+
+                    if (yearsofservice < 10)
+                    {
+                       
+                            RadioButtonList1.Items.Clear();
+                            RadioButtonList1.Items.Add(new ListItem("Refund", "3"));
+                        RadioButtonList1.SelectedIndex = 0;
+                    }
+                    else
+                    {
+                       
+                            RadioButtonList1.Items.Clear();
+                            RadioButtonList1.Items.Add(new ListItem("Gratuity Reduced Pension", "2"));
+                        RadioButtonList1.SelectedIndex = 0;
+
+                    }
+                }
+            }
+
+
         }
         protected void Wizard1_PreRender(object sender, EventArgs e)
         {
@@ -71,7 +122,7 @@ namespace pspfai
             }
         }
 
-       
+
 
     }
 }

@@ -418,7 +418,7 @@
                                                         <asp:ListItem Value="">Year</asp:ListItem>
                                                     </asp:DropDownList>
                                                     <asp:CompareValidator ID="CompareValidator4" runat="server" ErrorMessage="Invalid Date!" ControlToValidate="TextBox1" Operator="DataTypeCheck" Type="Date"></asp:CompareValidator>
-                                                 <span style="visibility:visible;"><asp:TextBox ID="TextBox1" required="required" runat="server"></asp:TextBox></span>
+                                                 <span style="visibility:hidden;"><asp:TextBox ID="TextBox1" required="required" runat="server"></asp:TextBox></span>
 
 
                                                 </span>
@@ -514,7 +514,7 @@
                                                     </asp:DropDownList>
                                                     <asp:CompareValidator ID="CompareValidator5" runat="server" ErrorMessage="Invalid Date!" ControlToValidate="TextBox2" Operator="DataTypeCheck" Type="Date"></asp:CompareValidator>
                                               
-                                                 <span style="visibility:visible;"><asp:TextBox ID="TextBox2" required="required" runat="server"></asp:TextBox></span>
+                                                 <span style="visibility:hidden;"><asp:TextBox ID="TextBox2" required="required" runat="server"></asp:TextBox></span>
 
 
                                                 </span>
@@ -590,8 +590,8 @@
                                                         <asp:ListItem Value="">Year</asp:ListItem>
                                                     </asp:DropDownList>
                                                     <asp:CompareValidator ID="CompareValidator6" runat="server" ErrorMessage="Invalid Date!" ControlToValidate="TextBox3" Operator="DataTypeCheck" Type="Date"></asp:CompareValidator>
-                                              
-                                                 <span style="visibility:visible;"><asp:TextBox ID="TextBox3" required="required" runat="server"></asp:TextBox></span>
+                                                   <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+                                                 <span style="visibility:hidden;"><asp:TextBox ID="TextBox3" required="required" runat="server"></asp:TextBox></span>
 
 
                                                 </span>
@@ -625,6 +625,7 @@
                                                 <span class="form__group-item">
                                                     <asp:TextBox ID="salary" Text="112000" required="required" runat="server"></asp:TextBox>
                                                     <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Currency Only!" ControlToValidate="salary" Operator="DataTypeCheck" Type="Currency"></asp:CompareValidator>
+
 
 
                                                 </span>
@@ -661,7 +662,11 @@
                                                         DateTime d1 = new DateTime(Convert.ToInt16(hire_year.SelectedValue), Convert.ToInt16(hire_month.SelectedValue), Convert.ToInt16(hire_day.SelectedValue));
 
                                                         //retirement date
-                                                        DateTime d2 = Convert.ToDateTime(TextBox1.Text).AddYears(65);
+                                                        DateTime d2;
+                                                        if (RadioButtonList2.SelectedValue == "1")
+                                                            d2 = Convert.ToDateTime(TextBox1.Text).AddYears(65);
+                                                        else
+                                                            d2 = Convert.ToDateTime(TextBox3.Text);
                                                         DateTime dtemp = new DateTime(d1.Year, d1.Month, d1.Day);
                                                         if (DateTime.Compare(d1, mrk) > 0)
                                                         {
@@ -672,7 +677,7 @@
                                                                 dtemp = dtemp.AddMonths(1);
                                                             }
                                                             //post04 = DateTime.Compare(dtemp, d2);
-                                                            Label1.Text = "1 :" + DateTime.Compare(d1, mrk) + ": " + d1.ToString() + " " + d2.ToString() + " " + mrk.ToString() + " " + dtemp.ToString() + " " + post04.ToString();
+                                                            //Label1.Text = "1 :" + DateTime.Compare(d1, mrk) + ": " + d1.ToString() + " " + d2.ToString() + " " + mrk.ToString() + " " + dtemp.ToString() + " " + post04.ToString();
                                                         }
                                                         else
                                                         {
@@ -681,7 +686,7 @@
                                                             {
                                                                 dtemp = dtemp.AddMonths(1);
                                                                 pre04++;
-                                                                Label2.Text = Label2.Text + dtemp.ToString("dd/MM/yyy") + ":" + DateTime.Compare(dtemp, mrk) + ",        ";
+                                                                //Label2.Text = Label2.Text + dtemp.ToString("dd/MM/yyy") + ":" + DateTime.Compare(dtemp, mrk) + ",        ";
                                                             }
 
                                                             dtemp = new DateTime(mrk.Year, mrk.Month, mrk.Day);
@@ -690,7 +695,7 @@
                                                                 dtemp = dtemp.AddMonths(1);
                                                                 post04++;
                                                             }
-                                                            Label1.Text = "2 :" + DateTime.Compare(d1, mrk) + ": " + d1.ToString() + " " + d2.ToString() + " " + mrk.ToString() + " " + dtemp.ToString() + " " + post04.ToString();
+                                                           // Label1.Text = "2 :" + DateTime.Compare(d1, mrk) + ": " + d1.ToString() + " " + d2.ToString() + " " + mrk.ToString() + " " + dtemp.ToString() + " " + post04.ToString();
                                                         }
 
                                                         prior_2004.Text = pre04.ToString();
@@ -699,7 +704,7 @@
                                                         //pre04 = Convert.ToDateTime(TextBox2.Text).AddYears(65).ToString("dd/MM/yyyy");
                                                     %>
                                                     <asp:TextBox ID="prior_2004" required="required" runat="server"></asp:TextBox>
-                                                    <asp:CompareValidator ID="CompareValidator2" runat="server" ErrorMessage="Numbers Only!" ControlToValidate="prior_2004" Operator="DataTypeCheck" Type="Integer"></asp:CompareValidator><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                                                    <asp:CompareValidator ID="CompareValidator2" runat="server" ErrorMessage="Numbers Only!" ControlToValidate="prior_2004" Operator="DataTypeCheck" Type="Integer"></asp:CompareValidator>
                                                 </span>
 
                                             </fieldset>
@@ -712,7 +717,7 @@
 
                                                 <span class="form__group-item">
                                                     <asp:TextBox ID="after_2004"  required="required" runat="server"></asp:TextBox>
-                                                    <asp:CompareValidator ID="CompareValidator3" runat="server" ErrorMessage="Numbers Only!" ControlToValidate="after_2004" Operator="DataTypeCheck" Type="Integer"></asp:CompareValidator><asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                                                    <asp:CompareValidator ID="CompareValidator3" runat="server" ErrorMessage="Numbers Only!" ControlToValidate="after_2004" Operator="DataTypeCheck" Type="Integer"></asp:CompareValidator>
                                                 </span>
 
                                             </fieldset>
@@ -734,15 +739,14 @@
                                         </div>
                                         <div class="form__row t-date-of-birth ">
                                             <fieldset class="form__group form__group--inline">
-                                                <legend>At retirement I'd like to receive
+                                                <legend>At <%=mde %> I'd like to receive
                                                 </legend>
 
                                                 <span class="form__group-item">
+                                                    
                                                     <asp:RadioButtonList ID="RadioButtonList1" required="required" runat="server">
-                                                        <asp:ListItem Text="Full Pension" Value="1" Selected="True" />
-                                                        <asp:ListItem Text="Gratuity Reduced Pension" Value="2" />
                                                     </asp:RadioButtonList>
-
+                                           
                                                 </span>
 
                                             </fieldset>
@@ -767,7 +771,7 @@
                                                     double s1 = Convert.ToDouble(salary.Text);
                                                     double pension1 = Convert.ToDouble(prior_2004.Text) / 600 * s1;
                                                     double pension2 = Convert.ToDouble(after_2004.Text) / 960 * s1;
-                                                
+
                                                 %>
                                                 <span class="form__group-item">
                                                     Your normal retirement date is <strong><%= 
@@ -777,13 +781,21 @@
                                                         { %>
                                                     At retirement you will receive an Annual Pension equal to EC
                                                     <strong>
-                                                        <%= string.Format("{0:C}",(pension1 + pension2)) %></strong>. 
+                                                        <%= string.Format("{0:C}", (pension1 + pension2)) %></strong>. 
                                                     <%}
-                                                        else if (RadioButtonList1.SelectedValue == "2")
+                                                        else if (RadioButtonList1.SelectedValue == "2" && RadioButtonList2.SelectedValue == "1")
                                                         {%>
-                                                    At retirement you will receive a <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}",(pension1 /4 * 12.5) + (pension2/4 * 12.5))
-                                                           %></strong> and an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}",(((pension1 * 3 / 4)) + ((pension2 * 3 / 4)))) %></strong>. 
-                                                                  <% }%>
+                                                    At retirement you will receive a <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}", ((pension1 / 4 * 12.5) + (pension2 / 4 * 12.5)))
+                                                           %></strong> and an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", ((pension1 * 3 / 4) + (pension2 * 3 / 4))) %></strong>. 
+                                                                  <% }
+                                                                      else if (RadioButtonList1.SelectedValue == "2" && RadioButtonList2.SelectedValue == "2")
+                                                                      {%>
+
+                                                       At resignation/termination you will receive a discounted <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}", ((pension1 / 4 * 12.5) + (pension2 / 4 * 12.5)) * .04)
+                                                           %></strong> and at Normal retirement age an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", ((pension1 * 3 / 4)) + ((pension2 * 3 / 4))) %></strong>. 
+                                                                
+
+                                                    <%} %>
                                                For a detailed projection of salaries above and below <%=string.Format("{0:C}",s1) %>. click <a href="chart.aspx?salary=<%=s1 %>&pension1=<%=pension1 %>&pension2=<%=pension2 %>&mode=<%=RadioButtonList1.SelectedValue%>&prior04=<%=Convert.ToDouble(prior_2004.Text) %>&post04=<%=Convert.ToDouble(after_2004.Text) %>" target="_blank">here</a>. </span>
                                             </fieldset
                                         </div>
