@@ -1,4 +1,5 @@
-﻿<%@ Page Title="Public Service Pension Fund: Calculator" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Calculator.aspx.cs" Inherits="pspfai.Calculator" %>
+﻿
+<%@ Page Title="Public Service Pension Fund: Calculator" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Calculator.aspx.cs" Inherits="pspfai.Calculator" %>
 <%@ MasterType VirtualPath="~/PSPFAI.Master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -776,6 +777,13 @@
                                                     double pension2 = Convert.ToDouble(after_2004.Text) / 960 * s1;
                                                     double pension = pension1 + pension2;
                                                     int yearsofservice = Convert.ToInt32(TextBox4.Text);
+
+
+
+                                                    //database connection etc
+                                                    string sqlcon = "";
+                                                    System.Data.SqlClient.SqlConnection con = new (ConfigurationManager.ConnectionString[]);
+
                                                     double factor = 0.00897665568;
 
                                                     double ciel = pension * .75;
@@ -803,7 +811,7 @@
 
                                                             %>
                                                     At retirement you will receive a <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}", (pension / 4 * 12.5))
-                                                           %></strong> and an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", (pension * 3 / 4)) %></strong>. 
+                                                           %></strong>and an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", (pension * 3 / 4)) %></strong>. 
                                                                   <% }
                                                                       else if (RadioButtonList1.SelectedValue == "2" && RadioButtonList2.SelectedValue == "2")
                                                                       {
@@ -811,7 +819,7 @@
                                                                           %>
 
                                                        At resignation/termination you will receive a discounted <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}", ((pension / 4 * 12.5) * .04))
-                                                           %></strong> and at Normal retirement age an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", (pension * 3 / 4)) %></strong>. 
+                                                           %></strong>and at Normal retirement age an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", (pension * 3 / 4)) %></strong>. 
                                                                 
 
                                                     <%} else if (RadioButtonList1.SelectedValue == "3" && RadioButtonList2.SelectedValue == "2") {
