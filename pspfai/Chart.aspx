@@ -7,10 +7,10 @@
     <title>Pension Charts</title>
     <style>
         #chartdiv {
-  width: 100%;
-  max-height: 600px;
-  height: 100vh;
-}
+            width: 100%;
+            max-height: 600px;
+            height: 100vh;
+        }
     </style>
 </head>
 <body>
@@ -28,48 +28,48 @@
                 //var chart = am4core.create("chartdiv", am4charts.XYChart);
                 chart.numberFormatter.numberFormat = "#,###.##";
 
-                if (mode == "1") {
-chart.data = [{
-                    "salary": x1,
-                    "pension": y1
-                }, {
-                    "salary": x2,
-                    "pension": y2
-                }, {
-                    "salary": x3,
-                    "pension": y3
-                }, {
-                    "salary": x4,
-                    "pension": y4
-                }, {
-                    "salary": x5,
-                    "pension": y5
-                }];
+                if (mode == "1" || mode == "4") {
+                    chart.data = [{
+                        "salary": x1,
+                        "pension": y1
+                    }, {
+                        "salary": x2,
+                        "pension": y2
+                    }, {
+                        "salary": x3,
+                        "pension": y3
+                    }, {
+                        "salary": x4,
+                        "pension": y4
+                    }, {
+                        "salary": x5,
+                        "pension": y5
+                    }];
                 } else {
 
-                chart.data = [{
-                    "salary": x1,
-                    "pension": y1,
-                    "gratuity": z1
-                }, {
-                    "salary": x2,
-                    "pension": y2,
-                    "gratuity": z2
-                }, {
-                    "salary": x3,
-                    "pension": y3,
-                    "gratuity": z3
-                }, {
-                    "salary": x4,
-                    "pension": y4,
-                    "gratuity": z4
-                }, {
-                    "salary": x5,
-                    "pension": y5,
-                    "gratuity": z5
-                }];
-}
-                
+                    chart.data = [{
+                        "salary": x1,
+                        "pension": y1,
+                        "gratuity": z1
+                    }, {
+                        "salary": x2,
+                        "pension": y2,
+                        "gratuity": z2
+                    }, {
+                        "salary": x3,
+                        "pension": y3,
+                        "gratuity": z3
+                    }, {
+                        "salary": x4,
+                        "pension": y4,
+                        "gratuity": z4
+                    }, {
+                        "salary": x5,
+                        "pension": y5,
+                        "gratuity": z5
+                    }];
+                }
+
 
                 chart.padding(40, 40, 40, 40);
 
@@ -103,14 +103,16 @@ chart.data = [{
                 series.dataFields.valueY = "pension";
                 series.tooltipText = "{valueY.value}";
                 series.name = "Pension";
+                if (mode == "4") series.name = "Refund";
+                
                 series.columns.template.strokeOpacity = 0;
 
-                if (mode =="2") {
+                if (mode == "2" || mode=="3") {
 
-                var series2 = chart.series.push(new am4charts.ColumnSeries3D());
-                series2.dataFields.valueY = "gratuity";
-                series2.dataFields.categoryX = "salary";
-                series2.name = "Gratuity";
+                    var series2 = chart.series.push(new am4charts.ColumnSeries3D());
+                    series2.dataFields.valueY = "gratuity";
+                    series2.dataFields.categoryX = "salary";
+                    series2.name = "Gratuity";
                     series2.clustered = false;
 
                 }
@@ -135,8 +137,8 @@ chart.data = [{
         <% 
 
             double s1 = Convert.ToDouble(Request.QueryString["salary"]);
-            double pension1 = Convert.ToDouble(Request.QueryString["pension1"]);
-            double pension2 = Convert.ToDouble(Request.QueryString["pension2"]);
+            double pension = Convert.ToDouble(Request.QueryString["pension"]);
+
             double factor = Math.Floor(s1 / 3);
 
             double x1 = 0;
@@ -163,18 +165,23 @@ chart.data = [{
                 x1 = factor;
                 y1 = (Convert.ToDouble(Request.QueryString["prior04"]) / 600 * x1) + (Convert.ToDouble(Request.QueryString["post04"]) / 960 * x1);
 
+                if (y1 > (.75 * s1)) y1 = .75 * s1;
+
                 x2 = factor * 2;
                 y2 = (Convert.ToDouble(Request.QueryString["prior04"]) / 600 * x2) + (Convert.ToDouble(Request.QueryString["post04"]) / 960 * x2);
 
+                if (y2 > (.75 * s1)) y2 = .75 * s1;
+
                 x3 = s1;
-                y3 = pension1 + pension2;
+                y3 = pension;
 
                 x4 = factor * 4;
                 y4 = (Convert.ToDouble(Request.QueryString["prior04"]) / 600 * x4) + (Convert.ToDouble(Request.QueryString["post04"]) / 960 * x4);
+                if (y4 > (.75 * s1)) y4 = .75 * s1;
 
                 x5 = factor * 5;
                 y5 = (Convert.ToDouble(Request.QueryString["prior04"]) / 600 * x5) + (Convert.ToDouble(Request.QueryString["post04"]) / 960 * x5);
-
+                if (y5 > (.75 * s1)) y5 = .75 * s1;
             }
             else if (Request.QueryString["mode"] == "2")
             {
@@ -186,45 +193,161 @@ chart.data = [{
                 p1 = Convert.ToDouble(Request.QueryString["prior04"]) / 600 * x1;
                 p2 = Convert.ToDouble(Request.QueryString["post04"]) / 960 * x1;
                 y1 = (p1 * 3 / 4) + (p2 * 3 / 4);
+                if (y1 > (.75 * s1)) y1 = .75 * s1;
+
                 z1 = (p1 / 4 * 12.5) + (p2 / 4 * 12.5);
 
                 x2 = factor * 2;
                 p1 = Convert.ToDouble(Request.QueryString["prior04"]) / 600 * x2;
                 p2 = Convert.ToDouble(Request.QueryString["post04"]) / 960 * x2;
                 y2 = (p1 * 3 / 4) + (p2 * 3 / 4);
+                if (y2 > (.75 * s1)) y2 = .75 * s1;
+
                 z2 = (p1 / 4 * 12.5) + (p2 / 4 * 12.5);
 
                 x3 = s1;
                 p1 = Convert.ToDouble(Request.QueryString["prior04"]) / 600 * x3;
                 p2 = Convert.ToDouble(Request.QueryString["post04"]) / 960 * x3;
                 y3 = (p1 * 3 / 4) + (p2 * 3 / 4);
+                if (y3 > (.75 * s1)) y3 = .75 * s1;
+
                 z3 = (p1 / 4 * 12.5) + (p2 / 4 * 12.5);
 
                 x4 = factor * 4;
                 p1 = Convert.ToDouble(Request.QueryString["prior04"]) / 600 * x4;
                 p2 = Convert.ToDouble(Request.QueryString["post04"]) / 960 * x4;
                 y4 = (p1 * 3 / 4) + (p2 * 3 / 4);
+                if (y4 > (.75 * s1)) y4 = .75 * s1;
+
                 z4 = (p1 / 4 * 12.5) + (p2 / 4 * 12.5);
 
                 x5 = factor * 5;
                 p1 = Convert.ToDouble(Request.QueryString["prior04"]) / 600 * x5;
                 p2 = Convert.ToDouble(Request.QueryString["post04"]) / 960 * x5;
                 y5 = (p1 * 3 / 4) + (p2 * 3 / 4);
+                if (y5 > (.75 * s1)) y5 = .75 * s1;
+
                 z5 = (p1 / 4 * 12.5) + (p2 / 4 * 12.5);
 
             }
-        %>
-        <div style="width:800px;">
-        <div id="chartdiv"></div>
-        <script src="assets/amcharts4/core.js"></script>
-        <script src="assets/amcharts4/charts.js"></script>
-        <script src="assets/amcharts4/themes/animated.js"></script>
-        <script type="text/javascript">
-            drawGraph(<%=x1%>,<%=y1%>,<%=x2%>,<%=y2%>,<%=x3%>,<%=y3%>,<%=x4%>,<%=y4%>,<%=x5%>,<%=y5%>,
-                                                    <%=z1%>, <%=z2%>, <%=z3%>, <%=z4%>, <%=z5%>,<%=Request.QueryString["mode"]%>);
-        </script>
+            else if (Request.QueryString["mode"] == "3")
+            {
 
-</div>
+                double p1 = 0;
+                double p2 = 0;
+                double factor1 = Convert.ToDouble(Request.QueryString["factor"]);
+
+                x1 = factor;
+                p1 = Convert.ToDouble(Request.QueryString["prior04"]) / 600 * x1;
+                p2 = Convert.ToDouble(Request.QueryString["post04"]) / 960 * x1;
+                y1 = (p1 * 3 / 4) + (p2 * 3 / 4);
+                if (y1 > (.75 * s1)) y1 = .75 * s1;
+                y1 = y1 * factor1;
+
+                z1 = (p1 / 4 * 12.5) + (p2 / 4 * 12.5);
+
+                x2 = factor * 2;
+                p1 = Convert.ToDouble(Request.QueryString["prior04"]) / 600 * x2;
+                p2 = Convert.ToDouble(Request.QueryString["post04"]) / 960 * x2;
+                y2 = (p1 * 3 / 4) + (p2 * 3 / 4);
+                if (y2 > (.75 * s1)) y2 = .75 * s1;
+                y2 = y2 * factor1;
+
+                z2 = (p1 / 4 * 12.5) + (p2 / 4 * 12.5);
+
+                x3 = s1;
+                p1 = Convert.ToDouble(Request.QueryString["prior04"]) / 600 * x3;
+                p2 = Convert.ToDouble(Request.QueryString["post04"]) / 960 * x3;
+                y3 = (p1 * 3 / 4) + (p2 * 3 / 4);
+                if (y3 > (.75 * s1)) y3 = .75 * s1;
+                y3 = y3 * factor1;
+
+                z3 = (p1 / 4 * 12.5) + (p2 / 4 * 12.5);
+
+                x4 = factor * 4;
+                p1 = Convert.ToDouble(Request.QueryString["prior04"]) / 600 * x4;
+                p2 = Convert.ToDouble(Request.QueryString["post04"]) / 960 * x4;
+                y4 = (p1 * 3 / 4) + (p2 * 3 / 4);
+                if (y4 > (.75 * s1)) y4 = .75 * s1;
+                y4 = y4 * factor1;
+
+                z4 = (p1 / 4 * 12.5) + (p2 / 4 * 12.5);
+
+                x5 = factor * 5;
+                p1 = Convert.ToDouble(Request.QueryString["prior04"]) / 600 * x5;
+                p2 = Convert.ToDouble(Request.QueryString["post04"]) / 960 * x5;
+                y5 = (p1 * 3 / 4) + (p2 * 3 / 4);
+                if (y5 > (.75 * s1)) y5 = .75 * s1;
+                y5 = y5 * factor1;
+
+                z5 = (p1 / 4 * 12.5) + (p2 / 4 * 12.5);
+
+            }
+            else if (Request.QueryString["mode"] == "4")
+            {
+                int yos = Convert.ToInt16(Request.QueryString["yos"]);
+                x1 = factor;
+                double refund = 0;
+                double stemp = s1;
+                for (int i = 1; i < yos; i++)
+                {
+                    double cmp = stemp * 0.03;
+                    stemp = stemp + cmp;
+                    refund = refund + cmp;
+                }
+                y1 = refund;
+
+                x2 = factor * 2;
+                stemp = s1;
+                refund = 0;
+                for (int i = 1; i < yos; i++)
+                {
+                    double cmp = stemp * 0.03;
+                    stemp = stemp + cmp;
+                    refund = refund + cmp;
+                }
+                y2 = refund;
+
+
+
+                x3 = s1;
+                y3 = pension;
+
+                x4 = factor * 4;
+                stemp = s1;
+                refund = 0;
+                for (int i = 1; i < yos; i++)
+                {
+                    double cmp = stemp * 0.03;
+                    stemp = stemp + cmp;
+                    refund = refund + cmp;
+                }
+                y4 = refund;
+
+
+                x5 = factor * 5;
+                stemp = x5;
+                refund = 0;
+                for (int i = 1; i < yos; i++)
+                {
+                    double cmp = stemp * 0.03;
+                    stemp = stemp + cmp;
+                    refund = refund + cmp;
+                }
+                y5 = refund;
+            }
+        %>
+        <div style="width: 800px;">
+            <div id="chartdiv"></div>
+            <script src="assets/amcharts4/core.js"></script>
+            <script src="assets/amcharts4/charts.js"></script>
+            <script src="assets/amcharts4/themes/animated.js"></script>
+            <script type="text/javascript">
+                drawGraph(<%=x1%>,<%=y1%>,<%=x2%>,<%=y2%>,<%=x3%>,<%=y3%>,<%=x4%>,<%=y4%>,<%=x5%>,<%=y5%>,
+                                                    <%=z1%>, <%=z2%>, <%=z3%>, <%=z4%>, <%=z5%>,<%=Request.QueryString["mode"]%>);
+            </script>
+
+        </div>
 
     </form>
 </body>

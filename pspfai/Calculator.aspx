@@ -722,6 +722,9 @@
 
                                             </fieldset>
                                         </div>
+                                        <div style="visibility:visible">
+                                            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox></div>
+                                        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox></div>
                                     </asp:WizardStep>
                                     <asp:WizardStep ID="WizardStep4" runat="server" Title="Options">
                                         <% 
@@ -771,32 +774,70 @@
                                                     double s1 = Convert.ToDouble(salary.Text);
                                                     double pension1 = Convert.ToDouble(prior_2004.Text) / 600 * s1;
                                                     double pension2 = Convert.ToDouble(after_2004.Text) / 960 * s1;
+                                                    double pension = pension1 + pension2;
+                                                    int yearsofservice = Convert.ToInt32(TextBox4.Text);
+                                                    double factor = 0.00897665568;
+
+                                                    double ciel = pension * .75;
+
+                                                    if (pension > ciel) pension = ciel;
 
                                                 %>
                                                 <span class="form__group-item">
                                                     Your normal retirement date is <strong><%= 
                                                               Convert.ToDateTime(TextBox1.Text).AddYears(65).ToString("dd/MM/yyyy")
                                                     %></strong>.
-                                                    <% if (RadioButtonList1.SelectedValue == "1")
-                                                        { %>
+                                                    <% 
+                                                        int mde1 = 0;
+                                                        if (RadioButtonList1.SelectedValue == "1")
+                                                        {
+                                                            mde1 = 1;
+                                                            %>
                                                     At retirement you will receive an Annual Pension equal to EC
                                                     <strong>
-                                                        <%= string.Format("{0:C}", (pension1 + pension2)) %></strong>. 
+                                                        <%= string.Format("{0:C}", pension) %></strong>. 
                                                     <%}
                                                         else if (RadioButtonList1.SelectedValue == "2" && RadioButtonList2.SelectedValue == "1")
-                                                        {%>
-                                                    At retirement you will receive a <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}", ((pension1 / 4 * 12.5) + (pension2 / 4 * 12.5)))
-                                                           %></strong> and an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", ((pension1 * 3 / 4) + (pension2 * 3 / 4))) %></strong>. 
+                                                        {
+                                                            mde1 = 2;
+
+                                                            %>
+                                                    At retirement you will receive a <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}", (pension / 4 * 12.5))
+                                                           %></strong> and an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", (pension * 3 / 4)) %></strong>. 
                                                                   <% }
                                                                       else if (RadioButtonList1.SelectedValue == "2" && RadioButtonList2.SelectedValue == "2")
-                                                                      {%>
+                                                                      {
+                                                                          mde1 = 3;
+                                                                          %>
 
-                                                       At resignation/termination you will receive a discounted <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}", ((pension1 / 4 * 12.5) + (pension2 / 4 * 12.5)) * .04)
-                                                           %></strong> and at Normal retirement age an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", ((pension1 * 3 / 4)) + ((pension2 * 3 / 4))) %></strong>. 
+                                                       At resignation/termination you will receive a discounted <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}", ((pension / 4 * 12.5) * .04))
+                                                           %></strong> and at Normal retirement age an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", (pension * 3 / 4)) %></strong>. 
                                                                 
 
-                                                    <%} %>
-                                               For a detailed projection of salaries above and below <%=string.Format("{0:C}",s1) %>. click <a href="chart.aspx?salary=<%=s1 %>&pension1=<%=pension1 %>&pension2=<%=pension2 %>&mode=<%=RadioButtonList1.SelectedValue%>&prior04=<%=Convert.ToDouble(prior_2004.Text) %>&post04=<%=Convert.ToDouble(after_2004.Text) %>" target="_blank">here</a>. </span>
+                                                    <%} else if (RadioButtonList1.SelectedValue == "3" && RadioButtonList2.SelectedValue == "2") {
+                                                            mde1 = 4;
+                                                            %>
+                                                    At resignition/termination you will receive a refund of EC
+                                                    <% 
+   
+    double refund = 0;
+    double stemp = s1;
+    for (int i = 1; i < yearsofservice; i++)
+    {
+        double cmp = stemp * 0.03;
+        stemp = stemp + cmp;
+        refund = refund + cmp;
+    }
+                                                        %>
+                                                    <%=string.Format("{0:C}", refund)%>
+                                                    <%
+
+                                                            pension = refund;
+
+                                                        }
+
+                                                        %>
+                                               For a detailed projection of salaries above and below <%=string.Format("{0:C}",s1) %>. click <a href="chart.aspx?salary=<%=s1 %>&pension=<%=pension %>&mode=<%=mde1%>&prior04=<%=Convert.ToDouble(prior_2004.Text) %>&post04=<%=Convert.ToDouble(after_2004.Text) %>&factor=<%=factor %>&yos=<%=yearsofservice %>" target="_blank">here</a>. </span>
                                             </fieldset
                                         </div>
                                        

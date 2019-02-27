@@ -61,6 +61,7 @@ namespace pspfai
                     int yearsofservice = 0;
                     DateTime d2 = Convert.ToDateTime(TextBox3.Text);
                     DateTime d1 = Convert.ToDateTime(TextBox2.Text);
+                    DateTime d = Convert.ToDateTime(TextBox1.Text);
 
 
                     while (DateTime.Compare(d1, d2) < 0)
@@ -68,23 +69,31 @@ namespace pspfai
                         yearsofservice++;
                         d1 = d1.AddYears(1);
                     }
-                    
+
+                    TextBox4.Text = yearsofservice.ToString();
 
                     if (yearsofservice < 10)
                     {
-                       
                             RadioButtonList1.Items.Clear();
                             RadioButtonList1.Items.Add(new ListItem("Refund", "3"));
-                        RadioButtonList1.SelectedIndex = 0;
+                            RadioButtonList1.SelectedIndex = 0;
                     }
                     else
                     {
                        
                             RadioButtonList1.Items.Clear();
                             RadioButtonList1.Items.Add(new ListItem("Gratuity Reduced Pension", "2"));
-                        RadioButtonList1.SelectedIndex = 0;
+                            RadioButtonList1.SelectedIndex = 0;
 
                     }
+
+                    int yearsremaining = 0;
+                    d1 = DateTime.Now;
+                    while (DateTime.Compare(d1, d.AddYears(65)) < 0) {
+                        yearsremaining++;
+                        d1 = d1.AddYears(1);
+                    }
+                    TextBox5.Text = yearsremaining.ToString();
                 }
             }
 
