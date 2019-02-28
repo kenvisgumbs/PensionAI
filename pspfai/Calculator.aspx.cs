@@ -64,12 +64,13 @@ namespace pspfai
                     DateTime d = Convert.ToDateTime(TextBox1.Text);
 
 
-                    while (DateTime.Compare(d1, d2) < 0)
-                    {
-                        yearsofservice++;
-                        d1 = d1.AddYears(1);
-                    }
+                    //while (DateTime.Compare(d1, d2) < 0)
+                    //{
+                    //    yearsofservice++;
+                    //    d1 = d1.AddYears(1);
+                    //}
 
+                    yearsofservice = calculateYearSpan(d1, d2);
                     TextBox4.Text = yearsofservice.ToString();
 
                     if (yearsofservice < 10)
@@ -89,10 +90,12 @@ namespace pspfai
 
                     int yearsremaining = 0;
                     d1 = DateTime.Now;
-                    while (DateTime.Compare(d1, d.AddYears(65)) < 0) {
-                        yearsremaining++;
-                        d1 = d1.AddYears(1);
-                    }
+                    //while (DateTime.Compare(d1, d.AddYears(65)) < 0) {
+                    //    yearsremaining++;
+                    //    d1 = d1.AddYears(1);
+                    //}
+
+                    yearsremaining = calculateYearSpan(d1, d.AddYears(65));
                     TextBox5.Text = yearsremaining.ToString();
                 }
             }
@@ -131,6 +134,31 @@ namespace pspfai
             }
         }
 
+        int calculateYearSpan(DateTime d1, DateTime d2)
+        {
+            int i = 0;
+            while (DateTime.Compare(d1, d2) < 0)
+            {
+                i++;
+                d1 = d1.AddYears(1);
+            }
+
+            return i;
+        }
+
+        double calculateReducedPension(double pension)
+        {
+            double d = 0;
+            d = 3 / 4 * pension;
+            return d;
+        }
+
+        double calculateGratuity(double pension)
+        {
+            double d = 0;
+            d = 1 / 4 * pension * 12.5;
+            return d;
+        }
 
 
     }

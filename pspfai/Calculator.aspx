@@ -696,7 +696,7 @@
                                                                 dtemp = dtemp.AddMonths(1);
                                                                 post04++;
                                                             }
-                                                           // Label1.Text = "2 :" + DateTime.Compare(d1, mrk) + ": " + d1.ToString() + " " + d2.ToString() + " " + mrk.ToString() + " " + dtemp.ToString() + " " + post04.ToString();
+                                                            // Label1.Text = "2 :" + DateTime.Compare(d1, mrk) + ": " + d1.ToString() + " " + d2.ToString() + " " + mrk.ToString() + " " + dtemp.ToString() + " " + post04.ToString();
                                                         }
 
                                                         prior_2004.Text = pre04.ToString();
@@ -777,14 +777,24 @@
                                                     double pension2 = Convert.ToDouble(after_2004.Text) / 960 * s1;
                                                     double pension = pension1 + pension2;
                                                     int yearsofservice = Convert.ToInt32(TextBox4.Text);
-
+                                                    int yearstoretirement =  Convert.ToInt32(TextBox5.Text);
 
 
                                                     //database connection etc
-                                                    string sqlcon = "";
-                                                    System.Data.SqlClient.SqlConnection con = new (ConfigurationManager.ConnectionString[]);
+                                                    string sqlcon = "Data Source=SQL5014.site4now.net;Initial Catalog=DB_A421EE_pspf;User Id=DB_A421EE_pspf_admin;Password=PSPF2019;";
+                                                    System.Data.SqlClient.SqlConnection con = new System.Data.SqlClient.SqlConnection(sqlcon);
 
-                                                    double factor = 0.00897665568;
+
+                                                    con.Open();
+                                                    string checkuser = @" SELECT MAX([factor])
+  FROM [DB_A421EE_pspf].[dbo].[tbl_discount_rates] tdr
+  INNER JOIN tbl_config tc ON tdr.rate_applied = tc.[value] AND tc.variable = 'discount_rate' AND years_to_retirement = " +  yearstoretirement  ;
+                                                    System.Data.SqlClient.SqlCommand cmd = new   System.Data.SqlClient.SqlCommand(checkuser, con);
+
+                                                    double factor = Convert.ToDouble(cmd.ExecuteScalar().ToString());
+
+
+                                                    con.Close();
 
                                                     double ciel = pension * .75;
 
@@ -807,37 +817,39 @@
                                                     <%}
                                                         else if (RadioButtonList1.SelectedValue == "2" && RadioButtonList2.SelectedValue == "1")
                                                         {
-                                                            mde1 = 2;
-
+                                                            mde1 = 2; 
+                                                           
                                                             %>
                                                     At retirement you will receive a <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}", (pension / 4 * 12.5))
-                                                           %></strong>and an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", (pension * 3 / 4)) %></strong>. 
+                                                           %><%pension = (pension * 3 / 4); %></strong>and an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", pension) %></strong>. 
                                                                   <% }
                                                                       else if (RadioButtonList1.SelectedValue == "2" && RadioButtonList2.SelectedValue == "2")
                                                                       {
                                                                           mde1 = 3;
                                                                           %>
 
-                                                       At resignation/termination you will receive a discounted <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}", ((pension / 4 * 12.5) * .04))
-                                                           %></strong>and at Normal retirement age an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", (pension * 3 / 4)) %></strong>. 
+                                                       At resignation/termination you will receive a discounted <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}", ((pension / 4 * 12.5) * factor))
+                                                           %><%pension = (pension * 3 / 4); %></strong>and at Normal retirement age an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", pension ) %></strong>. 
                                                                 
 
-                                                    <%} else if (RadioButtonList1.SelectedValue == "3" && RadioButtonList2.SelectedValue == "2") {
+                                                    <%}
+                                                        else if (RadioButtonList1.SelectedValue == "3" && RadioButtonList2.SelectedValue == "2")
+                                                        {
                                                             mde1 = 4;
                                                             %>
                                                     At resignition/termination you will receive a refund of EC
                                                     <% 
-   
-    double refund = 0;
-    double stemp = s1;
-    for (int i = 1; i < yearsofservice; i++)
-    {
-        double cmp = stemp * 0.03;
-        stemp = stemp + cmp;
-        refund = refund + cmp;
-    }
+
+                double refund = 0;
+                double stemp = s1;
+                for (int i = 1; i < yearsofservice; i++)
+                {
+                    double cmp = stemp * 0.03;
+                    stemp = stemp + cmp;
+                    refund = refund + cmp;
+                }
                                                         %>
-                                                    <%=string.Format("{0:C}", refund)%>
+                                                   <strong><%=string.Format("{0:C}", refund)%></strong>.
                                                     <%
 
                                                             pension = refund;
@@ -845,7 +857,7 @@
                                                         }
 
                                                         %>
-                                               For a detailed projection of salaries above and below <%=string.Format("{0:C}",s1) %>. click <a href="chart.aspx?salary=<%=s1 %>&pension=<%=pension %>&mode=<%=mde1%>&prior04=<%=Convert.ToDouble(prior_2004.Text) %>&post04=<%=Convert.ToDouble(after_2004.Text) %>&factor=<%=factor %>&yos=<%=yearsofservice %>" target="_blank">here</a>. </span>
+                                               For a detailed projection of salaries above and below <strong><%=string.Format("{0:C}",s1) %></strong>. click <a href="chart.aspx?salary=<%=s1 %>&pension=<%=pension %>&mode=<%=mde1%>&prior04=<%=Convert.ToDouble(prior_2004.Text) %>&post04=<%=Convert.ToDouble(after_2004.Text) %>&factor=<%=factor %>&yos=<%=yearsofservice %>" target="_blank">here</a>. </span>
                                             </fieldset
                                         </div>
                                        

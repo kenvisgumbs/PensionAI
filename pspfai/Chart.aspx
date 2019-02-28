@@ -288,7 +288,7 @@
                 int yos = Convert.ToInt16(Request.QueryString["yos"]);
                 x1 = factor;
                 double refund = 0;
-                double stemp = s1;
+                double stemp = x1;
                 for (int i = 1; i < yos; i++)
                 {
                     double cmp = stemp * 0.03;
@@ -298,7 +298,7 @@
                 y1 = refund;
 
                 x2 = factor * 2;
-                stemp = s1;
+                stemp = x2;
                 refund = 0;
                 for (int i = 1; i < yos; i++)
                 {
@@ -314,7 +314,7 @@
                 y3 = pension;
 
                 x4 = factor * 4;
-                stemp = s1;
+                stemp = x4;
                 refund = 0;
                 for (int i = 1; i < yos; i++)
                 {
@@ -336,6 +336,8 @@
                 }
                 y5 = refund;
             }
+
+
         %>
         <div style="width: 800px;">
             <div id="chartdiv"></div>
