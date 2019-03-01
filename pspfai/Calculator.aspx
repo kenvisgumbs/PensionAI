@@ -776,27 +776,36 @@
                                                     double pension1 = Convert.ToDouble(prior_2004.Text) / 600 * s1;
                                                     double pension2 = Convert.ToDouble(after_2004.Text) / 960 * s1;
                                                     double pension = pension1 + pension2;
-                                                    int yearsofservice = Convert.ToInt32(TextBox4.Text);
-                                                    int yearstoretirement =  Convert.ToInt32(TextBox5.Text);
+                                                    double factor = 0;
+
+                                                    int yearsofservice = 0;
+                                                    if (RadioButtonList1.SelectedValue == "2")
+                                                        yearsofservice = Convert.ToInt32(TextBox4.Text);
+
+                                                    int yearstoretirement = 0;
+                                                    if (RadioButtonList1.SelectedValue == "3")
+                                                    {
+                                                        yearstoretirement = Convert.ToInt32(TextBox5.Text);
 
 
-                                                    //database connection etc
-                                                    string sqlcon = "Data Source=SQL5014.site4now.net;Initial Catalog=DB_A421EE_pspf;User Id=DB_A421EE_pspf_admin;Password=PSPF2019;";
-                                                    System.Data.SqlClient.SqlConnection con = new System.Data.SqlClient.SqlConnection(sqlcon);
+                                                        //database connection etc
+                                                        string sqlcon = "Data Source=SQL5014.site4now.net;Initial Catalog=DB_A421EE_pspf;User Id=DB_A421EE_pspf_admin;Password=PSPF2019;";
+                                                        System.Data.SqlClient.SqlConnection con = new System.Data.SqlClient.SqlConnection(sqlcon);
 
 
-                                                    con.Open();
-                                                    string checkuser = @" SELECT MAX([factor])
+                                                        con.Open();
+                                                        string checkuser = @" SELECT MAX([factor])
   FROM [DB_A421EE_pspf].[dbo].[tbl_discount_rates] tdr
-  INNER JOIN tbl_config tc ON tdr.rate_applied = tc.[value] AND tc.variable = 'discount_rate' AND years_to_retirement = " +  yearstoretirement  ;
-                                                    System.Data.SqlClient.SqlCommand cmd = new   System.Data.SqlClient.SqlCommand(checkuser, con);
+  INNER JOIN tbl_config tc ON tdr.rate_applied = tc.[value] AND tc.variable = 'discount_rate' AND years_to_retirement = " + yearstoretirement;
+                                                        System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(checkuser, con);
 
-                                                    double factor = Convert.ToDouble(cmd.ExecuteScalar().ToString());
+                                                        factor = Convert.ToDouble(cmd.ExecuteScalar().ToString());
 
 
-                                                    con.Close();
+                                                        con.Close();
+                                                    }
 
-                                                    double ciel = pension * .75;
+                                                    double ciel = s1 * .75;
 
                                                     if (pension > ciel) pension = ciel;
 
