@@ -658,16 +658,21 @@
                                                     <%
                                                         int pre04 = 0;
                                                         int post04 = 0;
+                                                        int normalservice = 65;
 
                                                         DateTime mrk = new DateTime(2004, 1, 1);
                                                         DateTime d1 = new DateTime(Convert.ToInt16(hire_year.SelectedValue), Convert.ToInt16(hire_month.SelectedValue), Convert.ToInt16(hire_day.SelectedValue));
 
+                                                        if (DateTime.Compare(d1, mrk) < 0) normalservice = 60;
+
                                                         //retirement date
                                                         DateTime d2;
                                                         if (RadioButtonList2.SelectedValue == "1")
-                                                            d2 = Convert.ToDateTime(TextBox1.Text).AddYears(65);
-                                                        else
-                                                            d2 = Convert.ToDateTime(TextBox3.Text);
+                                                               d2 = Convert.ToDateTime(TextBox1.Text).AddYears(normalservice);
+                                                        
+                                                        else d2 = Convert.ToDateTime(TextBox3.Text);
+
+
                                                         DateTime dtemp = new DateTime(d1.Year, d1.Month, d1.Day);
                                                         if (DateTime.Compare(d1, mrk) > 0)
                                                         {
@@ -701,6 +706,7 @@
 
                                                         prior_2004.Text = pre04.ToString();
                                                         after_2004.Text = post04.ToString();
+                                                        normalyos.Text = normalservice.ToString();
 
                                                         //pre04 = Convert.ToDateTime(TextBox2.Text).AddYears(65).ToString("dd/MM/yyyy");
                                                     %>
@@ -709,6 +715,7 @@
                                                 </span>
 
                                             </fieldset>
+                                        
                                         </div>
 
                                         <div class="form__row t-date-of-birth ">
@@ -724,8 +731,10 @@
                                             </fieldset>
                                         </div>
                                         <div style="visibility:visible">
-                                            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox></div>
-                                        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox></div>
+                                            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="normalyos" runat="server"></asp:TextBox>
+                                        </div>
                                     </asp:WizardStep>
                                     <asp:WizardStep ID="WizardStep4" runat="server" Title="Options">
                                         <% 
@@ -779,7 +788,7 @@
                                                     double factor = 0;
 
                                                     int yearsofservice = 0;
-                                                    if (RadioButtonList1.SelectedValue == "2")
+                                                    if (RadioButtonList1.SelectedValue == "2" && RadioButtonList2.SelectedValue=="2")
                                                         yearsofservice = Convert.ToInt32(TextBox4.Text);
 
                                                     int yearstoretirement = 0;
@@ -809,10 +818,12 @@
 
                                                     if (pension > ciel) pension = ciel;
 
+                                                    
+
                                                 %>
                                                 <span class="form__group-item">
                                                     Your normal retirement date is <strong><%= 
-                                                              Convert.ToDateTime(TextBox1.Text).AddYears(65).ToString("dd/MM/yyyy")
+                                                              Convert.ToDateTime(TextBox1.Text).AddYears(Convert.ToInt16(normalyos.Text)).ToString("dd/MM/yyyy")
                                                     %></strong>.
                                                     <% 
                                                         int mde1 = 0;
@@ -826,8 +837,8 @@
                                                     <%}
                                                         else if (RadioButtonList1.SelectedValue == "2" && RadioButtonList2.SelectedValue == "1")
                                                         {
-                                                            mde1 = 2; 
-                                                           
+                                                            mde1 = 2;
+
                                                             %>
                                                     At retirement you will receive a <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}", (pension / 4 * 12.5))
                                                            %><%pension = (pension * 3 / 4); %></strong>and an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", pension) %></strong>. 
@@ -849,14 +860,14 @@
                                                     At resignition/termination you will receive a refund of EC
                                                     <% 
 
-                double refund = 0;
-                double stemp = s1;
-                for (int i = 1; i < yearsofservice; i++)
-                {
-                    double cmp = stemp * 0.03;
-                    stemp = stemp + cmp;
-                    refund = refund + cmp;
-                }
+                                                        double refund = 0;
+                                                        double stemp = s1;
+                                                        for (int i = 1; i < yearsofservice; i++)
+                                                        {
+                                                            double cmp = stemp * 0.03;
+                                                            stemp = stemp + cmp;
+                                                            refund = refund + cmp;
+                                                        }
                                                         %>
                                                    <strong><%=string.Format("{0:C}", refund)%></strong>.
                                                     <%

@@ -476,10 +476,6 @@
     <Content Include="reports.aspx" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
-    <Content Include="Blog-1.aspx" />
-    <Content Include="Blog-2.aspx" />
-    <Content Include="Blog-Single.aspx" />
-    <Content Include="Blog.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\animate.min.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -568,10 +564,8 @@
     <Content Include="Scripts\map.js" />
     <Content Include="Scripts\owl.carousel.min.js" />
     <Content Include="Scripts\validation.js" />
-    <Content Include="Services-1.aspx" />
-    <Content Include="Benefit-Details.aspx" />
-    <Content Include="Benefits.aspx" />
-    <Content Include="Single-Project.aspx" />
+    <Content Include="Service-Details.aspx" />
+    <Content Include="Services.aspx" />
     <Content Include="Calculator.aspx" />
     <Content Include="Web.config" />
     <Content Include="Chart.aspx" />
@@ -597,34 +591,6 @@
     </Compile>
     <Compile Include="reports.aspx.designer.cs">
       <DependentUpon>reports.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Blog-1.aspx.cs">
-      <DependentUpon>Blog-1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Blog-1.aspx.designer.cs">
-      <DependentUpon>Blog-1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Blog-2.aspx.cs">
-      <DependentUpon>Blog-2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Blog-2.aspx.designer.cs">
-      <DependentUpon>Blog-2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Blog-Single.aspx.cs">
-      <DependentUpon>Blog-Single.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Blog-Single.aspx.designer.cs">
-      <DependentUpon>Blog-Single.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Blog.aspx.cs">
-      <DependentUpon>Blog.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Blog.aspx.designer.cs">
-      <DependentUpon>Blog.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -668,33 +634,19 @@
     <Compile Include="PSPFAI.Master.designer.cs">
       <DependentUpon>PSPFAI.Master</DependentUpon>
     </Compile>
-    <Compile Include="Services-1.aspx.cs">
-      <DependentUpon>Services-1.aspx</DependentUpon>
+    <Compile Include="Service-Details.aspx.cs">
+      <DependentUpon>Service-Details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Services-1.aspx.designer.cs">
-      <DependentUpon>Services-1.aspx</DependentUpon>
+    <Compile Include="Service-Details.aspx.designer.cs">
+      <DependentUpon>Service-Details.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Benefit-Details.aspx.cs">
-      <DependentUpon>Benefit-Details.aspx</DependentUpon>
+    <Compile Include="Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Benefit-Details.aspx.designer.cs">
-      <DependentUpon>Benefit-Details.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Benefits.aspx.cs">
-      <DependentUpon>Benefits.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Benefits.aspx.designer.cs">
-      <DependentUpon>Benefits.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Single-Project.aspx.cs">
-      <DependentUpon>Single-Project.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Single-Project.aspx.designer.cs">
-      <DependentUpon>Single-Project.aspx</DependentUpon>
+    <Compile Include="Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
     </Compile>
     <Compile Include="Calculator.aspx.cs">
       <DependentUpon>Calculator.aspx</DependentUpon>

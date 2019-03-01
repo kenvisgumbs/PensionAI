@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace pspfai
 {
-    public partial class Benefits : System.Web.UI.Page
+    public partial class Services: System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

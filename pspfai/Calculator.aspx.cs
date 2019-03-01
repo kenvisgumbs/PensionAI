@@ -59,9 +59,9 @@ namespace pspfai
 
                   
                     int yearsofservice = 0;
-                    DateTime d2 = Convert.ToDateTime(TextBox3.Text);
-                    DateTime d1 = Convert.ToDateTime(TextBox2.Text);
-                    DateTime d = Convert.ToDateTime(TextBox1.Text);
+                    DateTime d2 = Convert.ToDateTime(TextBox3.Text); //dob
+                    DateTime d1 = Convert.ToDateTime(TextBox2.Text); // hire date
+                    DateTime d = Convert.ToDateTime(TextBox1.Text); //resignition/termination date
 
 
                     //while (DateTime.Compare(d1, d2) < 0)
@@ -95,7 +95,11 @@ namespace pspfai
                     //    d1 = d1.AddYears(1);
                     //}
 
-                    yearsremaining = calculateYearSpan(d1, d.AddYears(65));
+                    int serviceyears = 65;
+
+                    if (DateTime.Compare(d2,new DateTime(2004,1,1)) < 0) serviceyears = 60;
+
+                    yearsremaining = calculateYearSpan(d1, d.AddYears(serviceyears));
                     TextBox5.Text = yearsremaining.ToString();
                 }
             }

@@ -7,19 +7,22 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace pspfai {
-    
-    
-    public partial class Benefit_Details {
-        
+namespace pspfai
+{
+
+    public partial class Service_Details
+    {
+
         /// <summary>
         /// Master property.
         /// </summary>
         /// <remarks>
         /// Auto-generated property.
         /// </remarks>
-        public new pspfai.PSPFAI Master {
-            get {
+        public new pspfai.PSPFAI Master
+        {
+            get
+            {
                 return ((pspfai.PSPFAI)(base.Master));
             }
         }

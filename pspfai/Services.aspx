@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Public Service Pension Fund: Services" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Benefits.aspx.cs" Inherits="pspfai.Benefits" %>
+﻿<%@ Page Title="Public Service Pension Fund: Services" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Services.aspx.cs" Inherits="pspfai.Services" %>
 <%@ MasterType VirtualPath="~/PSPFAI.Master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -8,11 +8,11 @@
     <section class="page-title" style="background: url(Content/Images/pages/pagehsample.jpg);">
          <div class="floatover">
             <div class="container">
-                <h2>Benefits</h2>
+                <h2>Services</h2>
                 <ul class="title-manu">
                     <li><a href="Home.aspx">home</a></li>
                     <li>|</li>
-                    <li>Benefits</li>
+                    <li>Services</li>
                 </ul>
             </div>
           </div>
@@ -33,8 +33,8 @@
                                 <i class="flaticon-rocking-chair-with-dollar-sign-silhouette"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx">
-                                    <h5>Pensions</h5>
+                                <a href="services-details.aspx?type=pension">
+                                    <h5>Pension</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
                             </div>
@@ -50,7 +50,7 @@
                                 <i class="flaticon-retirement"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx">
+                                <a href="services-details.aspx?type=gratuity">
                                     <h5>Gratuity Payments
                                     </h5>
                                 </a>
@@ -68,7 +68,7 @@
                                 <i class="flaticon-money"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx">
+                                <a href="services-details.aspx?type=refund">
                                     <h5>Refunds</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
@@ -85,7 +85,7 @@
                                 <i class="flaticon-family"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx">
+                                <a href="services-details.aspx?type=survivor">
                                     <h5>Survivor's Pensions
                                     </h5>
                                 </a>
@@ -103,7 +103,7 @@
                                 <i class="flaticon-cheque"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx">
+                                <a href="services-details.aspx?type=early">
                                     <h5>Early Retirement</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
@@ -120,7 +120,7 @@
                                 <i class="flaticon-doctor-stethoscope"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx">
+                                <a href="services-details.aspx?type=medical">
                                     <h5>Medical Boarding</h5>
                                 </a>
                                 <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>

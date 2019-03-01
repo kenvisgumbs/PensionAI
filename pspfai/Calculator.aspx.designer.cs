@@ -319,6 +319,15 @@ namespace pspfai {
         protected global::System.Web.UI.WebControls.TextBox TextBox5;
         
         /// <summary>
+        /// normalyos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox normalyos;
+        
+        /// <summary>
         /// WizardStep4 control.
         /// </summary>
         /// <remarks>

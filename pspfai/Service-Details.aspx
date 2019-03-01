@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Public Service Pension Fund: Benefits" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Benefit-Details.aspx.cs" Inherits="pspfai.Benefit_Details" %>
+﻿<%@ Page Title="Public Service Pension Fund: Benefits" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Service-Details.aspx.cs" Inherits="pspfai.Service_Details" %>
 <%@ MasterType VirtualPath="~/PSPFAI.Master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -9,7 +9,7 @@
     <section class="page-title" style="background: url(Content/Images/pages/pagehsample.jpg);">
        <div class="floatover">
         <div class="container">
-            <h2><% =subPage%> Benefit Details</h2>
+            <h2><% =subPage%> Details</h2>
             <ul class="title-manu">
                 <li><a href="Home.aspx">home</a></li>
                 <li>|</li>
