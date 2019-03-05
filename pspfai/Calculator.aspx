@@ -730,7 +730,7 @@
 
                                             </fieldset>
                                         </div>
-                                        <div style="visibility:visible">
+                                        <div style="visibility: hidden">
                                             <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                                             <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
                                             <asp:TextBox ID="normalyos" runat="server"></asp:TextBox>
@@ -788,11 +788,11 @@
                                                     double factor = 0;
 
                                                     int yearsofservice = 0;
-                                                    if (RadioButtonList1.SelectedValue == "2" && RadioButtonList2.SelectedValue=="2")
+                                                    if (RadioButtonList1.SelectedValue=="3")
                                                         yearsofservice = Convert.ToInt32(TextBox4.Text);
 
                                                     int yearstoretirement = 0;
-                                                    if (RadioButtonList1.SelectedValue == "3")
+                                                    if (RadioButtonList1.SelectedValue == "2"  && RadioButtonList2.SelectedValue =="2")
                                                     {
                                                         yearstoretirement = Convert.ToInt32(TextBox5.Text);
 
@@ -841,7 +841,7 @@
 
                                                             %>
                                                     At retirement you will receive a <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}", (pension / 4 * 12.5))
-                                                           %><%pension = (pension * 3 / 4); %></strong>and an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", pension) %></strong>. 
+                                                           %><%pension = (pension * 3 / 4); %></strong> and an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", pension) %></strong>. 
                                                                   <% }
                                                                       else if (RadioButtonList1.SelectedValue == "2" && RadioButtonList2.SelectedValue == "2")
                                                                       {
@@ -849,7 +849,7 @@
                                                                           %>
 
                                                        At resignation/termination you will receive a discounted <strong>Gratuity Payment</strong> equal to EC<strong><%= string.Format("{0:C}", ((pension / 4 * 12.5) * factor))
-                                                           %><%pension = (pension * 3 / 4); %></strong>and at Normal retirement age an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", pension ) %></strong>. 
+                                                           %><%pension = (pension * 3 / 4); %></strong> and at Normal retirement age an <strong>Annual Reduced Pension</strong> equal to EC<strong><%=string.Format("{0:C}", pension ) %></strong>. 
                                                                 
 
                                                     <%}
@@ -868,6 +868,7 @@
                                                             stemp = stemp + cmp;
                                                             refund = refund + cmp;
                                                         }
+                                                       
                                                         %>
                                                    <strong><%=string.Format("{0:C}", refund)%></strong>.
                                                     <%

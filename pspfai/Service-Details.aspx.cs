@@ -23,14 +23,11 @@ namespace pspfai
                     case "gratuity":
                     case "refund":
                     case "survivor":
+                    case "early":
+                    case "medical":
                        subpagedescription = subpage;
                     break;
-                    case "early":
-                        subpagedescription = "Early Retirement";
-                    break;
-                    case "medical":
-                        subpagedescription = "Medical Boarding";
-                        break;
+                  
 
                     default:
                         subpagedescription = "";
@@ -42,6 +39,7 @@ namespace pspfai
         }
 
         private string subpagedescription=string.Empty;
+     
         public string subPage { get { return subpagedescription; } }
     }
 }

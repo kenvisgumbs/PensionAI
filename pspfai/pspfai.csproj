@@ -564,6 +564,7 @@
     <Content Include="Scripts\map.js" />
     <Content Include="Scripts\owl.carousel.min.js" />
     <Content Include="Scripts\validation.js" />
+    <Content Include="Loans.aspx" />
     <Content Include="Service-Details.aspx" />
     <Content Include="Services.aspx" />
     <Content Include="Calculator.aspx" />
@@ -633,6 +634,13 @@
     </Compile>
     <Compile Include="PSPFAI.Master.designer.cs">
       <DependentUpon>PSPFAI.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Loans.aspx.cs">
+      <DependentUpon>Loans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loans.aspx.designer.cs">
+      <DependentUpon>Loans.aspx</DependentUpon>
     </Compile>
     <Compile Include="Service-Details.aspx.cs">
       <DependentUpon>Service-Details.aspx</DependentUpon>

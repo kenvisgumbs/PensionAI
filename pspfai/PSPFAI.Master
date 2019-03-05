@@ -136,12 +136,12 @@
                                             </li>
                                             <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "SERVICES")); %>"><a href="Services.aspx">Services</a>
                                                 <ul>
-                                                    <li><a href="services-details.aspx?type=pension">Pensions</a></li>
-                                                    <li><a href="services-details.aspx?type=gratuity">Gratuity</a></li>
-                                                    <li><a href="services-details.aspx?type=refund">Refunds</a></li>
-                                                    <li><a href="services-details.aspx?type=survivor">Survivor</a></li>
-                                                    <li><a href="services-details.aspx?type=early">Early Retirement</a></li>
-                                                    <li><a href="services-details.aspx?type=medical">Medical Boarding</a></li>
+                                                    <li><a href="service-details.aspx?type=pension">Pensions</a></li>
+                                                    <li><a href="service-details.aspx?type=gratuity">Gratuity</a></li>
+                                                    <li><a href="service-details.aspx?type=refund">Refunds</a></li>
+                                                    <li><a href="service-details.aspx?type=survivor">Survivor</a></li>
+                                                    <li><a href="service-details.aspx?type=early">Early Retirement</a></li>
+                                                    <li><a href="service-details.aspx?type=medical">Medical Boarding</a></li>
                                                    
                                                 </ul>
 
@@ -153,7 +153,7 @@
                                                     <li><a href="reports.aspx">Annual Reports</a></li>
                                                     <li><a href="faq.aspx">Our Faq</a></li>
                                                     <li><a href="#">Forms</a></li>
-                                                    <li><a href="404.aspx">Error Page</a></li>
+                                                    <li><a href="calculator.aspx">Pension Calculator</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown"><a href="#">PRESS</a>
@@ -173,7 +173,7 @@
                             </div>
                             <div class="col-md-4 col-sm-12 col-xs-12">
                                 <div class="free-consulation-button pull-right">
-                                    <a class="thm-btn bg-clr1" href="#">Loans</a>
+                                    <a class="thm-btn bg-clr1" href="loans.aspx">Loans</a>
                                 </div>
                             </div>
                         </div>
