@@ -347,7 +347,7 @@
                                                 </legend>
 
                                                 <span class="form__group-item">
-                                                    <asp:TextBox ID="name" Text="Romero" required="required" runat="server" Columns="40"></asp:TextBox>
+                                                    <asp:TextBox ID="name" Text="" required="required" runat="server" Columns="40"></asp:TextBox>
                                                 </span>
 
                                             </fieldset>
@@ -624,7 +624,7 @@
                                                 </legend>
 
                                                 <span class="form__group-item">
-                                                    <asp:TextBox ID="salary" Text="112000" required="required" runat="server"></asp:TextBox>
+                                                    <asp:TextBox ID="salary" Text="" required="required" runat="server"></asp:TextBox>
                                                     <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Currency Only!" ControlToValidate="salary" Operator="DataTypeCheck" Type="Currency"></asp:CompareValidator>
 
 
@@ -878,7 +878,7 @@
                                                         }
 
                                                         %>
-                                               For a detailed projection of salaries above and below <strong><%=string.Format("{0:C}",s1) %></strong>. click <a href="chart.aspx?salary=<%=s1 %>&pension=<%=pension %>&mode=<%=mde1%>&prior04=<%=Convert.ToDouble(prior_2004.Text) %>&post04=<%=Convert.ToDouble(after_2004.Text) %>&factor=<%=factor %>&yos=<%=yearsofservice %>" target="_blank">here</a>. </span>
+                                               For a detailed projection of salaries above and below <strong><%=string.Format("{0:C}",s1) %></strong>. click <a href="chart.aspx?salary=<%=s1 %>&pension=<%=pension %>&mode=<%=mde1%>&prior04=<%=Convert.ToDouble(prior_2004.Text) %>&post04=<%=Convert.ToDouble(after_2004.Text) %>&factor=<%=factor %>&yos=<%=yearsofservice %>" target="_blank" style="color:#000; font-weight:bold;">here</a>. </span>
                                             </fieldset
                                         </div>
                                        
