@@ -150,6 +150,8 @@
     <Content Include="assets\jquery-ui-1.11.4\images\ui-icons_cd0a0a_256x240.html" />
     <Content Include="assets\jquery-ui-1.11.4\jquery-ui.css" />
     <Content Include="assets\jquery-ui-1.11.4\jquery-ui.js" />
+    <Content Include="Content\Images\jumbo\boardsample.jpg" />
+    <Content Include="Content\Images\jumbo\pensioner.jpg" />
     <Content Include="Content\Images\pages\about1.jpg" />
     <Content Include="Content\Images\pages\about2.jpg" />
     <Content Include="Content\Images\pages\graph1.jpg" />
@@ -436,6 +438,18 @@
     <Content Include="assets\amcharts4\themes\material.js.map" />
     <Content Include="assets\amcharts4\themes\moonrisekingdom.js.map" />
     <Content Include="assets\amcharts4\themes\spiritedaway.js.map" />
+    <Content Include="Content\Reports\2007 Audited Accounts.pdf" />
+    <Content Include="Content\Reports\2008 Audited Accounts.pdf" />
+    <Content Include="Content\Reports\2009 Audited Accounts.pdf" />
+    <Content Include="Content\Reports\2010 Audited Accounts.pdf" />
+    <Content Include="Content\Reports\2011 Audited Accounts.pdf" />
+    <Content Include="Content\Reports\2012 Audited Accounts.pdf" />
+    <Content Include="Content\Reports\2013 Audited Accounts.pdf" />
+    <Content Include="Content\Reports\2014 Audited Accounts.pdf" />
+    <Content Include="Content\Reports\2015 Audited Accounts.pdf" />
+    <Content Include="Content\Reports\2016 Audited Accounts.pdf" />
+    <Content Include="Content\Documents\PSPF_Booklet_2014_WEB.pdf" />
+    <Content Include="Content\Documents\PSPF_Registration.pdf" />
     <None Include="packages.config" />
     <Content Include="plugins\revolution\fonts\revicons\revicons90c6.eot" />
     <Content Include="plugins\revolution\fonts\revicons\revicons90c6.ttf" />

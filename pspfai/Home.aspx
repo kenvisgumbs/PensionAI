@@ -213,6 +213,72 @@
                         </div>
                     </li>
 
+                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1671" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="0" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/pensioner.jpg">
+
+                        <div class="tp-caption"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['-80','-90','-100','-100']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <h1>Your retirment is
+                                <br>
+                                in capable hands.</h1>
+                        </div>
+
+                        <div class="tp-caption"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['600','600','600','550']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['10','10','10','10']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="text">Enjoy your retirement; rest assured that your pension payments will be delivered accurately and timely.</div>
+                        </div>
+
+                        <div class="tp-caption tp-resizeme"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['100','100','100','110']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="btns-box">
+                                <%--<a href="#" class="thm-btn bg-clr1">Learn More</a>
+                                <a href="contact.aspx" class="thm-btn bg-clr2">Contact Us</a>--%>
+                            </div>
+                        </div>
+                    </li>
+
                   
                 </ul>
               
@@ -245,7 +311,7 @@
                             <a href="loans.aspx">
                                 <h5>Fast Loans</h5>
                             </a>
-                            <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida</p>
+                            <p>The Pension Fund Loan programme offers low rate interest loans to qualified Contributors. T &amp; C apply. </p>
                         </div>
                     </div>
                 </div>
@@ -258,7 +324,7 @@
                             <a href="contact.aspx">
                                 <h5>Contact Us</h5>
                             </a>
-                            <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida </p>
+                            <p>For concerns, comments or inquiries, use our contact form. Responses will be received within 24hrs. </p>
                         </div>
                     </div>
                 </div>
@@ -268,10 +334,10 @@
                             <div class="icon-box">
                                 <i class="flaticon-seo-performance-marketing-graphic"></i>
                             </div>
-                            <a href="ar.aspx">
+                            <a href="reports.aspx">
                                 <h5>Financials</h5>
                             </a>
-                            <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida </p>
+                            <p>The PSPF prides itself on openess &amp; transperency. We publish audited financial statements annually.</p>
                         </div>
                     </div>
                 </div>
@@ -295,7 +361,7 @@
                 <!--Start btn item-->
                 <div class="col-md-2 col-sm-4 col-xs-12">
                     <div class="btn-cont text-right">
-                        <a href="#" class="thm-btn bg-clr2">Loans</a>
+                        <a href="loans.aspx" class="thm-btn bg-clr2">Loans</a>
                     </div>
                 </div>
             </div>
@@ -328,7 +394,7 @@
                                 <a href="services-details.aspx">
                                     <h5>Pensions</h5>
                                 </a>
-                                <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
+                                <p>Pension is a monthly amount paid at retirement. Contributors qualify for a pension after 10 continuous years of contributions.</p>
                             </div>
                         </div>
                     </div>
@@ -345,7 +411,7 @@
                                 <a href="services-details.aspx">
                                     <h5>Gratuity Payments</h5>
                                 </a>
-                                <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
+                                <p>Gratuity is a one-time lump sum payment made to Contributors who have at least 10 years of service.</p>
                             </div>
                         </div>
                     </div>
@@ -362,7 +428,7 @@
                                 <a href="services-details.aspx">
                                     <h5>Refunds</h5>
                                 </a>
-                                <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
+                                <p>Refund is a payment of your contributions plus interest upon retirement or resignation for less than 10 years of service.</p>
                             </div>
                         </div>
                     </div>
@@ -379,7 +445,7 @@
                                 <a href="services-details.aspx">
                                     <h5>Survivor's Pension</h5>
                                 </a>
-                                <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
+                                <p>Survivors Pension is a monthly payment made to the Spouse and Dependent Children of a Contributor.</p>
                             </div>
                         </div>
                     </div>
@@ -396,7 +462,7 @@
                                 <a href="services-details.aspx">
                                     <h5>Early Retirement</h5>
                                 </a>
-                                <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
+                                <p>In special cases with approval, a Contributor who has 5 years left to normal retirement can receive Early Retirement.</p>
                             </div>
                         </div>
                     </div>
@@ -413,7 +479,7 @@
                                 <a href="services-details.aspx">
                                     <h5>Medical Boarding</h5>
                                 </a>
-                                <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
+                                <p>On Medical evidence that the Contributor by reason of infirmity of mind or body, is no longer capable of performing duties..</p>
                             </div>
                         </div>
                     </div>
@@ -476,9 +542,9 @@
                     <div class="sec-title text-center">
                         <h2>Annual Reports</h2>
                         <span class="border"></span>
-                        <p>Lorem ipsum dolor  amet mi ultricies interdum pede eu vestibulum vulputate maurimtum
+                        <p>The Public Service Pension Fund publishes Financial Reports annually.
                             <br>
-                            commod rhoncus consectetuer reduce producet</p>
+                            Click subscribe below to receive notifications of publications.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
@@ -505,10 +571,10 @@
                                     </a>
                                 </div>
                                 <div class="text">
-                                    <p>Nisl dolor accllentesque faucibus. numaris vel, tincidunt fusce tempor non, laoreet volat integer quam iaculis est malesuada </p>
+                                    <p>This year marked the end of the Conservatorship period of the two local banks; National Bank of Anguilla &amp; the.....</p>
                                 </div>
                                 <div class="read-more-btn">
-                                    <a target="_blank" href="Content/Reports/2016 Audited Accounts.pdf">Read More</a>
+                                    <a target="_blank" href="Content/Reports/2016 Audited Accounts.pdf">Full Document</a>
                                 </div>
                             </div>
                         </div>
@@ -533,15 +599,15 @@
                         <div class="text-area">
                             <div class="content-text text-left">
                                 <div class="title">
-                                    <a href="blog-single.aspx">
+                                    <a target="_blank" href="Content/Reports/2015 Audited Accounts.pdf">
                                         <h5>2015 Annual Report</h5>
                                     </a>
                                 </div>
                                 <div class="text">
-                                    <p>Nisl dolor accllentesque faucibus. numaris vel, tincidunt fusce tempor non, laoreet volat integer quam iaculis est malesuada </p>
+                                    <p>It is with much excitement and enthusiam that I write my 2015 report on the Public Service Pension Fund. During the past....</p>
                                 </div>
                                 <div class="read-more-btn">
-                                    <a target="_blank" href="Content/Reports/2015 Audited Accounts.pdf">Read More</a>
+                                    <a target="_blank" href="Content/Reports/2015 Audited Accounts.pdf">Full Document</a>
                                 </div>
                             </div>
 
@@ -567,15 +633,15 @@
                         <div class="text-area">
                             <div class="content-text text-left">
                                 <div class="title">
-                                    <a href="blog-single.aspx">
+                                    <a  target="_blank" href="Content/Reports/2014 Audited Accounts.pdf">
                                         <h5>2014 Annual Report</h5>
                                     </a>
                                 </div>
                                 <div class="text">
-                                    <p>Nisl dolor accllentesque faucibus. numaris vel, tincidunt fusce tempor non, laoreet volat integer quam iaculis est malesuada </p>
+                                    <p>The year 2014 was a milestone year for the Public Service Pension Fund as it marked 10 calendar years since the...</p>
                                 </div>
                                 <div class="read-more-btn">
-                                    <a target="_blank" href="Content/Reports/2014 Audited Accounts.pdf">Read More</a>
+                                    <a target="_blank" href="Content/Reports/2014 Audited Accounts.pdf">Full Document</a>
                                 </div>
                             </div>
 

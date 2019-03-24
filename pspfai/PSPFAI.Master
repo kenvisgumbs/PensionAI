@@ -225,11 +225,11 @@
                                     <h5>Our Services</h5>
                                 </div>
                                 <ul class="we-do-list">
-                                    <li><a href="services-details.aspx?type=pension"><i class="fa fa-angle-right" aria-hidden="true"></i>Pensions <span class="post-count">3</span></a></li>
-                                    <li><a href="services-details.aspx?type=gratuity"><i class="fa fa-angle-right" aria-hidden="true"></i>Gratuity Payments <span class="post-count">12</span></a></li>
-                                    <li><a href="services-details.aspx?type=refund"><i class="fa fa-angle-right" aria-hidden="true"></i>Refunds <span class="post-count">33</span></a></li>
-                                    <li><a href="services-details.aspx?type=survivor"><i class="fa fa-angle-right" aria-hidden="true"></i>Survivor Payments <span class="post-count">24</span></a></li>
-                                    <li><a href="services-details.aspx?type=early"><i class="fa fa-angle-right" aria-hidden="true"></i>Early Retirement <span class="post-count">40</span></a></li>
+                                    <li><a href="services-details.aspx?type=pension"><i class="fa fa-angle-right" aria-hidden="true"></i>Pensions <span class="post-count"></span></a></li>
+                                    <li><a href="services-details.aspx?type=gratuity"><i class="fa fa-angle-right" aria-hidden="true"></i>Gratuity Payments <span class="post-count"></span></a></li>
+                                    <li><a href="services-details.aspx?type=refund"><i class="fa fa-angle-right" aria-hidden="true"></i>Refunds <span class="post-count"></span></a></li>
+                                    <li><a href="services-details.aspx?type=survivor"><i class="fa fa-angle-right" aria-hidden="true"></i>Survivor Payments <span class="post-count"></span></a></li>
+                                    <li><a href="services-details.aspx?type=early"><i class="fa fa-angle-right" aria-hidden="true"></i>Early Retirement <span class="post-count"></span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -241,9 +241,9 @@
                                     <h5>Quick Resources</h5>
                                 </div>
                                 <a href="#" class="news-link">Loan Application</a>
-                                <a href="#" class="news-link">Registration Form</a>
+                                <a target="_blank" href="Content/Documents/PSPF_Registration.pdf" class="news-link">Registration Form</a>
                                 <a href="#" class="news-link">Refund Form</a>
-                                <a href="#" class="news-link">PSPF Handbook <span>23<sup>rd</sup> july 2014</span></a>
+                                <a target="_blank" href="Content/Documents/PSPF_Booklet_2014_WEB.pdf" class="news-link">PSPF Handbook <span>23<sup>rd</sup> july 2014</span></a>
 
                             </div>
                         </div>
@@ -317,11 +317,11 @@
             <!--mailchimp drop in -->
             <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
             <script type="text/javascript">
-    
+                   document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
                 function showRegisterPopUp() {
-       
+                   
                     window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us20.list-manage.com", "uuid": "c5fcfe19ef08397fe371130c3", "lid": "2188849241", "uniqueMethods": true }) })
-                    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+                    
                 };
             </script>
         </div>
