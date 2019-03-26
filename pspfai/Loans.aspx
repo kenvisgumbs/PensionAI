@@ -245,7 +245,7 @@
         }
     </style>
     <!--Page Title-->
-    <section class="page-title" style="background: url(Content/Images/pages/pagehsample.jpg);">
+    <section class="page-title" style="background: url(Content/Images/pages/loan_page.jpg);">
         <div class="floatover">
             <div class="container">
                 <h2>Loans</h2>

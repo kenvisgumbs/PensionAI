@@ -14,6 +14,72 @@
             <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
                <ul>
 
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/loan.jpg">
+
+                        <div class="tp-caption"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['-80','-90','-100','-100']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <h1> We offer the Lowest
+                                <br>
+                                Interst Rates on Loans</h1>
+                        </div>
+
+                        <div class="tp-caption"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['550','550','550','500']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['10','10','10','10']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="text">The Public Pension Fund Staff offers loans to qualified persons at a low rate of 6% annually.</div>
+                        </div>
+
+                        <div class="tp-caption tp-resizeme"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['100','100','100','110']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="btns-box">
+                                <a href="loans.aspx" class="thm-btn bg-clr2">Learn More</a>
+                                <a href="contact.aspx" class="thm-btn bg-clr1">Contact US Today</a>
+                            </div>
+                        </div>
+                    </li>
+
                      <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/slider_staff.jpg">
 
@@ -148,7 +214,7 @@
                     </li>
 
                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1670" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="0" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/boardsample.jpg">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="0" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/coins.jpg">
 
                         <div class="tp-caption"
                             data-paddingbottom="[0,0,0,0]"
@@ -166,9 +232,9 @@
                             data-y="['middle','middle','middle','middle']"
                             data-textalign="['top','top','top','top']"
                             data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h1>Provide best
+                            <h1>Responsible & Strategic
                                 <br>
-                                Consulting Services.</h1>
+                                Investment Programme.</h1>
                         </div>
 
                         <div class="tp-caption"
@@ -387,11 +453,11 @@
                         <div class="icon-area">
                             <div class="icon-box">
                                 <figure>
-                                    <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
+                                    <img src="Content/Images/pages/pension_sm.jpg" alt="services-1"></figure>
                                 <i class="flaticon-rocking-chair-with-dollar-sign-silhouette"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx">
+                                <a href="services-details.aspx?type=pension">
                                     <h5>Pensions</h5>
                                 </a>
                                 <p>Pension is a monthly amount paid at retirement. Contributors qualify for a pension after 10 continuous years of contributions.</p>
@@ -404,11 +470,11 @@
                         <div class="icon-area">
                             <div class="icon-box">
                                 <figure>
-                                    <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
+                                    <img src="Content/Images/pages/gratuity_sm.jpg" alt="services-1"></figure>
                                 <i class="flaticon-retirement"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx">
+                                <a href="services-details.aspx?type=gratuity">
                                     <h5>Gratuity Payments</h5>
                                 </a>
                                 <p>Gratuity is a one-time lump sum payment made to Contributors who have at least 10 years of service.</p>
@@ -421,11 +487,11 @@
                         <div class="icon-area">
                             <div class="icon-box">
                                 <figure>
-                                    <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
+                                    <img src="Content/Images/pages/refunds_sm.jpg" alt="services-1"></figure>
                                 <i class="flaticon-money"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx">
+                                <a href="services-details.aspx?type=refund">
                                     <h5>Refunds</h5>
                                 </a>
                                 <p>Refund is a payment of your contributions plus interest upon retirement or resignation for less than 10 years of service.</p>
@@ -438,11 +504,11 @@
                         <div class="icon-area">
                             <div class="icon-box">
                                 <figure>
-                                    <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
+                                    <img src="Content/Images/pages/survivor_sm.jpg" alt="services-1"></figure>
                                 <i class="flaticon-family"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx">
+                                <a href="services-details.aspx?type=survivor">
                                     <h5>Survivor's Pension</h5>
                                 </a>
                                 <p>Survivors Pension is a monthly payment made to the Spouse and Dependent Children of a Contributor.</p>
@@ -455,11 +521,11 @@
                         <div class="icon-area">
                             <div class="icon-box">
                                 <figure>
-                                    <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
+                                    <img src="Content/Images/pages/early_sm.jpg" alt="services-1"></figure>
                                 <i class="flaticon-cheque"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx">
+                                <a href="services-details.aspx?type=early">
                                     <h5>Early Retirement</h5>
                                 </a>
                                 <p>In special cases with approval, a Contributor who has 5 years left to normal retirement can receive Early Retirement.</p>
@@ -472,7 +538,7 @@
                         <div class="icon-area">
                             <div class="icon-box">
                                 <figure>
-                                    <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
+                                    <img src="Content/Images/Pages/pills_sm.jpg" alt="services-1"></figure>
                                 <i class="flaticon-doctor-stethoscope"></i>
                             </div>
                             <div class="service-det">
