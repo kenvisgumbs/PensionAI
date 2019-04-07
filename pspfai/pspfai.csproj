@@ -76,6 +76,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="404.aspx" />
+    <Content Include="Content\Images\pages\coin_page.jpg" />
+    <Content Include="Content\Images\pages\pension_page.jpg" />
+    <Content Include="Personnel.aspx" />
     <Content Include="About.aspx" />
     <Content Include="assets\amcharts4\charts.js" />
     <Content Include="assets\amcharts4\core.js" />
@@ -167,6 +170,7 @@
     <Content Include="Content\Images\pages\refunds_sm.jpg" />
     <Content Include="Content\Images\pages\survivor_sm.jpg" />
     <Content Include="Content\Images\resources\AR_bg.jpg" />
+    <Content Include="forms.aspx" />
     <Content Include="reports.aspx" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
@@ -261,7 +265,9 @@
     <Content Include="Service-Details.aspx" />
     <Content Include="Services.aspx" />
     <Content Include="Calculator.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Chart.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -272,12 +278,26 @@
     <Compile Include="404.aspx.designer.cs">
       <DependentUpon>404.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Personnel.aspx.cs">
+      <DependentUpon>Personnel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personnel.aspx.designer.cs">
+      <DependentUpon>Personnel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forms.aspx.cs">
+      <DependentUpon>forms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms.aspx.designer.cs">
+      <DependentUpon>forms.aspx</DependentUpon>
     </Compile>
     <Compile Include="reports.aspx.cs">
       <DependentUpon>reports.aspx</DependentUpon>
@@ -459,6 +479,7 @@
     <Content Include="Content\Reports\2016 Audited Accounts.pdf" />
     <Content Include="Content\Documents\PSPF_Booklet_2014_WEB.pdf" />
     <Content Include="Content\Documents\PSPF_Registration.pdf" />
+    <Content Include="Content\Documents\PSPF_Loan_Application_Form.pdf" />
     <None Include="packages.config" />
     <Content Include="plugins\revolution\fonts\revicons\revicons90c6.eot" />
     <Content Include="plugins\revolution\fonts\revicons\revicons90c6.ttf" />

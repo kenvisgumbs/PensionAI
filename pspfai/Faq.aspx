@@ -13,7 +13,7 @@
                  <li>|</li>
                 <li><a href="resources.aspx">Resources</a></li>
                 <li>|</li>
-                <li>Faq's</li>
+                <li class="current">Faq's</li>
             </ul>
         </div>
 

@@ -245,7 +245,7 @@
         }
     </style>
     <!--Page Title-->
-    <section class="page-title" style="background: url(Content/Images/pages/loan_page.jpg);">
+    <section class="page-title" style="background: url(Content/Images/pages/loan_page.jpg) center no-repeat;">
         <div class="floatover">
             <div class="container">
                 <h2>Loans</h2>
@@ -280,9 +280,7 @@
                 <div class="col-md-6 col-md-12">
                     <h4 class="bendetails">Criteria</h4>
                     <ul class="bendetails">
-                        <li><i class="fa fa-arrow-circle-right"></i>Must have at least two (2) years C
-                        
-                        ontribution</li>
+                        <li><i class="fa fa-arrow-circle-right"></i>Must have at least two (2) years Contributions</li>
                         <li><i class="fa fa-arrow-circle-right"></i>Loan amount less than 75% of Contributions</li>
 
                     </ul>
@@ -436,7 +434,7 @@
                                                     </asp:DropDownList>
                                                     <asp:CompareValidator ID="CompareValidator5" runat="server" ErrorMessage="Invalid Date!" ControlToValidate="TextBox1" Operator="DataTypeCheck" Type="Date"></asp:CompareValidator>
                                               
-                                                 <span style="visibility:hidden;"><asp:TextBox ID="TextBox1" required="required" runat="server"></asp:TextBox></span>
+                                                 <span style="visibility:visible;"><asp:TextBox ID="TextBox1" required="required" runat="server"></asp:TextBox></span>
 
 
                                                 </span>
@@ -497,7 +495,7 @@
                                                   
                                                     <asp:TextBox ID="amount" required="required" runat="server"></asp:TextBox>
                                                     <asp:CompareValidator ID="CompareValidator2" runat="server" ErrorMessage="Numbers Only!" ControlToValidate="amount" Operator="DataTypeCheck" Type="Double"></asp:CompareValidator>
-                                                    <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="Exceding Max Allowed!" ControlToValidate="amount" MinimumValue="0"
+                                                    <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="Exceding Max Allowed!" ControlToValidate="amount" MinimumValue="1000"
                                                       MaximumValue="3000" Type="Currency" ></asp:RangeValidator>
                                                 </span>
 
@@ -536,7 +534,23 @@
                                         %>  
                                          <div class="form__key">
                                         <h3><%=mde %> Projection</h3>
+                                             </div>
+                                             <div class="form__row t-date-of-birth ">
+                                             <span class="form__group-item"> For a principal of EC$<%=amount.Text.ToString() %> over <%=repayment.SelectedValue.ToString() %> years. Your wil be required to pay monthly EC$
 
+                                                 <%
+                                                     double mp = 0;
+                                                     double principal = Convert.ToDouble(amount.Text);
+                                                     double interest = 5.5/12/100; //annual interest divided by 12 for monthly interest
+                                                     int  n = Convert.ToInt16(repayment.SelectedValue) * -12;
+
+
+                                                     double cal = Math.Pow((1 + interest), n);
+                                                     mp = (interest * principal) / (1 - cal);
+
+                                                     %>
+                                              <strong> <%=string.Format("{0:C}", mp) %> </strong>
+                                        </span>
                                         </div>
                                         
                                        

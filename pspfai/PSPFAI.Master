@@ -129,8 +129,8 @@
                                             <li class="home <% Response.Write( globalUtil.getCurrent(ContentPageName, "HOME")); %>"><a href="Home.aspx">Home</a></li>
                                             <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "ABOUT")); %>"><a href="about.aspx">About</a>
                                                     <ul>
-                                                        <li><a href="board.aspx">THE BOARD</a></li>
-                                                        <li><a href="about.aspx#team">The Staff</a></li>
+                                                        <li><a href="personnel.aspx?type=board">THE BOARD</a></li>
+                                                        <li><a href="personnel.aspx?type=staff">The STAFF</a></li>
                                                         <!--<li><a href="faq.aspx">FAQ</a></li>-->
                                                     </ul>
                                             </li>
@@ -240,9 +240,9 @@
                                 <div class="title">
                                     <h5>Quick Resources</h5>
                                 </div>
-                                <a href="#" class="news-link">Loan Application</a>
+                                <a target="_blank" href="Content/Documents/PSPF_Loan_Application_Form.pdf" class="news-link">Loan Application</a>
                                 <a target="_blank" href="Content/Documents/PSPF_Registration.pdf" class="news-link">Registration Form</a>
-                                <a href="#" class="news-link">Refund Form</a>
+                               <%-- <a href="#" class="news-link">Refund Form</a>--%>
                                 <a target="_blank" href="Content/Documents/PSPF_Booklet_2014_WEB.pdf" class="news-link">PSPF Handbook <span>23<sup>rd</sup> july 2014</span></a>
 
                             </div>

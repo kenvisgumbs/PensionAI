@@ -29,6 +29,8 @@ namespace pspfai
             else
             {
 
+
+
                 if (contributions.Text == "") return;
 
                 double cntrs = Convert.ToDouble(contributions.Text);

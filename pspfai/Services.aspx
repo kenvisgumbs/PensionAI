@@ -29,14 +29,14 @@
                         <div class="icon-area">
                             <div class="icon-box">
                                 <figure>
-                                    <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
+                                    <img src="Content/Images/pages/pension_sm.jpg" alt="services-1"></figure>
                                 <i class="flaticon-rocking-chair-with-dollar-sign-silhouette"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx?type=pension">
+                                <a href="service-details.aspx?type=pension">
                                     <h5>Pension</h5>
                                 </a>
-                                <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
+                                <p>Pension is a monthly amount paid at retirement. Contributors qualify for a pension after 10 continuous years of contributions.</p>
                             </div>
                         </div>
                     </div>
@@ -46,15 +46,15 @@
                         <div class="icon-area">
                             <div class="icon-box">
                                 <figure>
-                                    <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
+                                    <img src="Content/Images/pages/gratuity_sm.jpg" alt="services-1"></figure>
                                 <i class="flaticon-retirement"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx?type=gratuity">
+                                <a href="service-details.aspx?type=gratuity">
                                     <h5>Gratuity Payments
                                     </h5>
                                 </a>
-                                <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
+                                <p>Gratuity is a one-time lump sum payment made to Contributors who have at least 10 years of service.</p>
                             </div>
                         </div>
                     </div>
@@ -64,14 +64,14 @@
                         <div class="icon-area">
                             <div class="icon-box">
                                 <figure>
-                                    <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
+                                    <img src="Content/Images/pages/refunds_sm.jpg" alt="services-1"></figure>
                                 <i class="flaticon-money"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx?type=refund">
+                                <a href="service-details.aspx?type=refund">
                                     <h5>Refunds</h5>
                                 </a>
-                                <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
+                                <p>Refund is a payment of your contributions plus interest upon retirement or resignation for less than 10 years of service.</p>
                             </div>
                         </div>
                     </div>
@@ -81,15 +81,15 @@
                         <div class="icon-area">
                             <div class="icon-box">
                                 <figure>
-                                    <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
+                                    <img src="Content/Images/pages/survivor_sm.jpg" alt="services-1"></figure>
                                 <i class="flaticon-family"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx?type=survivor">
+                                <a href="service-details.aspx?type=survivor">
                                     <h5>Survivor's Pensions
                                     </h5>
                                 </a>
-                                <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
+                                <p>Survivors Pension is a monthly payment made to the Spouse and Dependent Children of a Contributor.</p>
                             </div>
                         </div>
                     </div>
@@ -99,14 +99,14 @@
                         <div class="icon-area">
                             <div class="icon-box">
                                 <figure>
-                                    <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
+                                    <img src="Content/Images/pages/early_sm.jpg" alt="services-1"></figure>
                                 <i class="flaticon-cheque"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx?type=early">
+                                <a href="service-details.aspx?type=early">
                                     <h5>Early Retirement</h5>
                                 </a>
-                                <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
+                                <p>In special cases with approval, a Contributor who has 5 years left to normal retirement can receive Early Retirement.</p>
                             </div>
                         </div>
                     </div>
@@ -116,14 +116,14 @@
                         <div class="icon-area">
                             <div class="icon-box">
                                 <figure>
-                                    <img src="https://via.placeholder.com/185x195" alt="services-1"></figure>
+                                    <img src="Content/Images/Pages/pills_sm.jpg" alt="services-1"></figure>
                                 <i class="flaticon-doctor-stethoscope"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx?type=medical">
+                                <a href="service-details.aspx?type=medical">
                                     <h5>Medical Boarding</h5>
                                 </a>
-                                <p>Adipiscing laoreet dui sed sceleri enas pellentesque ac justo. Lectu feltrumn Placerat arcu dolor laoreet</p>
+                                <p>On Medical evidence that the Contributor by reason of infirmity of mind or body, is no longer capable of performing duties..</p>
                             </div>
                         </div>
                     </div>

@@ -20,8 +20,15 @@ namespace pspfai
                 switch(subpage)
                 {
                     case "pension":
-                    case "gratuity":
+                        page_file = "pension_page.jpg";
+                        subpagedescription = subpage;
+                        break;
+                    
                     case "refund":
+                        page_file = "pension_page.jpg";
+                        subpagedescription = subpage;
+                        break;
+                    case "gratuity":
                     case "survivor":
                     case "early":
                     case "medical":
@@ -39,7 +46,9 @@ namespace pspfai
         }
 
         private string subpagedescription=string.Empty;
+        private string page_file = string.Empty;
      
         public string subPage { get { return subpagedescription; } }
+        public string bgFile {  get { return page_file; } }
     }
 }
