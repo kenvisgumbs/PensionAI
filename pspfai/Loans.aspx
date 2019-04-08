@@ -339,7 +339,7 @@
                                                 </legend>
 
                                                 <span class="form__group-item">
-                                                    <asp:TextBox ID="name" Text="Romero" required="required" runat="server" Columns="40"></asp:TextBox>
+                                                    <asp:TextBox ID="name" Text="" required="required" runat="server" Columns="40"></asp:TextBox>
                                                 </span>
 
                                             </fieldset>
@@ -433,8 +433,10 @@
                                                         <asp:ListItem Value="">Year</asp:ListItem>
                                                     </asp:DropDownList>
                                                     <asp:CompareValidator ID="CompareValidator5" runat="server" ErrorMessage="Invalid Date!" ControlToValidate="TextBox1" Operator="DataTypeCheck" Type="Date"></asp:CompareValidator>
-                                              
-                                                 <span style="visibility:visible;"><asp:TextBox ID="TextBox1" required="required" runat="server"></asp:TextBox></span>
+                                                    <asp:RangeValidator ID="RangeValidator2" ControlToValidate="TextBox2" runat="server" ErrorMessage="Insufficient years of service!"></asp:RangeValidator>
+                                                 <span style="visibility:hidden;"><asp:TextBox ID="TextBox1" required="required" runat="server"></asp:TextBox>
+                                                     <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                                                 </span>
 
 
                                                 </span>
@@ -464,7 +466,7 @@
                                                 </legend>
 
                                                 <span class="form__group-item">
-                                                    <asp:TextBox ID="contributions" Text="12900" required="required" runat="server"></asp:TextBox>
+                                                    <asp:TextBox ID="contributions" Text="" required="required" runat="server"></asp:TextBox>
                                                     <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Currency Only!" ControlToValidate="contributions" Operator="DataTypeCheck" Type="Currency"></asp:CompareValidator>
 
                                                 </span>
