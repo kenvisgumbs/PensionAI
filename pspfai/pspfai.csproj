@@ -78,6 +78,8 @@
     <Content Include="404.aspx" />
     <Content Include="Content\Images\pages\coin_page.jpg" />
     <Content Include="Content\Images\pages\pension_page.jpg" />
+    <Content Include="Content\Images\personnel\lenia.jpg" />
+    <Content Include="Content\Images\personnel\sharice.jpg" />
     <Content Include="Personnel.aspx" />
     <Content Include="About.aspx" />
     <Content Include="assets\amcharts4\charts.js" />

@@ -186,7 +186,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="https://via.placeholder.com/270x300" alt="team">
+                            <img src="Content/Images/personnel/monifa.jpg" alt="team">
                         </figure>
 
                         <div class="text-bottom">
@@ -198,7 +198,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="https://via.placeholder.com/270x300" alt="team">
+                            <img src="Content/Images/personnel/lenia.jpg" alt="team">
                         </figure>
                         <div class="overlay">
                             <ul>
@@ -218,7 +218,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="https://via.placeholder.com/270x300" alt="team">
+                            <img src="Content/Images/personnel/sharice.jpg" alt="team">
                         </figure>
                         <div class="overlay">
                             <ul>
@@ -238,7 +238,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="https://via.placeholder.com/270x300" alt="team">
+                            <img src="Content/Images/personnel/ron.jpg" alt="team">
                         </figure>
                         <div class="overlay">
                             <ul>
@@ -250,7 +250,7 @@
                             </ul>
                         </div>
                         <div class="text-bottom">
-                            <h5>Pamela Jalle</h5>
+                            <h5>Rochelle Bryan</h5>
                             <h6>Pension Clerk</h6>
                         </div>
                     </div>
