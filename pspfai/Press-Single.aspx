@@ -124,10 +124,10 @@
                                 using (System.Data.SqlClient.SqlConnection con1 = new System.Data.SqlClient.SqlConnection(constr1))
                                 {
                                     
-                                    using (System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(@"select tc.category_id, category, count(press_id) num FROM tbl_category tc LEFT OUTER JOIN
+                                    using (System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(@"select tc.category_id, category,[sort], count(press_id) num FROM tbl_category tc LEFT OUTER JOIN
 tbl_press tpc ON tpc.category_id = tc.category_id
-group by tc.category_id, category
-order by category"))
+group by tc.category_id, category,[sort]
+order by [sort],category"))
                                     {
                                         cmd.CommandType = System.Data.CommandType.Text;
                                         cmd.Connection = con1;

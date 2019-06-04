@@ -33,15 +33,15 @@
                         {
                             string story;
                             story = Request.QueryString["press-id"];
-                            using (System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(@"SELECT [press_id]
+                            using (System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(@"SELECT tp.[press_id]
       ,[headline]
-      ,[details]
+      ,[details], [short_details]
       ,CONVERT(varchar,[published], 103) pdt
       ,[pubisher]
       ,[media]
-,[category_id]
+,tc.[category_id], category
       ,[display]
-  FROM [DB_A421EE_pspf].[dbo].[tbl_press] WHERE display= 1 Order by published Desc"))
+  FROM [DB_A421EE_pspf].[dbo].[tbl_press] tp INNER JOIN tbl_category tc ON tc.category_id = tp.category_id WHERE display= 1 Order by published Desc"))
                             {
                                 cmd.CommandType = System.Data.CommandType.Text;
                                 cmd.Connection = con;
@@ -64,12 +64,13 @@
                                 </div>
                                 <div class=""author-com"">
                                     <ul>
-                                        <li>" + sdr["pdt"].ToString() + @"</li>
+                                        <li><strong>Posted</strong>&nbsp;" + sdr["pdt"].ToString() + @"</li>
                                         <li>&nbsp;&nbsp;<strong>Posted by</strong> Webmaster</li>
+                                        <li>&nbsp;&nbsp;<strong>Category</strong>&nbsp;" + sdr["category"].ToString() + @"</li>
                                     </ul>
                                 </div>
                                 <div class=""text"">
-                                    <p>Donec natoque beatae porttitor eget vehicula leo. Id gravida volutpat magna amet nullam lectus, parturient ullamcorper sagittis, at lectus sapien orci sit arcu. Ac cras cras felis, eu faucibus porta imperdiet aeaoreet aenean, eget duis egestas sint, sollicitudin in nisl dolor. In a sodales eleifend mauris.</p>
+                                    <p>"+ sdr["short_details"].ToString() +@"...</p>
                                 </div>
                                 <div class=""read-more-btn"">
                                     <a href=""press-single.aspx?press-id=" + sdr["press_id"].ToString() + "&category-id=" + sdr["category_id"].ToString() +  @""">Read More</a>
@@ -108,10 +109,10 @@
                                 using (System.Data.SqlClient.SqlConnection con1 = new System.Data.SqlClient.SqlConnection(constr1))
                                 {
                                     
-                                    using (System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(@"select tc.category_id, category, count(press_id) num FROM tbl_category tc LEFT OUTER JOIN
+                                    using (System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(@"select tc.category_id, category,[sort], count(press_id) num FROM tbl_category tc LEFT OUTER JOIN
 tbl_press tpc ON tpc.category_id = tc.category_id
-group by tc.category_id,category
-order by category"))
+group by tc.category_id,category,[sort]
+order by [sort],category"))
                                     {
                                         cmd.CommandType = System.Data.CommandType.Text;
                                         cmd.Connection = con1;
