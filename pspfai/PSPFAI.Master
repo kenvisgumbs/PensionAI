@@ -129,7 +129,7 @@
                                             <li class="home <% Response.Write( globalUtil.getCurrent(ContentPageName, "HOME")); %>"><a href="Home.aspx">Home</a></li>
                                             <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "ABOUT")); %>"><a href="about.aspx">About</a>
                                                     <ul>
-                                                        <li><a href="personnel.aspx?type=board">THE BOARD</a></li>
+                                                       <%-- <li><a href="personnel.aspx?type=board">THE BOARD</a></li>--%>
                                                         <li><a href="personnel.aspx?type=staff">The STAFF</a></li>
                                                         <!--<li><a href="faq.aspx">FAQ</a></li>-->
                                                     </ul>
@@ -156,13 +156,8 @@
                                                     <li><a href="calculator.aspx">Pension Calculator</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="dropdown"><a href="#">PRESS</a>
-                                                <ul>
-                                                    <li><a href="blog.aspx">Blgo Style 1</a></li>
-                                                    <li><a href="blog-1.aspx">Blgo Style 2</a></li>
-                                                    <li><a href="blog-2.aspx">Blgo Style 3</a></li>
-                                                    <li><a href="blog-single.aspx">Single News</a></li>
-                                                </ul>
+                                            <li class="<% Response.Write( globalUtil.getCurrent(ContentPageName, "PRESS")); %>"><a href="press.aspx">PRESS</a>
+                                               
                                             </li>
                                             <li class="<% Response.Write( globalUtil.getCurrent(ContentPageName, "CONTACT")); %>"><a href="contact.aspx">Contact</a></li>
                                         </ul>
@@ -273,7 +268,10 @@
             <section class="footer-bottom-area">
                 <div class="container">
                     <div class="copyright-text text-center">
+                        
                         <p>Copyright &copy; <%=DateTime.Now.Year.ToString() %> <a href="Home.apsx">Public Service Pension Fund.</a> All Rights Reserved.</p>
+                       <a href="https://ssl.comodo.com">
+<img src="https://ssl.comodo.com/images/trusted-site-seal.png" alt="Comodo Trusted Site Seal" width="113" height="59" style="border: 0px;"></a><br> <span style="font-weight:bold; font-size:7pt"><a href="https://ssl.comodo.com">SSL Certificate</a></span>
                     </div>
                 </div>
             </section>

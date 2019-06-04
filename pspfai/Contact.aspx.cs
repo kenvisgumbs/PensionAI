@@ -40,7 +40,7 @@ namespace pspfai
                     CaptchaErrorLabel.Visible = false;
                     try { 
                             // TODO: proceed with protected action
-                            string to = "romero.kelsick@gmail.com"+","+txtEmail.Text; //To address     
+                            string to = "info@pspf.ai"+","+txtEmail.Text; //To address     
                             string from = "info@pspf.ai"; //From address     
                             MailMessage message = new MailMessage(from, to);
 

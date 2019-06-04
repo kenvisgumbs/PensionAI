@@ -177,9 +177,9 @@
                         </a>
                         <span class="border"></span>
                         <p>
-                            Lorem ipsum dolor  amet mi ultricies interdum pede eu vestibulum vulputate maurimtum
+                            The Public Service Pension Fund professional staff are ready and
                             <br>
-                            commod rhoncus consectetuer reduce producet
+                            able to assist with your needs.
                         </p>
                     </div>
                 </div>
@@ -192,6 +192,18 @@
                         <div class="text-bottom">
                             <h5>Monifa Brooks-Gumbs</h5>
                             <h6>Administrator</h6>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-single text-center">
+                        <figure>
+                            <img src="Content/Images/personnel/girdon.jpg" alt="team">
+                        </figure>
+
+                        <div class="text-bottom">
+                            <h5>Girdon Connor</h5>
+                            <h6>Accountant</h6>
                         </div>
                     </div>
                 </div>
@@ -238,7 +250,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="Content/Images/personnel/ron.jpg" alt="team">
+                            <img src="Content/Images/personnel/rochelle.jpg" alt="team">
                         </figure>
                         <div class="overlay">
                             <ul>

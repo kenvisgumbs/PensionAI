@@ -33,7 +33,7 @@
                        
                         <p><strong>To be an effective provider of retirement benefits to ensure peace of mind to Contributors and a level of service that exceeds expectations.</strong>
 </p>   
-                      
+                       
                         <h4>HISTORY</h4>
                         <p class="mid">On 1 January 2004, the Public Service Pension Fund became the sole pension scheme for Government employees and government agencies. 
                             The Pensions Act is found in Chapter P20 of the Revised Statutes of Anguilla. The Pension Fund is a contributory fund and all contributors 

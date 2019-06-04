@@ -307,8 +307,8 @@
                                             <h5>PSPF Pension Calculator Basics</h5>
                                             <h5>&nbsp;</h5>
                                             <p class="para">
-                                                This calculator is only used for estimating purposes. For offical calculations please contact our office at your earliest convenience.
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                Calculations performed using this utilitly are not final and the PSPF cannot be held liable for any information shown here. For offical calculations and pension projections, please contact our office at your earliest convenience.
+                                               <br />
                                             </p>
                                             <p>Do you want to project <strong>Normal Retirement or Resignition/Termination?</strong>
                                                  <span class="form__group-item">
@@ -798,7 +798,8 @@
 
 
                                                         //database connection etc
-                                                        string sqlcon = "Data Source=SQL5014.site4now.net;Initial Catalog=DB_A421EE_pspf;User Id=DB_A421EE_pspf_admin;Password=PSPF2019;";
+                                                        //string sqlcon = "Data Source=SQL5014.site4now.net;Initial Catalog=DB_A421EE_pspf;User Id=DB_A421EE_pspf_admin;Password=PSPF2019;";
+                                                        string sqlcon = System.Configuration.ConfigurationManager.ConnectionStrings["sqlConnectionString"].ConnectionString;
                                                         System.Data.SqlClient.SqlConnection con = new System.Data.SqlClient.SqlConnection(sqlcon);
 
 
@@ -818,7 +819,7 @@
 
                                                     if (pension > ciel) pension = ciel;
 
-                                                    
+
 
                                                 %>
                                                 <span class="form__group-item">

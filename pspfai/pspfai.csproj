@@ -76,9 +76,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="404.aspx" />
+    <Content Include="Content\Images\press\student_visit.jpg" />
+    <Content Include="Press-Single.aspx" />
+    <Content Include="Press.aspx" />
+    <Content Include="Content\Images\core.png" />
     <Content Include="Content\Images\pages\coin_page.jpg" />
     <Content Include="Content\Images\pages\pension_page.jpg" />
+    <Content Include="Content\Images\personnel\girdon.jpg" />
     <Content Include="Content\Images\personnel\lenia.jpg" />
+    <Content Include="Content\Images\personnel\monifa.jpg" />
+    <Content Include="Content\Images\personnel\rochelle.jpg" />
     <Content Include="Content\Images\personnel\sharice.jpg" />
     <Content Include="Personnel.aspx" />
     <Content Include="About.aspx" />
@@ -279,6 +286,20 @@
     </Compile>
     <Compile Include="404.aspx.designer.cs">
       <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Press-Single.aspx.cs">
+      <DependentUpon>Press-Single.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Press-Single.aspx.designer.cs">
+      <DependentUpon>Press-Single.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Press.aspx.cs">
+      <DependentUpon>Press.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Press.aspx.designer.cs">
+      <DependentUpon>Press.aspx</DependentUpon>
     </Compile>
     <Compile Include="Personnel.aspx.cs">
       <DependentUpon>Personnel.aspx</DependentUpon>
@@ -482,6 +503,7 @@
     <Content Include="Content\Documents\PSPF_Booklet_2014_WEB.pdf" />
     <Content Include="Content\Documents\PSPF_Registration.pdf" />
     <Content Include="Content\Documents\PSPF_Loan_Application_Form.pdf" />
+    <Content Include="Content\Reports\2017 Audited Accounts.pdf" />
     <None Include="packages.config" />
     <Content Include="plugins\revolution\fonts\revicons\revicons90c6.eot" />
     <Content Include="plugins\revolution\fonts\revicons\revicons90c6.ttf" />

@@ -2572,7 +2572,7 @@ select:focus {
 
 }
 .right-side-bar .services-area{
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 .right-side-bar .service-menu {
   padding: 30px 0;
@@ -2993,6 +2993,25 @@ select:focus {
     line-height: 26px;
     color: #888888;
     font-weight: 400;
+}
+
+.blog-details .image-text ol > li{
+        list-style:upper-roman !important;
+        text-transform:none;
+        padding-left:5px;
+}
+
+.blog-details .image-text ul{
+        margin-left: 15px;
+        margin-bottom:5px;
+        text-transform: none;
+}
+
+.blog-details .image-text ul > li {
+   text-transform: none;
+   padding:0;
+   margin:0;
+   font-size: 14px;
 }
 
 .blog-details .left-side .text {
