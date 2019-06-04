@@ -143,39 +143,48 @@ order by [sort],category"))
                         <div class="title">
                             <h4>Popular News</h4>
                         </div>
-                        <div class="item">
-                            <div class="image-box">
-                                <figure>
-                                    <a href="blog-details.html"><img src="https://via.placeholder.com/100x75" alt=""></a>
-                                </figure>
-                            </div>
-                            <div class="image-text">
-                                <a href="blog-details.html"><h6>Condimentum incididunt amet a, pellente</h6></a>
-                                <span><i class="fa fa-calendar" aria-hidden="true"></i>Nov 20, 2017</span>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image-box">
-                                <figure>
-                                    <a href="blog-details.html"><img src="https://via.placeholder.com/100x75" alt=""></a>
-                                </figure>
-                            </div>
-                            <div class="image-text">
-                                <a href="blog-details.html"><h6>volutpat magna amet nullam lectus, parturient </h6></a>
-                                <span><i class="fa fa-calendar" aria-hidden="true"></i>02 Feb, 2017</span>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image-box">
-                                <figure>
-                                    <a href="blog-details.html"><img src="https://via.placeholder.com/100x75" alt=""></a>
-                                </figure>
-                            </div>
-                            <div class="image-text">
-                                <a href="blog-details.html"><h6>Magna wisi, et donec impdiet adipiscing volutpat </h6></a>
-                                <span><i class="fa fa-calendar" aria-hidden="true"></i>02 Feb, 2017</span>
-                            </div>
-                        </div>
+                         <%  string constr2 = ConfigurationManager.ConnectionStrings["sqlConnectionString"].ConnectionString;
+                            string press_id;
+                                                press_id = Request.QueryString["press-id"];
+                                        using (System.Data.SqlClient.SqlConnection con2 = new System.Data.SqlClient.SqlConnection(constr2))
+                                        {
+
+                                            using (System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(@"SELECT Top 4 [press_id]
+      ,[headline]
+      ,[details]
+      ,CONVERT(varchar,[published], 107) pdt
+      ,[pubisher], [view_count]
+      ,[category_id]
+      ,[media_tn]
+FROM [DB_A421EE_pspf].[dbo].[tbl_press] WHERE display= 1 ORDER BY view_count DESC"))
+                                            {
+                                                cmd.CommandType = System.Data.CommandType.Text;
+                                                cmd.Connection = con2;
+                                                con2.Open();
+                                                
+                                                using (System.Data.SqlClient.SqlDataReader sdr = cmd.ExecuteReader())
+                                                {
+                                                    while (sdr.Read()) {
+                                                        Response.Write(@"<div class=""item"">
+                                                <div class=""image-box"">
+                                                    <figure>
+                                                        <a href=""press-single.aspx?press-id=" + sdr["press_id"].ToString() + "&category-id=" + sdr["category_id"].ToString() + @"""><img width=""100"" height=""75"" src=""" + sdr["media_tn"].ToString() + @"""></a>
+                                                    </figure>
+                                                </div>
+                                                <div class=""image-text"">
+                                                    <a href=""press-single.aspx?press-id=" + sdr["press_id"].ToString() + "&category-id=" + sdr["category_id"].ToString() + @"""><h6>" + sdr["headline"].ToString() +@"</h6></a>
+                                                    <span><i class=""fa fa-calendar"" aria-hidden=""true""></i>"+ sdr["pdt"].ToString()+@"</span>
+                                                </div>
+                                            </div>");
+                                        }
+
+                            }
+                            con2.Close();
+                                }
+                            }
+
+
+                          %>
                     </div>
                                                
                 </div>
