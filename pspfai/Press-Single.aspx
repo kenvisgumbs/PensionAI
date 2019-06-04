@@ -43,9 +43,9 @@
       ,CONVERT(varchar,[published], 103) pdt
       ,[pubisher]
       ,[media]
-,[category_id]
+,tc.[category_id], category
       ,[display]
-  FROM [DB_A421EE_pspf].[dbo].[tbl_press] WHERE display= 1 and press_id= " + story))
+  FROM [DB_A421EE_pspf].[dbo].[tbl_press] tp INNER JOIN tbl_category tc ON tc.category_id = tp.category_id WHERE display= 1 and press_id= " + story))
                                  {
                                      cmd.CommandType = System.Data.CommandType.Text;
                                      cmd.Connection = con;
@@ -57,6 +57,7 @@
                                          Headline.InnerText = sdr["headline"].ToString();
                                          storyDetails.InnerHtml = sdr["details"].ToString();
                                          published.InnerText = " " + sdr["pdt"].ToString();
+                                         category.InnerText = sdr["category"].ToString();
                                          hasRows = true;
                                      }
                                      con.Close();
@@ -80,8 +81,9 @@
                                 </div>
                                 <div class="author-com">
                                     <ul>
-                                        <li id="published" runat="server" ></li>
-                                       <li>&nbsp;&nbsp;<strong>Posted</strong> by Webmaster</li>
+                                        <li><strong>Published</strong>&nbsp;<span id="published" runat="server" ></span></li>
+                                        <li>&nbsp;&nbsp;<strong>Posted by</strong> &nbsp;Webmaster</li>
+                                        <li>&nbsp;&nbsp;<strong>Category</strong>&nbsp;<span id="category" runat="server"></span></li>
                                     </ul>
                                 </div>
                                 <div id="storyDetails" runat="server" class="image-text">
