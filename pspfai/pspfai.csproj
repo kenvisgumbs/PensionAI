@@ -78,6 +78,7 @@
     <Content Include="404.aspx" />
     <Content Include="Content\Images\press\student_visit.jpg" />
     <Content Include="Content\Images\press\student_visit_tn.jpg" />
+    <Content Include="Press2.aspx" />
     <Content Include="Press-Single.aspx" />
     <Content Include="Press.aspx" />
     <Content Include="Content\Images\core.png" />
@@ -287,6 +288,13 @@
     </Compile>
     <Compile Include="404.aspx.designer.cs">
       <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Press2.aspx.cs">
+      <DependentUpon>Press2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Press2.aspx.designer.cs">
+      <DependentUpon>Press2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Press-Single.aspx.cs">
       <DependentUpon>Press-Single.aspx</DependentUpon>
