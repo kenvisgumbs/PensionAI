@@ -2877,6 +2877,13 @@ select:focus {
     display: inline-block;
     margin: 0 5px;
 }
+
+.busizone-pagination ul table {
+        display: inline-block;
+        margin: 0 5px;
+        float:left;
+}
+
 .busizone-pagination ul li a {
     float: left;
     width: 43px;
@@ -2898,10 +2905,17 @@ select:focus {
   width: 65px;
 }
 
-.busizone-pagination ul li a:hover{
+    .busizone-pagination ul li a.next-btn2 {
+        width: 65px;
+        float:left;
+    }
+
+.busizone-pagination ul li a:hover, ul li a.active{
   background: #21a53b;
   color: #fff;
 }
+
+
 
 /*** 
 =============================================

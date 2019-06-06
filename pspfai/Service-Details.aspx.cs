@@ -32,6 +32,7 @@ namespace pspfai
                     case "survivor":
                     case "early":
                     case "medical":
+                        page_file = "pension_page.jpg";
                        subpagedescription = subpage;
                     break;
                   

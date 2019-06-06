@@ -391,7 +391,7 @@
                                 <i class="flaticon-rocking-chair-with-dollar-sign-silhouette"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx?type=pension">
+                                <a href="service-details.aspx?type=pension">
                                     <h5>Pensions</h5>
                                 </a>
                                 <p>Pension is a monthly amount paid at retirement. Contributors qualify for a pension after 10 continuous years of contributions.</p>
@@ -408,7 +408,7 @@
                                 <i class="flaticon-retirement"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx?type=gratuity">
+                                <a href="service-details.aspx?type=gratuity">
                                     <h5>Gratuity Payments</h5>
                                 </a>
                                 <p>Gratuity is a one-time lump sum payment made to Contributors who have at least 10 years of service.</p>
@@ -425,7 +425,7 @@
                                 <i class="flaticon-money"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx?type=refund">
+                                <a href="service-details.aspx?type=refund">
                                     <h5>Refunds</h5>
                                 </a>
                                 <p>Refund is a payment of your contributions plus interest upon retirement or resignation for less than 10 years of service.</p>
@@ -442,7 +442,7 @@
                                 <i class="flaticon-family"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx?type=survivor">
+                                <a href="service-details.aspx?type=survivor">
                                     <h5>Survivor's Pension</h5>
                                 </a>
                                 <p>Survivors Pension is a monthly payment made to the Spouse and Dependent Children of a Contributor.</p>
@@ -459,7 +459,7 @@
                                 <i class="flaticon-cheque"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx?type=early">
+                                <a href="service-details.aspx?type=early">
                                     <h5>Early Retirement</h5>
                                 </a>
                                 <p>In special cases with approval, a Contributor who has 5 years left to normal retirement can receive Early Retirement.</p>
@@ -476,7 +476,7 @@
                                 <i class="flaticon-doctor-stethoscope"></i>
                             </div>
                             <div class="service-det">
-                                <a href="services-details.aspx">
+                                <a href="service-details.aspx">
                                     <h5>Medical Boarding</h5>
                                 </a>
                                 <p>On Medical evidence that the Contributor by reason of infirmity of mind or body, is no longer capable of performing duties..</p>
