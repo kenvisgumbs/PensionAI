@@ -90,6 +90,7 @@ namespace pspfai
             lbPrevious.Visible = !_pgsource.IsFirstPage;
             lbNext.Visible = !_pgsource.IsLastPage;
 
+     
             //Bind Data
             rptPress.DataSource = _pgsource;
             rptPress.DataBind();

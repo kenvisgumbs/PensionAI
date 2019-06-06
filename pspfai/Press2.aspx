@@ -64,32 +64,25 @@
                         </asp:Repeater>
                         <div class="busizone-pagination style2">
                             <ul>
-                                <li><a class="next-prv-btn" href="#" title=""><asp:LinkButton ID="lbPrevious" runat="server" OnClick="lbPrevious_Click">Prev</asp:LinkButton></a></li>
+                               <li><asp:LinkButton ID="lbPrevious" CssClass="next-prv-btn" runat="server" OnClick="lbPrevious_Click">Prev</asp:LinkButton></li> 
                                 <asp:DataList ID="rptPaging" runat="server" OnItemCommand="rptPaging_ItemCommand" OnItemDataBound="rptPaging_ItemDataBound"
                                                 RepeatDirection="Horizontal">
+                                   
                                                 <ItemTemplate>
-                                                    <li><a href="#" title=""> <asp:LinkButton ID="lbPaging" runat="server" CommandArgument='<%# Eval("PageIndex") %>' CommandName="newPage"
-                                                        Text='<%# Eval("PageText") %> ' Width="20px">      
-                                                    </asp:LinkButton></a></li>
+                                                    <li><asp:LinkButton ID="lbPaging" runat="server" CommandArgument='<%# Eval("PageIndex") %>' CommandName="newPage"
+                                                        Text='<%# Eval("PageText") %> '>      
+                                                    </asp:LinkButton></li>
                                                 </ItemTemplate>
+                                  
                                             </asp:DataList>
-                                <li><a href="#" title="" class="next-btn"><asp:LinkButton ID="lbNext" runat="server" OnClick="lbNext_Click">></asp:LinkButton></a></li>
+                               <li><asp:LinkButton CssClass="next-btn" ID="lbNext" runat="server" OnClick="lbNext_Click">></asp:LinkButton></li>
                             </ul>
                             <div style="margin-top: 20px;">
                                 <table>
                                     <tr>
                                         <asp:Label ID="lblpage" runat="server" Text="" Font-Size="Small"></asp:Label>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                           </td>
-                                        <td>
-                                            
-                                        </td>
-                                        <td>
-                                            
-                                        </td>
-                                    </tr>
+                               
                                 </table>
                         </div>
                     </div>
