@@ -28,7 +28,7 @@
                     <div class="service-block text-center">
                         <div class="icon-area">
                             <div class="icon-box">
-                                <i class="flaticon-"></i>
+                                <i class="flaticon-clipboard"></i>
                             </div>
                             <a href="forms.aspx"><h5>Forms</h5></a>
                             <p>Our fillable PDF forms, allow customers to easily fill, validate and print forms before submitting to the office.</p>
@@ -39,7 +39,7 @@
                     <div class="service-block text-center">
                         <div class="icon-area">
                             <div class="icon-box">
-                                <i class="fa fa-question-circle"></i>
+                                <i class="flaticon-information"></i>
                             </div>
                             <a href="services-details.html"><h5>FAQ</h5></a>
                             <p>Chances are our FAQ catelogue will have the answers to your inquiries. Also feel free to make suggestions.</p>
@@ -50,7 +50,7 @@
                     <div class="service-block text-center">
                         <div class="icon-area">
                             <div class="icon-box">
-                                <i class="fa fa-paper-plane-o"></i>
+                                <i class="flaticon-seo-performance-marketing-graphic"></i>
                             </div>
                             <a href="reports.aspx"><h5>Reports</h5></a>
                             <p>Annually, we publish our audited Accounts & Financial Statements. You can subscribe below. </p>

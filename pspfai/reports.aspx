@@ -26,6 +26,17 @@
      <section class="service-section">
         <div class="container">
             <div class="row">
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-block text-center">
+                        <div class="icon-area">
+                            <div class="icon-box">
+                                <i class="flaticon-seo-performance-marketing-graphic"></i>
+                            </div>
+                            <a target="_blank" href="Content/Reports/2017 Audited Accounts.pdf"><h5>2017 Annual Report</h5></a>
+                            <p>Adipiscing laoreet dui sed scelerisque  pellentesque ac justo. Lectu felis lacrum Placerat arcu dvida</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="service-block text-center">
                         <div class="icon-area">

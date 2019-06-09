@@ -439,7 +439,7 @@
                             <div class="icon-box">
                                 <figure>
                                     <img src="Content/Images/pages/survivor_sm.jpg" alt="services-1"></figure>
-                                <i class="flaticon-family"></i>
+                                <i class="flaticon-family-group-of-three"></i>
                             </div>
                             <div class="service-det">
                                 <a href="service-details.aspx?type=survivor">

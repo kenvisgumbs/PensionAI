@@ -149,10 +149,9 @@
                                             <li class="dropdown <% Response.Write( pspfai.util.getCurrent(ContentPageName, "RESOURCES")); %>"><a href="resources.aspx">Resources</a>
                                                 <ul> 
                                                     
-                                                    
-                                                    <li><a href="reports.aspx">Annual Reports</a></li>
-                                                    <li><a href="faq.aspx">Our Faq</a></li>
                                                     <li><a href="forms.aspx">Forms</a></li>
+                                                    <li><a href="reports.aspx">Annual Reports</a></li>
+                                                    <li><a href="faq.aspx">Faq</a></li>
                                                     <li><a href="calculator.aspx">Pension Calculator</a></li>
                                                 </ul>
                                             </li>
