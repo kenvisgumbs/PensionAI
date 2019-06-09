@@ -36,7 +36,7 @@ namespace pspfai
             this.Master.ContentPageName = "PRESS";
             if (!this.IsPostBack)
             {
-                BindCategory();
+                //BindCategory();
                 BindDataIntoRepeater();
                 BindPopular();
 
@@ -188,60 +188,15 @@ Order by published Desc"))
 
         private void BindPopular()
         {
-            using (System.Data.SqlClient.SqlConnection con = new System.Data.SqlClient.SqlConnection(constr))
-            {
 
-                using (System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(@"SELECT Top 4 [press_id]
-      ,[headline]
-      ,[details]
-      ,CONVERT(varchar,[published], 107) pdt
-      ,[pubisher], [view_count]
-      ,[category_id]
-      ,[media_tn]
-FROM [DB_A421EE_pspf].[dbo].[tbl_press] WHERE display= 1 ORDER BY view_count DESC"))
-                {
-                    cmd.CommandType = System.Data.CommandType.Text;
-                    cmd.Connection = con;
-                    con.Open();
-                    using (System.Data.SqlClient.SqlDataAdapter sda = new System.Data.SqlClient.SqlDataAdapter(cmd))
-                    {
-                        System.Data.DataTable dt = new System.Data.DataTable();
-                        sda.Fill(dt);
-                        rptPopular.DataSource = dt;
-                        rptPopular.DataBind();
-                    }
-                }
-                con.Close();
-            }
+            DataTable dt = new DataTable();
+            util.getPopular(constr, ref dt);
+            if (dt == null) return;
+            rptPopular.DataSource = dt;
+            rptPopular.DataBind();
+            
         }
 
-        private void BindCategory()
-        {
-            using (System.Data.SqlClient.SqlConnection con = new System.Data.SqlClient.SqlConnection(constr))
-            {
-                
-                using (System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(@"select tc.category_id, category,[sort], count(press_id) num 
-FROM tbl_category tc LEFT OUTER JOIN
-tbl_press tpc ON tpc.category_id = tc.category_id
-group by tc.category_id,category,[sort]
-order by [sort],category"))
-                {
-                    cmd.CommandType = System.Data.CommandType.Text;
-                    cmd.Connection = con;
-                    con.Open();
-                    using (System.Data.SqlClient.SqlDataAdapter sda = new System.Data.SqlClient.SqlDataAdapter(cmd))
-                    {
-                        System.Data.DataTable dt = new System.Data.DataTable();
-                        sda.Fill(dt);
-                        rptCategory.DataSource = dt;
-                        rptCategory.DataBind();
-                    }
-                }
-                con.Close();
-            }
-
-
-        }
 
         private void BindRepeater()
         {

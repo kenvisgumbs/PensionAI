@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="right-side clearfix">
-                        <div class="top-right">
+                       <%-- <div class="top-right">
                             <h6>Follow Us</h6>
                         </div>
                         <ul class="social-links">
@@ -54,7 +54,7 @@
                             <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
+                        </ul>--%>
                     </div>
                 </div>
             </section>
@@ -126,15 +126,15 @@
                                     </div>
                                     <div class="navbar-collapse collapse clearfix">
                                         <ul class="navigation clearfix">
-                                            <li class="home <% Response.Write( globalUtil.getCurrent(ContentPageName, "HOME")); %>"><a href="Home.aspx">Home</a></li>
-                                            <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "ABOUT")); %>"><a href="about.aspx">About</a>
+                                            <li class="home <% Response.Write( pspfai.util.getCurrent(ContentPageName, "HOME")); %>"><a href="Home.aspx">Home</a></li>
+                                            <li class="dropdown <% Response.Write(pspfai.util.getCurrent(ContentPageName, "ABOUT")); %>"><a href="about.aspx">About</a>
                                                     <ul>
                                                        <%-- <li><a href="personnel.aspx?type=board">THE BOARD</a></li>--%>
                                                         <li><a href="personnel.aspx?type=staff">The STAFF</a></li>
                                                         <!--<li><a href="faq.aspx">FAQ</a></li>-->
                                                     </ul>
                                             </li>
-                                            <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "SERVICES")); %>"><a href="Services.aspx">Services</a>
+                                            <li class="dropdown <% Response.Write( pspfai.util.getCurrent(ContentPageName, "SERVICES")); %>"><a href="Services.aspx">Services</a>
                                                 <ul>
                                                     <li><a href="service-details.aspx?type=pension">Pensions</a></li>
                                                     <li><a href="service-details.aspx?type=gratuity">Gratuity</a></li>
@@ -146,20 +146,20 @@
                                                 </ul>
 
                                             </li>
-                                            <li class="dropdown <% Response.Write( globalUtil.getCurrent(ContentPageName, "RESOURCES")); %>"><a href="#">Resources</a>
+                                            <li class="dropdown <% Response.Write( pspfai.util.getCurrent(ContentPageName, "RESOURCES")); %>"><a href="resources.aspx">Resources</a>
                                                 <ul> 
                                                     
                                                     
                                                     <li><a href="reports.aspx">Annual Reports</a></li>
                                                     <li><a href="faq.aspx">Our Faq</a></li>
-                                                    <li><a href="#">Forms</a></li>
+                                                    <li><a href="forms.aspx">Forms</a></li>
                                                     <li><a href="calculator.aspx">Pension Calculator</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="<% Response.Write( globalUtil.getCurrent(ContentPageName, "PRESS")); %>"><a href="press.aspx">PRESS</a>
+                                            <li class="<% Response.Write( pspfai.util.getCurrent(ContentPageName, "PRESS")); %>"><a href="press.aspx">PRESS</a>
                                                
                                             </li>
-                                            <li class="<% Response.Write( globalUtil.getCurrent(ContentPageName, "CONTACT")); %>"><a href="contact.aspx">Contact</a></li>
+                                            <li class="<% Response.Write( pspfai.util.getCurrent(ContentPageName, "CONTACT")); %>"><a href="contact.aspx">Contact</a></li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -202,13 +202,13 @@
                                        
                                     </ul>
                                 </div>
-                                <ul class="footer-social-links">
+                               <%-- <ul class="footer-social-links">
                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                </ul>
+                                </ul>--%>
                             </div>
                         </div>
                         <!--End single footer widget-->

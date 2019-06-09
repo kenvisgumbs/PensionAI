@@ -7,13 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace pspfai
 {
-    public partial class PSPFAI : System.Web.UI.MasterPage
+    public partial class Resources : System.Web.UI.Page
     {
-        public string ContentPageName { get; set; }
-        //public pspfai.util globalUtil;
         protected void Page_Load(object sender, EventArgs e)
         {
-            //globalUtil = new pspfai.util();
+            this.Master.ContentPageName = "RESOURCES";
         }
     }
 }

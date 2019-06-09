@@ -55,7 +55,7 @@
                                                 <p><%#Eval("short_details")%>...</p>
                                             </div>
                                             <div class="read-more-btn">
-                                                <a href="press-single.aspx?press-id=<%#Eval("press_id")%>&category-id=<%#Eval("press_id")%>">Read More</a>
+                                                <a href="press-single.aspx?press-id=<%#Eval("press_id")%>&category-id=<%#Eval("category_id")%>">Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -96,13 +96,36 @@
                             <h4>Categories</h4>
                         </div>
                         <ul class="service-menu">
-                            <asp:Repeater ID="rptCategory" runat="server">
-                                <HeaderTemplate></HeaderTemplate>
-                                <ItemTemplate>
-                                    <li><a href="press.aspx?category-id=<%#Eval("category_id")%>&category=<%#Eval("category") %>"><%# Eval("category") %><span>(<%# Eval("num") %>)</span></a></li>
-                                </ItemTemplate>
-                                <FooterTemplate></FooterTemplate>
-                            </asp:Repeater>
+                             <%  string constr1 = ConfigurationManager.ConnectionStrings["sqlConnectionString"].ConnectionString;
+
+                                using (System.Data.SqlClient.SqlConnection con1 = new System.Data.SqlClient.SqlConnection(constr1))
+                                {
+                                    
+                                    using (System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(@"select tc.category_id, category,[sort], count(press_id) num FROM tbl_category tc LEFT OUTER JOIN
+tbl_press tpc ON tpc.category_id = tc.category_id
+group by tc.category_id, category,[sort]
+order by [sort],category"))
+                                    {
+                                        cmd.CommandType = System.Data.CommandType.Text;
+                                        cmd.Connection = con1;
+                                        con1.Open();
+                                        string category;
+                                        category = Request.QueryString["category-id"];
+                                        using (System.Data.SqlClient.SqlDataReader sdr = cmd.ExecuteReader())
+                                        {
+                                            while (sdr.Read()) {
+                                                if (category != sdr["category_id"].ToString() )
+                                                Response.Write(@"<li><a href=""press.aspx?category-id="+ sdr["category_id"].ToString() + @"&category="+ sdr["category"].ToString() + @""">" +  sdr["category"].ToString() + "<span>("+sdr["num"].ToString()+")</span></a></li>");
+                                                else Response.Write(@"<li class=""active""><a href=""press.aspx?category-id="+ sdr["category_id"].ToString() + @"&category="+ sdr["category"].ToString() + @""">" +  sdr["category"].ToString() + "<span>("+sdr["num"].ToString()+")</span></a></li>");
+                                            }
+                                          
+                                        }
+                                        con1.Close();
+                                    }
+                                }
+
+
+                          %>
                         </ul>
                     </div>
                     <div class="blog-sidebar">
@@ -123,7 +146,7 @@
                                         <a href="press-single.aspx?press-id=<%#Eval("press_id")%>&category-id=<%#Eval("category_id")%>">
                                             <h6><%# Eval("headline")%></h6>
                                         </a>
-                                        <span><i class="fa fa-calendar" aria-hidden="true"></i>"+ <%# Eval("pdt")%></span>
+                                        <span><i class="fa fa-calendar" aria-hidden="true"></i><%# Eval("pdt")%></span>
                                     </div>
                                 </div>
                             </ItemTemplate>

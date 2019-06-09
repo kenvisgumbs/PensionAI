@@ -76,8 +76,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="404.aspx" />
+    <Content Include="Content\Images\pages\document_icons.png" />
+    <Content Include="Content\Images\pages\getacrobat.png" />
+    <Content Include="Content\Images\pages\loan_bg.png" />
+    <Content Include="Content\Images\pages\reg_bg.png" />
     <Content Include="Content\Images\press\student_visit.jpg" />
     <Content Include="Content\Images\press\student_visit_tn.jpg" />
+    <Content Include="fonts\Flaticon.svg" />
+    <Content Include="Resources.aspx" />
     <Content Include="Press.aspx" />
     <Content Include="Press-Single.aspx" />
     <Content Include="Content\Images\core.png" />
@@ -222,7 +228,6 @@
     <Content Include="Content\style.css" />
     <Content Include="EmailTemplate.html" />
     <Content Include="Faq.aspx" />
-    <Content Include="fonts\Flaticon.svg" />
     <Content Include="fonts\fontawesome-webfont3295.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\icomoonda59.svg" />
@@ -287,6 +292,13 @@
     </Compile>
     <Compile Include="404.aspx.designer.cs">
       <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.aspx.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources.aspx.designer.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
     </Compile>
     <Compile Include="Press.aspx.cs">
       <DependentUpon>Press.aspx</DependentUpon>
@@ -410,9 +422,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\Flaticon.eot" />
-    <Content Include="fonts\Flaticon.ttf" />
-    <Content Include="fonts\Flaticon.woff" />
     <Content Include="fonts\Flaticond41d.eot" />
     <Content Include="fonts\fontawesome-webfont3295.eot" />
     <Content Include="fonts\fontawesome-webfont3295.ttf" />
@@ -505,6 +514,10 @@
     <Content Include="Content\Documents\PSPF_Registration.pdf" />
     <Content Include="Content\Documents\PSPF_Loan_Application_Form.pdf" />
     <Content Include="Content\Reports\2017 Audited Accounts.pdf" />
+    <Content Include="fonts\Flaticon.eot" />
+    <Content Include="fonts\Flaticon.ttf" />
+    <Content Include="fonts\Flaticon.woff" />
+    <Content Include="fonts\Flaticon.woff2" />
     <None Include="packages.config" />
     <Content Include="plugins\revolution\fonts\revicons\revicons90c6.eot" />
     <Content Include="plugins\revolution\fonts\revicons\revicons90c6.ttf" />

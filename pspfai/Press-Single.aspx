@@ -147,8 +147,8 @@ order by [sort],category"))
                                         {
                                             while (sdr.Read()) {
                                                 if (category != sdr["category_id"].ToString() )
-                                                Response.Write(@"<li><a href=""#\"">" +  sdr["category"].ToString() + "<span>("+sdr["num"].ToString()+")</span></a></li>");
-                                                else Response.Write(@"<li class=""active""><a href=""#\"">" +  sdr["category"].ToString() + "<span>("+sdr["num"].ToString()+")</span></a></li>");
+                                                Response.Write(@"<li><a href=""press.aspx?category-id="+ sdr["category_id"].ToString() + @"&category="+ sdr["category"].ToString() + @""">" +  sdr["category"].ToString() + "<span>("+sdr["num"].ToString()+")</span></a></li>");
+                                                else Response.Write(@"<li class=""active""><a href=""press.aspx?category-id="+ sdr["category_id"].ToString() + @"&category="+ sdr["category"].ToString() + @""">" +  sdr["category"].ToString() + "<span>("+sdr["num"].ToString()+")</span></a></li>");
                                             }
                                           
                                         }
@@ -169,48 +169,26 @@ order by [sort],category"))
                         <div class="title">
                             <h4>Popular News</h4>
                         </div>
-                        <%  string constr2 = ConfigurationManager.ConnectionStrings["sqlConnectionString"].ConnectionString;
-                            string press_id;
-                                                press_id = Request.QueryString["press-id"];
-                                        using (System.Data.SqlClient.SqlConnection con2 = new System.Data.SqlClient.SqlConnection(constr2))
-                                        {
-
-                                            using (System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(@"SELECT Top 4 [press_id]
-      ,[headline]
-      ,[details]
-      ,CONVERT(varchar,[published], 107) pdt
-      ,[pubisher], [view_count]
-      ,[category_id]
-      ,[media_tn]
-FROM [DB_A421EE_pspf].[dbo].[tbl_press] WHERE display= 1 AND press_id <> " + press_id + " ORDER BY view_count DESC"))
-                                            {
-                                                cmd.CommandType = System.Data.CommandType.Text;
-                                                cmd.Connection = con2;
-                                                con2.Open();
-                                                
-                                                using (System.Data.SqlClient.SqlDataReader sdr = cmd.ExecuteReader())
-                                                {
-                                                    while (sdr.Read()) {
-                                                        Response.Write(@"<div class=""item"">
-                                                <div class=""image-box"">
-                                                    <figure>
-                                                        <a href=""press-single.aspx?press-id=" + sdr["press_id"].ToString() + "&category-id=" + sdr["category_id"].ToString() + @"""><img width=""100"" height=""75"" src=""" + sdr["media_tn"].ToString() + @"""></a>
-                                                    </figure>
-                                                </div>
-                                                <div class=""image-text"">
-                                                    <a href=""press-single.aspx?press-id=" + sdr["press_id"].ToString() + "&category-id=" + sdr["category_id"].ToString() + @"""><h6>" + sdr["headline"].ToString() +@"</h6></a>
-                                                    <span><i class=""fa fa-calendar"" aria-hidden=""true""></i>"+ sdr["pdt"].ToString()+@"</span>
-                                                </div>
-                                            </div>");
-                                        }
-
-                            }
-                            con2.Close();
-                                }
-                            }
-
-
-                          %>
+                         <asp:Repeater ID="rptPopular" runat="server">
+                            <HeaderTemplate></HeaderTemplate>
+                            <ItemTemplate>
+                                <div class="item">
+                                    <div class="image-box">
+                                        <figure>
+                                            <a href="press-single.aspx?press-id=<%#Eval("press_id")%>&category-id=<%#Eval("category_id")%>">
+                                                <img width="100" height="75" src="<%#Eval("media_tn")%>"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="image-text">
+                                        <a href="press-single.aspx?press-id=<%#Eval("press_id")%>&category-id=<%#Eval("category_id")%>">
+                                            <h6><%# Eval("headline")%></h6>
+                                        </a>
+                                        <span><i class="fa fa-calendar" aria-hidden="true"></i><%# Eval("pdt")%></span>
+                                    </div>
+                                </div>
+                            </ItemTemplate>
+                            <FooterTemplate></FooterTemplate>
+                        </asp:Repeater>
                        
                    
                     </div>                              
