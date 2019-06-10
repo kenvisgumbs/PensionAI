@@ -2791,24 +2791,26 @@ select:focus {
   position: relative;
   display: block;
 }
-.latest-project-area .overlay{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background: rgba(30, 33, 37, 0.30);
-  -webkit-transition: all 500ms ease;
-      -ms-transition: all 500ms ease;
-       -o-transition: all 500ms ease;
-     -moz-transition: all 500ms ease;
-          transition: all 500ms ease;
-  -webkit-transform: scale(0, 0);
-      -ms-transform: scale(0, 0);
-       -o-transform: scale(0, 0);
-     -moz-transform: scale(0, 0);
-          transform: scale(0, 0);
+
+
+.latest-project-area .overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(30, 33, 37, 0.30);
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    -moz-transform: scale(0, 0);
+    transform: scale(0, 0);
 }
 .latest-project-area .item:hover .overlay{
   -webkit-transition: all 500ms ease;
@@ -2851,7 +2853,7 @@ select:focus {
 
 .latest-project-area .overlay i:before{
   font-size: 40px;
-  color: #999999;
+  color: #999999 !important;
 }
 .latest-project-area .item img{
   width: 100%;

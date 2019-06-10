@@ -42,7 +42,7 @@
                                 <i class="flaticon-information"></i>
                             </div>
                             <a href="services-details.html"><h5>FAQ</h5></a>
-                            <p>Chances are our FAQ catelogue will have the answers to your inquiries. Also feel free to make suggestions.</p>
+                            <p>Chances are our FAQ catelog will have the answers to your inquiries. Also feel free to make suggestions.</p>
                         </div>
                     </div>
                 </div>

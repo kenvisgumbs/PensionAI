@@ -47,7 +47,7 @@
                    
                        <img width="195" height="168" src="Content/Images/pages/document_icons.png" alt="">
                         <div class="overlay">
-                            <a target="_blank" href="Content/Documents/PSPF_Registration.pdf"><i class="fa fa-download" aria-hidden="true"></i></a>
+                            <a target="_blank" href="Content/Documents/PSPF_Registration.pdf"><i class="flaticon-unlink" aria-hidden="true"></i></a>
                            
                         </div> 
                     <a target="_blank" href="Content/Documents/PSPF_Registration.pdf" class="title-overly"><h5>Registration Form</h5></a>      
@@ -60,7 +60,7 @@
                 <div class="item">
                     <img width="195" height="168" src="Content/Images/pages/document_icons.png" alt="">
                         <div class="overlay">
-                    <a target="_blank" href="Content/Documents/PSPF_Loan_Application_Form.pdf"><i class="fa fa-download" aria-hidden="true"></i></a>
+                    <a target="_blank" href="Content/Documents/PSPF_Loan_Application_Form.pdf"><i class="flaticon-unlink" aria-hidden="true"></i></a>
                             </div>
                       <a target="_blank" href="Content/Documents/PSPF_Registration.pdf" class="title-overly"> <h5>Loan Application</h5></a>
                                   
