@@ -78,8 +78,12 @@
     <Content Include="404.aspx" />
     <Content Include="Content\Images\pages\document_icons.png" />
     <Content Include="Content\Images\pages\getacrobat.png" />
+    <Content Include="Content\Images\pages\invest_page.jpg" />
     <Content Include="Content\Images\pages\loan_bg.png" />
+    <Content Include="Content\Images\pages\piggy_page.jpg" />
     <Content Include="Content\Images\pages\reg_bg.png" />
+    <Content Include="Content\Images\pages\service_pension.jpg" />
+    <Content Include="Content\Images\pages\service_pension1.jpg" />
     <Content Include="Content\Images\press\student_visit.jpg" />
     <Content Include="Content\Images\press\student_visit_tn.jpg" />
     <Content Include="fonts\Flaticon.svg" />

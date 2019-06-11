@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Public Service Pension Fund: Benefits" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Loans.aspx.cs" Inherits="pspfai.Loans" %>
+﻿<%@ Page Title="Public Service Pension Fund: Loans" Language="C#" MasterPageFile="~/PSPFAI.Master" AutoEventWireup="true" CodeBehind="Loans.aspx.cs" Inherits="pspfai.Loans" %>
 
 <%@ MasterType VirtualPath="~/PSPFAI.Master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">

@@ -102,7 +102,7 @@ Gratuity is a one-time lump sum payment made to Contributors who have at least 1
                     <div class="right-content-area bendetails">
                         <!-- right content area -->
                         <div class="img-wrapper">
-                            <img src="https://via.placeholder.com/570x405" alt="Services Image">
+                            <img src="Content/Images/pages/service_pension1.jpg" alt="Services Image">
                         </div>
                     </div>
                 </div>
@@ -173,7 +173,7 @@ Every effort will be made to have payment ready for the employee’s effective d
                     <div class="right-content-area bendetails">
                         <!-- right content area -->
                         <div class="img-wrapper">
-                            <img src="https://via.placeholder.com/570x405" alt="Services Image">
+                            <img src="Content/Images/pages/service_pension1.jpg" alt="Services Image">
                         </div>
                     </div>
                 </div>
@@ -240,7 +240,7 @@ Every effort will be made to have payment ready for the employee’s effective d
                     <div class="right-content-area bendetails">
                         <!-- right content area -->
                         <div class="img-wrapper">
-                            <img src="https://via.placeholder.com/570x405" alt="Services Image">
+                            <img src="Content/Images/pages/service_pension1.jpg" alt="Services Image">
                         </div>
                     </div>
                 </div>
@@ -307,7 +307,7 @@ Every effort will be made to have payment ready for the employee’s effective d
                     <div class="right-content-area bendetails">
                         <!-- right content area -->
                         <div class="img-wrapper">
-                            <img src="https://via.placeholder.com/570x405" alt="Services Image">
+                            <img src="Content/Images/pages/service_pension1.jpg" alt="Services Image">
                         </div>
                     </div>
                 </div>
@@ -373,7 +373,7 @@ Every effort will be made to have payment ready for the employee’s effective d
                     <div class="right-content-area bendetails">
                         <!-- right content area -->
                         <div class="img-wrapper">
-                            <img src="https://via.placeholder.com/570x405" alt="Services Image">
+                            <img src="Content/Images/pages/service_pension1.jpg" alt="Services Image">
                         </div>
                     </div>
                 </div>

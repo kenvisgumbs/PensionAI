@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!--Page Title-->
-    <section class="page-title" style="background: url(Content/Images/pages/loan_page.jpg);">
+    <section class="page-title" style="background: url(Content/Images/pages/loan_page.jpg) no-repeat center;">
        <div class="floatover">
         <div class="container">
             <h2>Resources</h2>

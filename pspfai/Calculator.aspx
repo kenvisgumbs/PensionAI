@@ -273,7 +273,7 @@
         }
     </style>
     <!--Page Title-->
-    <section class="page-title" style="background: url(Content/Images/pages/pagehsample.jpg);">
+    <section class="page-title" style="background: url(Content/Images/pages/pension_page.jpg) no-repeat center;">
         <div class="floatover">
             <div class="container">
                 <h2>Calculator</h2>
