@@ -435,10 +435,17 @@
                                                 <span class="form__group-item">
                                                     <asp:DropDownList ID="employer" runat="server" required="required" CssClass="select dob">
                                                         <asp:ListItem Value="">Employer</asp:ListItem>
-                                                        <asp:ListItem Value="1">PSPF Office</asp:ListItem>
-                                                        <asp:ListItem Value="2">GOA</asp:ListItem>
-                                                        <asp:ListItem Value="3">HAA</asp:ListItem>
-                                                        <asp:ListItem Value="3">RAPF</asp:ListItem>
+                                                        <asp:ListItem Value="1">GOA</asp:ListItem>
+                                                        <asp:ListItem Value="2">AASPA</asp:ListItem>
+                                                        <asp:ListItem Value="3">ACC</asp:ListItem>
+                                                         <asp:ListItem Value="4">ADB</asp:ListItem>
+                                                         <asp:ListItem Value="5">ATB</asp:ListItem>
+                                                         <asp:ListItem Value="6">FSC</asp:ListItem>
+                                                         <asp:ListItem Value="7">HAA</asp:ListItem>
+                                                        <asp:ListItem Value="8">PSPF</asp:ListItem>
+                                                        <asp:ListItem Value="9">PUC</asp:ListItem>
+                                                        <asp:ListItem Value="10">RAPF</asp:ListItem>
+                                                        <asp:ListItem Value="11">WCA</asp:ListItem>
                                                     </asp:DropDownList>
 
                                                 </span>

@@ -44,12 +44,7 @@
                             Pension Fund. There is a separate Fund for members of the Royal Anguilla Police Force called 
                             the Police Pension Fund. Both Funds are administered by the Pension Board and Pension Fund office.</p>
 
-                        <h4>Current Pension Fund Contributors</h4>
-                        <p>All Government employees holding pensionable posts must contribute to the Pension Fund. 
-                            In addition, employees of Statutory Agencies also contribute to the Fund. Currently, over 1000 persons 
-                            contribute to the Public Service Pension Fund. There is a separate Fund for members of the Royal Anguilla Police Force 
-                            called the Police Pension Fund. Both Funds are administered by the Pension Board and Pension Fund office.
-                        </p>
+                       
 
                         <h4>Retirement Ages</h4>
                          <ul> 

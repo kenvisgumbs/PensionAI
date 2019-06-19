@@ -219,11 +219,11 @@
                                     <h5>Our Services</h5>
                                 </div>
                                 <ul class="we-do-list">
-                                    <li><a href="services-details.aspx?type=pension"><i class="fa fa-angle-right" aria-hidden="true"></i>Pensions <span class="post-count"></span></a></li>
-                                    <li><a href="services-details.aspx?type=gratuity"><i class="fa fa-angle-right" aria-hidden="true"></i>Gratuity Payments <span class="post-count"></span></a></li>
-                                    <li><a href="services-details.aspx?type=refund"><i class="fa fa-angle-right" aria-hidden="true"></i>Refunds <span class="post-count"></span></a></li>
-                                    <li><a href="services-details.aspx?type=survivor"><i class="fa fa-angle-right" aria-hidden="true"></i>Survivor Payments <span class="post-count"></span></a></li>
-                                    <li><a href="services-details.aspx?type=early"><i class="fa fa-angle-right" aria-hidden="true"></i>Early Retirement <span class="post-count"></span></a></li>
+                                    <li><a href="service-details.aspx?type=pension"><i class="fa fa-angle-right" aria-hidden="true"></i>Pensions <span class="post-count"></span></a></li>
+                                    <li><a href="service-details.aspx?type=gratuity"><i class="fa fa-angle-right" aria-hidden="true"></i>Gratuity Payments <span class="post-count"></span></a></li>
+                                    <li><a href="service-details.aspx?type=refund"><i class="fa fa-angle-right" aria-hidden="true"></i>Refunds <span class="post-count"></span></a></li>
+                                    <li><a href="service-details.aspx?type=survivor"><i class="fa fa-angle-right" aria-hidden="true"></i>Survivor Payments <span class="post-count"></span></a></li>
+                                    <li><a href="service-details.aspx?type=early"><i class="fa fa-angle-right" aria-hidden="true"></i>Early Retirement <span class="post-count"></span></a></li>
                                 </ul>
                             </div>
                         </div>

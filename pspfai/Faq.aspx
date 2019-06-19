@@ -171,7 +171,9 @@ Service prior to 2004 the yearly accrual rate is 2% and for service from 2004 on
                         </div>
                     </div>
 
-                      <div class="accordion accordion-block">
+                     
+
+                     <div class="accordion accordion-block">
                         <div class="accord-btn">
                             <i class="left-num">14</i>
                             <h4>What is Gratuity and how is it calculated?</h4>
@@ -182,20 +184,9 @@ Service prior to 2004 the yearly accrual rate is 2% and for service from 2004 on
                         </div>
                     </div>
 
-                     <div class="accordion accordion-block">
-                        <div class="accord-btn">
-                            <i class="left-num">15</i>
-                            <h4>What is Gratuity and how is it calculated?</h4>
-                        </div>
-                        <div class="accord-content">
-                            <p>Gratuity is a one-time lump sum payment. It is calculated by multiplying the annual full pension by 12.5 and you receive 25% of this figure. Opting for gratuity reduces your annual pension to 75% of the full annual pension (Section 56).
-                    </p>
-                        </div>
-                    </div>
-
                         <div class="accordion accordion-block">
                         <div class="accord-btn">
-                            <i class="left-num">16</i>
+                            <i class="left-num">15</i>
                             <h4>What benefits are available for my family?</h4>
                         </div>
                         <div class="accord-content">
@@ -206,7 +197,7 @@ Service prior to 2004 the yearly accrual rate is 2% and for service from 2004 on
 
                         <div class="accordion accordion-block">
                         <div class="accord-btn">
-                            <i class="left-num">17</i>
+                            <i class="left-num">16</i>
                             <h4>Can I contribute while on Leave without Salary?</h4>
                         </div>
                         <div class="accord-content">
@@ -214,17 +205,27 @@ Service prior to 2004 the yearly accrual rate is 2% and for service from 2004 on
                         </div>
                     </div>
 
+                    
+
                      <div class="accordion accordion-block">
                         <div class="accord-btn">
-                            <i class="left-num border">18</i>
-                            <h4>Can I contribute while on Leave without Salary?Need to change</h4>
+                            <i class="left-num border">17</i>
+                            <h4>What are the Criteria for applying for a Pension Loan?</h4>
                         </div>
                         <div class="accord-content">
-                            <p>Yes, you can continue to contribute to the Pension Fund. Section 33 (1&2) of the Pensions Act, outlines the options for payment while on leave without salary for illness or pregnancy and leave for special or educational purposes.</p>
+                            <p>To apply for a Pension Loan you must be a Contributor of the Public Service Pension Fund and have been employed for at least two (2) years.</p>
                         </div>
                     </div>
 
-
+                    <div class="accordion accordion-block">
+                        <div class="accord-btn">
+                            <i class="left-num border">18</i>
+                            <h4>What amount can be borrowed as a Pension Loan?</h4>
+                        </div>
+                        <div class="accord-content">
+                            <p>Contributors can borrow up to 75% of their total contributions to the Pension Fund. The minimum loan amount is EC$1,000.00.</p>
+                        </div>
+                    </div>
 
                 </div>
 

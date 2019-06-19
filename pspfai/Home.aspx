@@ -232,7 +232,7 @@
                             data-y="['middle','middle','middle','middle']"
                             data-textalign="['top','top','top','top']"
                             data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h1>Your retirment is
+                            <h1>Your retirement is
                                 <br>
                                 in capable hands.</h1>
                         </div>
@@ -337,7 +337,7 @@
                             <a href="reports.aspx">
                                 <h5>Financials</h5>
                             </a>
-                            <p>The PSPF prides itself on openess &amp; transperency. We publish audited financial statements annually.</p>
+                            <p>The PSPF prides itself on openess &amp; transparency. We publish audited financial statements annually.</p>
                         </div>
                     </div>
                 </div>
@@ -377,9 +377,9 @@
                     <div class="sec-title text-center">
                         <h2>Our Benefits</h2>
                         <span class="border"></span>
-                        <p>There are no loosing options at the PSPF. We offer from Refunds of Contributions to
+                        <p>There are no losing options at the PSPF. We offer from Refunds of Contributions to
                             <br>
-                            Gratuity and/or Monthly Pensions after Retirment.</p>
+                            Gratuity and/or Monthly Pensions after Retirement.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
@@ -638,7 +638,7 @@
                                     </a>
                                 </div>
                                 <div class="text">
-                                    <p>It is with much excitement and enthusiam that I write my 2015 report on the Public Service Pension Fund. During the past....</p>
+                                    <p>It is with much excitement and enthusiasm that I write my 2015 report on the Public Service Pension Fund. During the past....</p>
                                 </div>
                                 <div class="read-more-btn">
                                     <a target="_blank" href="Content/Reports/2015 Audited Accounts.pdf">Full Document</a>

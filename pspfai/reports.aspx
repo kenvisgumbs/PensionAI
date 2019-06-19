@@ -55,7 +55,7 @@
                                 <i class="flaticon-seo-performance-marketing-graphic"></i>
                             </div>
                             <a target="_blank" href="Content/Reports/2015 Audited Accounts.pdf"><h5>2015 Annual Report</h5></a>
-                            <p>It is with much excitement and enthusiam that I write my 2015 report on the Public Service Pension Fund. During the past....</p>
+                            <p>It is with much excitement and enthusiasm that I write my 2015 report on the Public Service Pension Fund. During the past....</p>
                         </div>
                     </div>
                 </div>

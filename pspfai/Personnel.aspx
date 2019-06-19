@@ -203,7 +203,7 @@
 
                         <div class="text-bottom">
                             <h5>Girdon Connor</h5>
-                            <h6>Accountant</h6>
+                            <h6>Finance Manager</h6>
                         </div>
                     </div>
                 </div>
@@ -212,15 +212,7 @@
                         <figure>
                             <img src="Content/Images/personnel/lenia.jpg" alt="team">
                         </figure>
-                        <div class="overlay">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
+                       
                         <div class="text-bottom">
                             <h5>Lenia Simpson</h5>
                             <h6>Accounts & Loans Officer</h6>
@@ -232,15 +224,7 @@
                         <figure>
                             <img src="Content/Images/personnel/sharice.jpg" alt="team">
                         </figure>
-                        <div class="overlay">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
+                     
                         <div class="text-bottom">
                             <h5>Sharice Richardson</h5>
                             <h6>Accounts Clerk</h6>
@@ -252,15 +236,7 @@
                         <figure>
                             <img src="Content/Images/personnel/rochelle.jpg" alt="team">
                         </figure>
-                        <div class="overlay">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
+                       
                         <div class="text-bottom">
                             <h5>Rochelle Bryan</h5>
                             <h6>Pension Clerk</h6>
