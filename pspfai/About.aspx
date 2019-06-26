@@ -33,7 +33,15 @@
                        
                         <p><strong>To be an effective provider of retirement benefits to ensure peace of mind to Contributors and a level of service that exceeds expectations.</strong>
 </p>   
-                       
+                       <h4>CORE VALUES</h4>
+                        <ul class="core">
+                            <li class="c1"><span class="highlight">I</span>ntegrity</li>
+                            <li>E<span class="highlight">m</span>pathy</li>
+                            <li class="c2"><span class="highlight">P</span>rudence</li>
+                            <li class="c3"><span class="highlight">A</span>ccountability</li>
+                            <li class="c4"><span class="highlight">C</span>ustomer Focus</li>
+                            <li class="c5"><span class="highlight">T</span>ransparency</li>
+                        </ul>
                         <h4>HISTORY</h4>
                         <p class="mid">On 1 January 2004, the Public Service Pension Fund became the sole pension scheme for Government employees and government agencies. 
                             The Pensions Act is found in Chapter P20 of the Revised Statutes of Anguilla. The Pension Fund is a contributory fund and all contributors 

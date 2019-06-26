@@ -444,8 +444,8 @@
                                                          <asp:ListItem Value="7">HAA</asp:ListItem>
                                                         <asp:ListItem Value="8">PSPF</asp:ListItem>
                                                         <asp:ListItem Value="9">PUC</asp:ListItem>
-                                                        <asp:ListItem Value="10">RAPF</asp:ListItem>
-                                                        <asp:ListItem Value="11">WCA</asp:ListItem>
+                                                      
+                                                        <asp:ListItem Value="10">WCA</asp:ListItem>
                                                     </asp:DropDownList>
 
                                                 </span>

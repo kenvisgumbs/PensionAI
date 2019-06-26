@@ -311,7 +311,7 @@
   z-index:12;
 }        
 .main-menu .navbar-header .navbar-toggle {
-    border: 2px solid #0660a9;
+    border: 2px solid #21a53b;
     display: inline-block;
     float: left;
     margin: 0;
@@ -321,11 +321,11 @@
     border-radius: 0;
 }  
 .main-menu .navbar-header .navbar-toggle .icon-bar {
-  background: #0660a9 none repeat scroll 0 0;
+  background: #21a53b none repeat scroll 0 0;
   font-weight: 700;
 }  
 .main-menu .navbar-collapse > .navigation {
-  background: #0660a9 none repeat scroll 0 0;
+  background: #21a53b none repeat scroll 0 0;
   float: none !important;
   margin: 0 !important;
   width: 100% !important;
@@ -388,14 +388,14 @@
   padding:10px 10px !important;
   line-height:22px;
   color:#ffffff;
-  background:#0660a9;
+  background:#21a53b;
   text-align:left;
 } 
 .main-menu .navbar-collapse > .navigation > li > ul > li > a{
   padding:10px 20px !important;
   line-height:22px;
   color:#ffffff;
-  background:#0660a9;
+  background:#21a53b;
   text-align:left;
   font-size: 12px;
   font-weight: 600;

@@ -281,7 +281,7 @@
                     <h4 class="bendetails">Criteria</h4>
                     <ul class="bendetails">
                         <li><i class="fa fa-arrow-circle-right"></i>Must have at least two (2) years Contributions</li>
-                        <li><i class="fa fa-arrow-circle-right"></i>Loan amount less than 75% of Contributions</li>
+                        <li><i class="fa fa-arrow-circle-right"></i>Loan amount up to 75% of Contributions</li>
 
                     </ul>
 
@@ -309,7 +309,7 @@
                                             <h5>&nbsp;</h5>
                                             <p class="para">
                                                 This calculator is only used for estimating purposes. For offical calculations & amortization information please contact our office at your earliest convenience.
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                             
                                             </p>
                                          
                                         </div>
@@ -353,12 +353,21 @@
 
                                                 <span class="form__group-item">
                                                     <asp:DropDownList ID="employer" runat="server" required="required" CssClass="select dob">
+                                                        
                                                         <asp:ListItem Value="">Employer</asp:ListItem>
-                                                        <asp:ListItem Value="1">PSPF Office</asp:ListItem>
-                                                        <asp:ListItem Value="2">GOA</asp:ListItem>
-                                                        <asp:ListItem Value="3">HAA</asp:ListItem>
-                                                        <asp:ListItem Value="3">RAPF</asp:ListItem>
+                                                        <asp:ListItem Value="1">GOA</asp:ListItem>
+                                                        <asp:ListItem Value="2">AASPA</asp:ListItem>
+                                                        <asp:ListItem Value="3">ACC</asp:ListItem>
+                                                         <asp:ListItem Value="4">ADB</asp:ListItem>
+                                                         <asp:ListItem Value="5">ATB</asp:ListItem>
+                                                         <asp:ListItem Value="6">FSC</asp:ListItem>
+                                                         <asp:ListItem Value="7">HAA</asp:ListItem>
+                                                        <asp:ListItem Value="8">PSPF</asp:ListItem>
+                                                        <asp:ListItem Value="9">PUC</asp:ListItem>
+                                                      
+                                                        <asp:ListItem Value="10">WCA</asp:ListItem>
                                                     </asp:DropDownList>
+                                               
 
                                                 </span>
 
