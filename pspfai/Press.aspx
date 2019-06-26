@@ -35,7 +35,7 @@
                                 <div class="item-holder">
                                     <div class="image-box">
                                         <figure>
-                                            <img src="<%# Eval("media")%>" />
+                                            <img width="770" height="455" src="<%# Eval("media")%>" />
                                         </figure>
 
                                     </div>
@@ -102,7 +102,7 @@
                                 {
                                     
                                     using (System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(@"select tc.category_id, category,[sort], count(press_id) num FROM tbl_category tc LEFT OUTER JOIN
-tbl_press tpc ON tpc.category_id = tc.category_id
+tbl_press tpc ON tpc.category_id = tc.category_id WHERE display = 1
 group by tc.category_id, category,[sort]
 order by [sort],category"))
                                     {

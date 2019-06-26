@@ -84,9 +84,16 @@
     <Content Include="Content\Images\pages\reg_bg.png" />
     <Content Include="Content\Images\pages\service_pension.jpg" />
     <Content Include="Content\Images\pages\service_pension1.jpg" />
+    <Content Include="Content\Images\press\2017_openhouse.jpg" />
+    <Content Include="Content\Images\press\2017_openhouse_tn.jpg" />
+    <Content Include="Content\Images\press\2018_breastcancer.jpg" />
+    <Content Include="Content\Images\press\2018_breastcancer_tn.jpg" />
+    <Content Include="Content\Images\press\board_retreat.jpg" />
+    <Content Include="Content\Images\press\board_retreat_tn.jpg" />
     <Content Include="Content\Images\press\student_visit.jpg" />
     <Content Include="Content\Images\press\student_visit_tn.jpg" />
     <Content Include="fonts\Flaticon.svg" />
+    <Content Include="publications.aspx" />
     <Content Include="Resources.aspx" />
     <Content Include="Press.aspx" />
     <Content Include="Press-Single.aspx" />
@@ -296,6 +303,13 @@
     </Compile>
     <Compile Include="404.aspx.designer.cs">
       <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publications.aspx.cs">
+      <DependentUpon>publications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publications.aspx.designer.cs">
+      <DependentUpon>publications.aspx</DependentUpon>
     </Compile>
     <Compile Include="Resources.aspx.cs">
       <DependentUpon>Resources.aspx</DependentUpon>
@@ -522,6 +536,8 @@
     <Content Include="fonts\Flaticon.ttf" />
     <Content Include="fonts\Flaticon.woff" />
     <Content Include="fonts\Flaticon.woff2" />
+    <Content Include="Content\Documents\Loan_Brochure.pdf" />
+    <Content Include="Content\Documents\Budgeting_Brochure.pdf" />
     <None Include="packages.config" />
     <Content Include="plugins\revolution\fonts\revicons\revicons90c6.eot" />
     <Content Include="plugins\revolution\fonts\revicons\revicons90c6.ttf" />

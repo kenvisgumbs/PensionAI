@@ -163,8 +163,10 @@
     </section>
     <!--End team area-->
     <%}
-    else
-    { %>
+        else
+        {
+            if (Request.QueryString["person"] == null)
+            {%>
 
     <!--Start tema area-->
     <section class="team-sec">
@@ -186,7 +188,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="Content/Images/personnel/monifa.jpg" alt="team">
+                          <a href="?person=monifa&type=staff"> <img src="Content/Images/personnel/monifa.jpg" alt="team"></a> 
                         </figure>
 
                         <div class="text-bottom">
@@ -198,7 +200,7 @@
                  <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="Content/Images/personnel/girdon.jpg" alt="team">
+                             <a href="?person=girdon&type=staff">  <img src="Content/Images/personnel/girdon.jpg" alt="team"></a>
                         </figure>
 
                         <div class="text-bottom">
@@ -210,7 +212,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="Content/Images/personnel/lenia.jpg" alt="team">
+                             <a href="?person=lenia&type=staff">  <img src="Content/Images/personnel/lenia.jpg" alt="team"></a>
                         </figure>
                        
                         <div class="text-bottom">
@@ -222,7 +224,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="Content/Images/personnel/sharice.jpg" alt="team">
+                              <a href="?person=sharice&type=staff"> <img src="Content/Images/personnel/sharice.jpg" alt="team"></a>
                         </figure>
                      
                         <div class="text-bottom">
@@ -234,7 +236,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="Content/Images/personnel/rochelle.jpg" alt="team">
+                             <a href="?person=rochelle&type=staff">  <img src="Content/Images/personnel/rochelle.jpg" alt="team"></a>
                         </figure>
                        
                         <div class="text-bottom">
@@ -248,7 +250,37 @@
     </section>
     <!--End team area-->
 
-    <% }%>
+    <% } else {  %>
+    
+    <section class="project-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <div class="left-content-area"><!-- left content area -->
+                       <div class="img-wrapper">
+                            <img id="singlephoto" runat="server" src="/" alt="">
+                       <p><a href="personnel.aspx?type=staff">Back</a></p> 
+                       </div>
+                    </div><!-- //. left content area -->
+               </div>
+               <div class="col-md-9 col-sm-12">
+                    <div class="right-content-area"><!-- right content area -->
+                        <h3 id="singlename" runat="server"></h3>
+                        <div id="singletext" runat="server"></div>
+                    </div>
+               </div>
+              <div  class="col-md-12">
+              </div>
+             
+            </div>
+      </div>
+    </section>
+    
+    
+    <% }
+
+
+        }%>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="FooterScriptContent" runat="server">
 </asp:Content>

@@ -638,7 +638,7 @@
                                     </a>
                                 </div>
                                 <div class="text">
-                                    <p>It is with much excitement and enthusiasm that I write my 2015 report on the Public Service Pension Fund. During the past....</p>
+                                    <p>It is with much excitement and enthusiasm that I write my 2015 report on the Public Service Pension....</p>
                                 </div>
                                 <div class="read-more-btn">
                                     <a target="_blank" href="Content/Reports/2015 Audited Accounts.pdf">Full Document</a>

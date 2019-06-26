@@ -220,13 +220,13 @@ Every effort will be made to have payment ready for the employee’s effective d
                         <h4 class="bendetails">key notes</h4>
                         	
 
-                       <p>
-Pension paid to a surviving spouse (Section 61(1-3))
-	ceases upon remarriage
-	after 5 years if surviving spouse was under the age of 50 at the time of death 
-	Pension paid to surviving child(ren) (Section 61(1-3 & 63))
-	Ceases at the age of 18 or 21 if receiving full-time instructions at University, College or other educational establishment
-                       </p>	
+                       <ul class="bendetails"><li>
+<strong>Pension paid to a surviving spouse (Section 61(1-3))</strong>
+	<ul><li>Ceases upon remarriage</li>
+	<li>After 5 years if surviving spouse was under the age of 50 at the time of death</li></ul></li>
+	<li><strong>Pension paid to surviving child(ren) (Section 61(1-3 & 63))</strong>
+	<ul class="bendetails"><li>Ceases at the age of 18 or 21 if receiving full-time instructions at University, College or other educational establishment</li></ul></li>
+                       </ul>	
                                  
                         
 	
@@ -255,7 +255,7 @@ Pension paid to a surviving spouse (Section 61(1-3))
             </div>
         </div>
     </section>
-    <%} else if (subPage == "early") { %>
+    <%} else if (subPage == "early retirement") { %>
     <section class="services-details">
         <div class="container">
             <div class="row">
@@ -331,7 +331,13 @@ Interested persons should write to the Deputy Governor, via the Permanent Secret
                 <div class="col-md-12">
                     <div class="text-area text-left">
                         <h4>Details About Medical Boarding &amp Retirement</h4>
-                        <p>On Medical evidence to the satisfaction of the Governor or Secretary of State that the Contributor by reason of any infirmity of mind or body, is no longer capable of performing his or her duties, and such infirmity is likely to be permanent, then Early Retirement can be granted. In this case, pension benefits are calculated up to the effective date, there is no discount on gratuity and pension is paid without delay.</p>
+                        <p>Section 7(e) of the Pensions Act provides for the special case
+of Medical Boarding. The process is triggered by the employing Human Resource
+(HR) Department following a period of continuous accumulated
+Sick Leave.The HR Department commissions a Medical Board consisting
+of Medical Professionals and the Medical Board Candidate. After an interview process and review of Medical Records the
+Medical Board determines whether the employee is fit to work. The Medical Board submits a report to the Governor or Deputy
+Governor for final approval.</p>
                             
 
                     </div>
@@ -341,39 +347,45 @@ Interested persons should write to the Deputy Governor, via the Permanent Secret
                 <div class="col-md-6 col-md-12">
                     <h4 class="bendetails">Criteria</h4>
 
-                    <ul class="bendetails"><li><i class="fa fa-arrow-circle-right"></i>Contributed to the Public Service Pension Fund</li>
-<li><i class="fa fa-arrow-circle-right"></i>Less than 10 years of continuous service</li>
+                    <ul class="bendetails">
+<li><i class="fa fa-arrow-circle-right"></i>At least ten years of contributory pensionable service</li>
                         
                        
                     </ul>
                     
 
                 </div>
+                
+
 
                  <div class="col-md-6 col-md-12">
                     <h4 class="bendetails">The Calculation</h4>
-                   <p class="bendetails">Upon resignation, employees receive a refund of all Pension Contributions plus interest, compounded annually, at the current interest rate</p>
-<p class="bendetails">Pension deductions are usually not made for the last month of service</p>
-<p class="bendetails">All refund calculations are verified by either the Treasury Department or the respective agency Human Resource departments.</p>
+                   <p class="bendetails">Benefits are calculated up to the approval date given by the
+Governor or Deputy Governor.</p>
+<p class="bendetails">The formula used is the same as that for Normal Retirement
+calculations.</p>
+<p class="bendetails">There is no discounting of gratuity benefits and pension
+payments begin on the day following the approval date.</p>
 
                 </div>
                 
                 <div class="col-md-6 col-sm-12">
                     <div class="left-content-area bendetails">
                         <!-- left content area -->
-                        <h4 class="bendetails">Timeframe for receiving refund</h4>
-
-                       <p>The refund process begins when the Pension Fund office receives notice of an employee’s resignation from Public Administration or agency Human Resource Department. 
-Every effort will be made to have payment ready for the employee’s effective date of resignation.</p>	
+                        <h4 class="bendetails">Payment of Benefit &amp; Other Information</h4>
+                        <p>Pension payments begin to accrue on the day following the last day of service and are paid in arrears in monthly installments. Deferred pension 
+                            payments begin when the normal retirement age is attained.</p>
+                        <p>Pension payments are made on the 29<sup>th</sup> day of each month. Exceptions are for the months of February and December. 
+                            February payments will be made on the 28<sup>th</sup> and December payments on the 20<sup>th</sup>. If the scheduled payment date falls on a weekend or holiday, payments will be made on the closest working day.
+</p>
                                  
                          
 	
                             <h5 class="bendetails">Key Documents</h5>   
                         <div class="about-item">
                             <ul class="left-side">
-                                <li><i class="fa fa-arrow-circle-right"></i>Letter of Resignation</li>
-                                <li><i class="fa fa-arrow-circle-right"></i>Notice from your HR Dept</li>
-                                
+                                <li><i class="fa fa-arrow-circle-right"></i>Governor or Dpty Governor Approval</li>
+                              
                             </ul>
                         </div>
                     </div>

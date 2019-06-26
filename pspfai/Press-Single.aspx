@@ -134,7 +134,7 @@
                                 {
                                     
                                     using (System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(@"select tc.category_id, category,[sort], count(press_id) num FROM tbl_category tc LEFT OUTER JOIN
-tbl_press tpc ON tpc.category_id = tc.category_id
+tbl_press tpc ON tpc.category_id = tc.category_id Where display = 1
 group by tc.category_id, category,[sort]
 order by [sort],category"))
                                     {

@@ -13,6 +13,33 @@ namespace pspfai {
     public partial class Personnel {
         
         /// <summary>
+        /// singlephoto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage singlephoto;
+        
+        /// <summary>
+        /// singlename control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl singlename;
+        
+        /// <summary>
+        /// singletext control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl singletext;
+        
+        /// <summary>
         /// Master property.
         /// </summary>
         /// <remarks>
