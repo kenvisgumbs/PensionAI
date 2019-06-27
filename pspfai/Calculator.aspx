@@ -453,7 +453,17 @@
 
 
                                             </fieldset>
-
+                                             <ul>
+                                                <li>GOA - Government of Anguilla</li>
+                                                <li>AASPA - Anguilla Air &amp; Seaports Authority</li>
+                                                <li>ACC - Anguilla Community College</li>
+                                                <li>ADB - Anguilla Development Board</li>
+                                                <li>ATB - Anguilla Tourist Board</li>
+                                                <li>FSC - Financial Services Commission</li>
+                                                <li>HAA - Health Authority Anguilla</li>
+                                                <li>PSPF - Public Service Pension Fund</li>
+                                                <li>PUC - Public Utilities Commission</li>
+                                            </ul>
                                         </div>
 
                                           <div class="form__row t-date-of-birth">

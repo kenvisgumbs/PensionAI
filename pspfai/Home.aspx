@@ -375,7 +375,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="sec-title text-center">
-                        <h2>Our Benefits</h2>
+                        <h2>Our Services</h2>
                         <span class="border"></span>
                         <p>There are no losing options at the PSPF. We offer from Refunds of Contributions to
                             <br>
@@ -496,7 +496,7 @@
                 <!--Start single item-->
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="single-item text-left">
-                        <h1><span class="timer" data-from="1" data-to="500" data-speed="5000" data-refresh-interval="50">500</span><i class="fa fa-plus" aria-hidden="true"></i></h1>
+                        <h1><span class="timer" data-from="1" data-to="100" data-speed="5000" data-refresh-interval="50">100</span><i class="fa fa-plus" aria-hidden="true"></i></h1>
                         <span class="border"></span>
                         <h3>Pensioners</h3>
                     </div>
@@ -514,7 +514,7 @@
                 <!--Start single item-->
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="single-item text-left">
-                        <h1><span class="timer" data-from="1" data-to="50" data-speed="5000" data-refresh-interval="50">50</span><i class="text-m">M</i></h1>
+                        <h1><span class="timer" data-from="1" data-to="40" data-speed="5000" data-refresh-interval="50">40</span><i class="text-m">M</i></h1>
                         <span class="border"></span>
                         <h3>Reserves</h3>
                     </div>
@@ -523,7 +523,7 @@
                 <!--Start single item-->
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="single-item text-left">
-                        <h1><span class="timer" data-from="1" data-to="10" data-speed="5000" data-refresh-interval="50">10</span><i class="text-m">M</i></h1>
+                        <h1><span class="timer" data-from="1" data-to="5" data-speed="5000" data-refresh-interval="50">5</span><i class="text-m">M</i></h1>
                         <span class="border"></span>
                         <h3>Loans</h3>
                     </div>

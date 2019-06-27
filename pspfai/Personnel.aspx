@@ -35,9 +35,9 @@
                         </a>
                         <span class="border"></span>
                         <p>
-                            Lorem ipsum dolor  amet mi ultricies interdum pede eu vestibulum vulputate maurimtum
+                            The Public Service Pension Fund Board of Directors embodies sound,  
                             <br>
-                            commod rhoncus consectetuer reduce producet
+                         timely &amp; strategic Governance.
                         </p>
                     </div>
                 </div>
@@ -58,15 +58,7 @@
                         <figure>
                             <img src="https://via.placeholder.com/270x300" alt="team">
                         </figure>
-                        <div class="overlay">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
+                      
                         <div class="text-bottom">
                             <h5>Mr Timothy A. Hodge</h5>
                             <h6>Member</h6>
@@ -78,15 +70,7 @@
                         <figure>
                             <img src="https://via.placeholder.com/270x300" alt="team">
                         </figure>
-                        <div class="overlay">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
+                       
                         <div class="text-bottom">
                             <h5>Dr. Aidan Harrigan</h5>
                             <h6>Member</h6>
@@ -98,15 +82,7 @@
                         <figure>
                             <img src="https://via.placeholder.com/270x300" alt="team">
                         </figure>
-                        <div class="overlay">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
+                      
                         <div class="text-bottom">
                             <h5>Ms. Emma Furguson</h5>
                             <h6>Member</h6>
@@ -123,15 +99,7 @@
                         <figure>
                             <img src="https://via.placeholder.com/270x300" alt="team">
                         </figure>
-                        <div class="overlay">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
+                       
                         <div class="text-bottom">
                             <h5>Ms. Susan Hodge</h5>
                             <h6>Member</h6>
@@ -143,15 +111,7 @@
                         <figure>
                             <img src="https://via.placeholder.com/270x300" alt="team">
                         </figure>
-                        <div class="overlay">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
+                      
                         <div class="text-bottom">
                             <h5>Ms. Michelle Queeley</h5>
                             <h6>Member</h6>
