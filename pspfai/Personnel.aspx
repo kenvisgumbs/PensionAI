@@ -23,7 +23,9 @@
     <!--End Page Title-->
 
     <% if (subPage == "board")
-        { %>
+        {
+            if (Request.QueryString["person"] == null)
+            {%>%>
     <!--Start tema area-->
     <section class="team-sec">
         <div class="container">
@@ -44,7 +46,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="https://via.placeholder.com/270x300" alt="team">
+                              <a href="?person=kathleen&type=board"><img src="Content/Images/personnel/kathleen.jpg" alt="team"></a>
                         </figure>
 
                         <div class="text-bottom">
@@ -56,7 +58,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="https://via.placeholder.com/270x300" alt="team">
+                             <a href="?person=timothy&type=board"><img src="Content/Images/personnel/timothy.jpg" alt="team"></a>
                         </figure>
                       
                         <div class="text-bottom">
@@ -68,7 +70,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="https://via.placeholder.com/270x300" alt="team">
+                             <a href="?person=aidan&type=board"><img src="Content/Images/personnel/aidan.jpg" alt="team"></a>
                         </figure>
                        
                         <div class="text-bottom">
@@ -80,11 +82,11 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="https://via.placeholder.com/270x300" alt="team">
+                             <a href="?person=susan&type=board"><img src="Content/Images/personnel/susan.jpg" alt="team"></a>
                         </figure>
-                      
+                       
                         <div class="text-bottom">
-                            <h5>Ms. Emma Furguson</h5>
+                            <h5>Ms. Susan Hodge</h5>
                             <h6>Member</h6>
                         </div>
                     </div>
@@ -94,22 +96,11 @@
         <div class="clearfix"><</div>
         <div class="container">
             <div class="row">
+               
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                            <img src="https://via.placeholder.com/270x300" alt="team">
-                        </figure>
-                       
-                        <div class="text-bottom">
-                            <h5>Ms. Susan Hodge</h5>
-                            <h6>Member</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="team-single text-center">
-                        <figure>
-                            <img src="https://via.placeholder.com/270x300" alt="team">
+                             <a href="?person=michelle&type=board"><img src="Content/Images/personnel/michelle.jpg" alt="team"></a>
                         </figure>
                       
                         <div class="text-bottom">
@@ -124,9 +115,36 @@
     <!--End team area-->
     <%}
         else
-        {
-            if (Request.QueryString["person"] == null)
-            {%>
+        {%>
+             <section class="project-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <div class="left-content-area"><!-- left content area -->
+                       <div class="img-wrapper">
+                            <img id="singlephoto1" runat="server" src="/" alt="">
+                       <p><a href="personnel.aspx?type=board">Back</a></p> 
+                       </div>
+                    </div><!-- //. left content area -->
+               </div>
+               <div class="col-md-9 col-sm-12">
+                    <div class="right-content-area"><!-- right content area -->
+                        <h3 id="singlename1" runat="server"></h3>
+                        <div id="singletext1" runat="server"></div>
+                    </div>
+               </div>
+              <div  class="col-md-12">
+              </div>
+             
+            </div>
+      </div>
+    </section> 
+       <% }
+           }
+           else
+           {
+               if (Request.QueryString["person"] == null)
+               {%>
 
     <!--Start tema area-->
     <section class="team-sec">
@@ -210,7 +228,9 @@
     </section>
     <!--End team area-->
 
-    <% } else {  %>
+    <% }
+        else
+        {  %>
     
     <section class="project-details">
         <div class="container">

@@ -29,7 +29,7 @@
                     <div class="sec-title text-center">
                       
                         <p>
-                            All forms on this page are provided in Portable Document Format(PDF). Download the desired form fill, print
+                            All forms on this page are provided in Portable Document Format(PDF). Download the desired form; fill, print
                            <br>
                           and return to the Public Service Pension Office.
                         </p>

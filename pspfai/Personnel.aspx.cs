@@ -26,6 +26,35 @@ namespace pspfai
                 switch(Request.QueryString["person"])
                 {
 
+                    case "kathleen":
+                        singlephoto1.Src = "Content/Images/personnel/kathleen.jpg";
+                        singlename1.InnerText = "Kathleen Rogers - Chairlady";
+                        singletext1.InnerHtml = @"";
+                    break;
+
+                    case "timothy":
+                        singlephoto1.Src = "Content/Images/personnel/timothy.jpg";
+                        singlename1.InnerText = "Timothy Hodge";
+                        singletext1.InnerHtml = @"";
+                    break;
+
+                    case "aidan":
+                        singlephoto1.Src = "Content/Images/personnel/aidan.jpg";
+                        singlename1.InnerText = "Aidan Harrigan";
+                        singletext1.InnerHtml = @"";
+                        break;
+
+                    case "susan":
+                        singlephoto1.Src = "Content/Images/personnel/susan.jpg";
+                        singlename1.InnerText = "Susan Hodge";
+                        singletext1.InnerHtml = @"";
+                        break;
+                    case "michelle":
+                        singlephoto1.Src = "Content/Images/personnel/michelle.jpg";
+                        singlename1.InnerText = "Michelle Queeley";
+                        singletext1.InnerHtml = @"";
+                        break;
+
                     case "monifa":
                         singlephoto.Src = "Content/Images/personnel/monifa.jpg";
                         singlename.InnerText = "Monifa Brooks-Gumbs - Administrator";
