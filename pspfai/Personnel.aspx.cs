@@ -28,7 +28,7 @@ namespace pspfai
 
                     case "kathleen":
                         singlephoto1.Src = "Content/Images/personnel/kathleen.jpg";
-                        singlename1.InnerText = "Kathleen Rogers - Chairlady";
+                        singlename1.InnerText = "Kathleen Rogers - Chairman";
                         singletext1.InnerHtml = @"";
                     break;
 
@@ -40,7 +40,7 @@ namespace pspfai
 
                     case "aidan":
                         singlephoto1.Src = "Content/Images/personnel/aidan.jpg";
-                        singlename1.InnerText = "Aidan Harrigan";
+                        singlename1.InnerText = "Dr. Aidan Harrigan";
                         singletext1.InnerHtml = @"";
                         break;
 
