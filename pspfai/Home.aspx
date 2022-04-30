@@ -4,20 +4,286 @@
     <link href="plugins/revolution/css/settings.css" rel="stylesheet" type="text/css">
     <link href="plugins/revolution/css/layers.css" rel="stylesheet" type="text/css">
     <link href="plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css">
+	
+		 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <!--Main Slider
+	<!--Main Slider
     update data-index tag for slider animation to function-->
     <section class="main-slider">
         <div class="rev_slider_wrapper fullwidthbanner-container" id="rev_slider_one_wrapper" data-source="gallery">
             <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
                <ul>
 
+				   <!-- <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1681" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/christmas.jpg">
+
+                        <div class="tp-caption tp-resizeme"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['-80','-90','-100','-100']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <h1> Season&#39;s Greetings! <br/>
+								and A Happy New Year!
+                                </h1>
+                        </div>
+
+                        <div class="tp-caption"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['550','550','550','500']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['10','10','10','10']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="text">Peace, love and harmony we wish to you and <br/>may love fill your home with blessings too.</div>
+                        </div>
+
+                        <div class="tp-caption tp-resizeme"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['100','100','100','110']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="btns-box">
+                                <!--<a href="loans.aspx" class="thm-btn bg-clr2">Learn More</a>
+                                <a href="contact.aspx" class="thm-btn bg-clr1">Contact US</a>
+                            </div>
+                        </div>
+                    </li>-->
+				   
+				<!--   <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1587" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/bcancer.jpg">
+
+                        <div class="tp-caption"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['-80','-90','-100','-100']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <h1> Early Detection
+                                <br>
+                                Saves Lives!</h1>
+                        </div>
+
+                        <div class="tp-caption"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['550','550','550','500']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['10','10','10','10']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="text">&nbsp;</div>
+                        </div>
+
+                        <div class="tp-caption tp-resizeme"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['100','100','100','110']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="btns-box">
+                               <!-- <a href="loans.aspx" class="thm-btn bg-clr2">Learn More</a>
+                                <a href="contact.aspx" class="thm-btn bg-clr1">Contact US</a>
+                            </div>
+                        </div>ChristmasCard-2021.jpg
+                    </li>
+                    
+                     <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/ChristmasCard-2021.jpg">
+
+                        <div class="tp-caption tp-resizeme"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['-80','-90','-100','-100']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'><!--
+                            <h1> We offer the Lowest
+                                <br>
+                                Interest Rates on Loans</h1>
+                        </div>
+
+                        <div class="tp-caption"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['550','550','550','500']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['10','10','10','10']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="text">Apply by 15<sup>th</sup> December to ensure payment for Christmas.</div>
+                        </div>
+
+                        <div class="tp-caption tp-resizeme"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['100','100','100','110']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="btns-box">
+                                <!--<a href="Content/Documents/loan2021.pdf" class="thm-btn bg-clr2"></a>
+                                <a href="contact.aspx" class="thm-btn bg-clr1">Contact US</a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/loan2021.jpg">
+
+                        <div class="tp-caption tp-resizeme"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['-80','-90','-100','-100']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'><!--
+                            <h1> We offer the Lowest
+                                <br>
+                                Interest Rates on Loans</h1>
+                        </div>
+
+                        <div class="tp-caption"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['550','550','550','500']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['10','10','10','10']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                           <!-- <div class="text">Apply by 15<sup>th</sup> December to ensure payment for Christmas.</div>
+                        </div>
+
+                        <div class="tp-caption tp-resizeme"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['100','100','100','110']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="btns-box">
+                                <a href="Content/Documents/loan2021.pdf" class="thm-btn bg-clr2">Learn More</a>
+                                <a href="contact.aspx" class="thm-btn bg-clr1">Contact US</a>
+                            </div>
+                        </div>
+                    </li>
+				   
                     <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/loan.jpg">
 
-                        <div class="tp-caption"
+                        <div class="tp-caption tp-resizeme"
                             data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]"
@@ -54,7 +320,7 @@
                             data-y="['middle','middle','middle','middle']"
                             data-textalign="['top','top','top','top']"
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <div class="text">The Public Service Pension Fund offers loans to qualified persons at a low rate of 6% annually.</div>
+                            <div class="text">The Public Service Pension Fund offers loans to qualified persons at a low rate of 5% annually.</div>
                         </div>
 
                         <div class="tp-caption tp-resizeme"
@@ -78,7 +344,7 @@
                                 <a href="contact.aspx" class="thm-btn bg-clr1">Contact US</a>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
 
                   <%--   <li data-description="Slide Description" data-easein="default" data-easeout="default"  data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/slider_staff.jpg">
@@ -150,7 +416,7 @@
                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1670" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="0" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/coins.jpg">
 
-                        <div class="tp-caption"
+                        <div class="tp-caption tp-resizeme"
                             data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]"
@@ -166,7 +432,7 @@
                             data-y="['middle','middle','middle','middle']"
                             data-textalign="['top','top','top','top']"
                             data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h1>Responsible & Strategic
+                            <h1>Responsible &amp; Strategic
                                 <br>
                                 Investment Programme.</h1>
                         </div>
@@ -212,11 +478,13 @@
                             </div>
                         </div>
                     </li>
+				   
+				   
 
                      <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1671" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="0" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/pensioner.jpg">
 
-                        <div class="tp-caption"
+                        <div class="tp-caption tp-resizeme"
                             data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]"
@@ -278,8 +546,71 @@
                             </div>
                         </div>
                     </li>
+				   
+				   <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1672" data-masterspeed="600" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="https://via.placeholder.com/1920x1080" data-title="Slide Title" data-transition="">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="0" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="Content/Images/jumbo/retire.jpg">
 
-                  
+                        <div class="tp-caption"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['-80','-90','-100','-100']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <h1>RETIRE from WORK but<br/> NOT from LIFE!</h1>
+                        </div>
+
+                        <div class="tp-caption"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['600','600','600','550']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['10','10','10','10']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="text"><strong>M.K.SONI</strong></div>
+                        </div>
+
+                        <div class="tp-caption tp-resizeme"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingtop="[0,0,0,0]"
+                            data-responsive_offset="on"
+                            data-type="text"
+                            data-height="none"
+                            data-width="['900','850','750','600']"
+                            data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']"
+                            data-voffset="['100','100','100','110']"
+                            data-x="['left','left','left','left']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="btns-box">
+                                <%--<a href="#" class="thm-btn bg-clr1">Learn More</a>
+                                <a href="contact.aspx" class="thm-btn bg-clr2">Contact Us</a>--%>
+                            </div>
+                        </div>
+                    </li>
+
                 </ul>
               
             </div>
@@ -287,7 +618,26 @@
     </section>
     <!--End Main Slider-->
 
-
+   <!--Start notices area-->
+    <section class="contact-area">
+        <div class="container">
+        	<div class="row">
+            	<div class="col-md-12 notice">
+                	<h2>NOTICE</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!--Start heading item-->
+                <div class="col-md-12 col-sm-8 col-xs-12">
+                    <div class="notice">
+                        <p class="notice">The Public Service Pension Fund(PSPF) wishes to advise its MASA Assist Subscribers of a change in membership fees effective April 1<sup>st</sup>, 2022. See full notice <a target="_blank" href="Content/Documents/MASAMembershipUpdates_Employee_Anguilla.pdf">here</a>.</p>
+                    </div>
+                </div>
+                <!--End single item-->
+            </div>
+        </div>
+    </section>
+    <!--End notices area-->
 
     <!--Start Service Section-->
     <section class="service-section">
@@ -667,4 +1017,39 @@
     <script src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
     <script src="Scripts/main-slider-script.js"></script>
+	<script type="text/javascript">
+		
+		// Get the modal
+var modal = document.getElementById("pspfmodal");
+
+// Get the button that opens the modal
+//var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+//btn.onclick = function() {
+  //modal.style.display = "block";
+//}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+   modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+     modal.style.display  = "none";
+  }
+} 
+
+window.onload= function(event) {
+ 
+     modal.style.display  = "block";
+ 
+} 
+   
+</script>
 </asp:Content>

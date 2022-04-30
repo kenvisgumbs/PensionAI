@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="404.aspx" />
+    <Content Include="Content\Images\jumbo\covid19.jpg" />
     <Content Include="Content\Images\pages\document_icons.png" />
     <Content Include="Content\Images\pages\getacrobat.png" />
     <Content Include="Content\Images\pages\invest_page.jpg" />
@@ -85,7 +86,9 @@
     <Content Include="Content\Images\pages\service_pension.jpg" />
     <Content Include="Content\Images\pages\service_pension1.jpg" />
     <Content Include="Content\Images\personnel\aidan.jpg" />
+    <Content Include="Content\Images\personnel\cherise.jpg" />
     <Content Include="Content\Images\personnel\kathleen.jpg" />
+    <Content Include="Content\Images\personnel\larry.jpg" />
     <Content Include="Content\Images\personnel\michelle.jpg" />
     <Content Include="Content\Images\personnel\susan.jpg" />
     <Content Include="Content\Images\personnel\timothy.jpg" />
@@ -95,7 +98,13 @@
     <Content Include="Content\Images\press\2018_breastcancer_tn.jpg" />
     <Content Include="Content\Images\press\board_retreat.jpg" />
     <Content Include="Content\Images\press\board_retreat_tn.jpg" />
+    <Content Include="Content\Images\press\MultiProf.jpg" />
+    <Content Include="Content\Images\press\MultiProf_tn.jpg" />
+    <Content Include="Content\Images\press\retreat_2020.jpg" />
+    <Content Include="Content\Images\press\retreat_2020_tn.jpg" />
     <Content Include="Content\Images\press\student_visit.jpg" />
+    <Content Include="Content\Images\press\student_visit2.jpg" />
+    <Content Include="Content\Images\press\student_visit2_tn.jpg" />
     <Content Include="Content\Images\press\student_visit_tn.jpg" />
     <Content Include="fonts\Flaticon.svg" />
     <Content Include="publications.aspx" />
@@ -543,13 +552,14 @@
     <Content Include="fonts\Flaticon.woff2" />
     <Content Include="Content\Documents\Loan_Brochure.pdf" />
     <Content Include="Content\Documents\Budgeting_Brochure.pdf" />
+    <Content Include="Content\Documents\2020-PSPF-Budget.pdf" />
     <None Include="packages.config" />
     <Content Include="plugins\revolution\fonts\revicons\revicons90c6.eot" />
     <Content Include="plugins\revolution\fonts\revicons\revicons90c6.ttf" />
     <Content Include="plugins\revolution\fonts\revicons\revicons90c6.woff" />
     <Content Include="plugins\revolution\js\.DS_Store" />
     <Content Include="PSPFAI.Master" />
-    <None Include="Properties\PublishProfiles\PSPF.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

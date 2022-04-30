@@ -129,8 +129,8 @@
                                             <li class="home <% Response.Write( pspfai.util.getCurrent(ContentPageName, "HOME")); %>"><a href="Home.aspx">Home</a></li>
                                             <li class="dropdown <% Response.Write(pspfai.util.getCurrent(ContentPageName, "ABOUT")); %>"><a href="about.aspx">About</a>
                                                     <ul>
-                                                       <%-- <li><a href="personnel.aspx?type=board">THE BOARD</a></li>--%>
-                                                        <li><a href="personnel.aspx?type=staff">The STAFF</a></li>
+                                                        <li><a href="personnel.aspx?type=board">THE BOARD</a></li>
+                                                        <li><a href="personnel.aspx?type=staff">THE STAFF</a></li>
                                                         <!--<li><a href="faq.aspx">FAQ</a></li>-->
                                                     </ul>
                                             </li>

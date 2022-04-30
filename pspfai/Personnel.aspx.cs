@@ -26,16 +26,47 @@ namespace pspfai
                 switch(Request.QueryString["person"])
                 {
 
+                    case "larry":
+                        singlephoto1.Src = "Content/Images/personnel/larry.jpg";
+                        singlename1.InnerText = "Larry Franklin - Chairman";
+                        singletext1.InnerHtml = @"";
+                        break;
+
+                    case "cherise":
+                        singlephoto1.Src = "Content/Images/personnel/cherise.jpg";
+                        singlename1.InnerText = "Cherise Gumbs";
+                        singletext1.InnerHtml = @"<p>I have a passion for teaching and education. 
+I see myself as a dedicated, highly motivated, and hardworking individual, parent, and educator. 
+I epitomize the core qualities of everything Anguillian: resilience, strength, endurance, and beauty. 
+I hold fast to the principles of collaboration, teamwork, team building, and empowerment. 
+I strongly believe that we must all aspire to become lifelong learners and always possess a thirst for knowledge. 
+My verse of encouragement reads – Call unto Me, and 
+I will show thee great and mighty things, which thou knowest not (Jeremiah 33:3).</p>";
+                        break;
+
                     case "kathleen":
                         singlephoto1.Src = "Content/Images/personnel/kathleen.jpg";
-                        singlename1.InnerText = "Kathleen Rogers - Chairman";
-                        singletext1.InnerHtml = @"";
+                        singlename1.InnerText = "Kathleen Rogers";
+                        singletext1.InnerHtml = @"<p>Mrs. Kathleen Rogers holds a Masters of Accounting and Finance Management from 
+Keller University in the US, a Bachelor of Arts in Accounting (Magna Cum Laude) from the University of the Virgin Islands and a 
+Certificate in Public Administration from the University of the West Indies. Mrs. Rogers has been employed with the 
+Government of Anguilla for over thirty years and has held several posts including Accountant General, Director of Audit, 
+Permanent Secretary of Finance. 
+She is currently Permanent Secretary in the Department of Public Administration.</p>";
                     break;
 
                     case "timothy":
                         singlephoto1.Src = "Content/Images/personnel/timothy.jpg";
                         singlename1.InnerText = "Timothy Hodge";
-                        singletext1.InnerHtml = @"";
+                        singletext1.InnerHtml = @"<p>Timothy Hodge obtained a B.A. (Summa Cum Laude) in Business Administration (Finance) from the University of The Virgin Islands and an MBA from the University of The West Indies. He is presently pursuing a PhD in Creative Leadership for Innovation and Change with the University of the Virgin Islands, 
+and has been awarded a Graduate Certificate in Creativity Studies from Buffalo State, SUNY. 
+He was the Social Security System’s first employee in 1981, and has been Director of Social Security for the past 27 years. 
+In 1985, he was 1 of 8 promoters of the National Bank of Anguilla, 
+and served as a Director and Corporate Secretary for many years until 2010. 
+He served on the Board of the Eastern Caribbean Home Mortgage Bank based in St. Kitts for 10 years, 
+including 2 as Vice-Chairman. He has served on several national organizations and committees including the 
+Anguilla National Trust, the Constitutional and Electoral Reform Committee, and the Health Authority Project Board. 
+He has been an ex-officio member of the Public Service Pension Fund Board from its inception.</p>";
                     break;
 
                     case "aidan":
@@ -47,7 +78,17 @@ namespace pspfai
                     case "susan":
                         singlephoto1.Src = "Content/Images/personnel/susan.jpg";
                         singlename1.InnerText = "Susan Hodge";
-                        singletext1.InnerHtml = @"";
+                        singletext1.InnerHtml = @"
+<p>Susan Hodge is an English-born Anguillian and has worked in various positions in the Anguilla Public Service for more than 30 years. She currently holds the post of Programme Officer in the Department of Disaster Management (DDM) since its inception October 2005. She is a graduate of the University of the West Indies Challenge Programme and University of Gloucestershire, a Certified Business Continuity Manager, 
+UNICEF Return to Happiness Trainer and a Member of the International Association of Emergency Managers (IAEM).</p>
+<p>A trade unionist from her youth, Susan is currently as President of the Anguilla Civil Service Association (ACSA) 
+and is serving her second term as a member of the Public Service Pension Fund Board; having served as a member of the transition 
+committee from non-contributory to contributory pension fund.</p>
+<p>A believer in life-long learning, Susan has never let the grass grow under 
+her feet after winning Anguilla’s first Secretary of the Year Competition she went on to win the 
+Caribbean Secretary of the Year in 1996-1998. An active community volunteer in many spheres, 
+Susan has achieved the highest communication award from Toastmasters International Advanced Communicator 
+Gold and has held a myriad of leadership position in many local, regional and international organizations.</p>";
                         break;
                     case "michelle":
                         singlephoto1.Src = "Content/Images/personnel/michelle.jpg";

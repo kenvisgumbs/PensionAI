@@ -25,7 +25,7 @@
     <% if (subPage == "board")
         {
             if (Request.QueryString["person"] == null)
-            {%>%>
+            {%>
     <!--Start tema area-->
     <section class="team-sec">
         <div class="container">
@@ -46,11 +46,11 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                              <a href="?person=kathleen&type=board"><img src="Content/Images/personnel/kathleen.jpg" alt="team"></a>
+                              <a href="?person=larry&type=board"><img src="Content/Images/personnel/larry.jpg" alt="team"></a>
                         </figure>
 
                         <div class="text-bottom">
-                            <h5>Mrs. Kathleen Rogers</h5>
+                            <h5>Mr. Larry Franklin</h5>
                             <h6>Chairman</h6>
                         </div>
                     </div>
@@ -62,20 +62,20 @@
                         </figure>
                       
                         <div class="text-bottom">
-                            <h5>Mr Timothy A. Hodge</h5>
-                            <h6>Member</h6>
+                            <h5>Mr. Timothy A. Hodge</h5>
+                            <h6>Director</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                             <a href="?person=aidan&type=board"><img src="Content/Images/personnel/aidan.jpg" alt="team"></a>
+                             <a href="?person=kathleen&type=board"><img src="Content/Images/personnel/kathleen.jpg" alt="team"></a>
                         </figure>
                        
                         <div class="text-bottom">
-                            <h5>Dr. Aidan Harrigan</h5>
-                            <h6>Member</h6>
+                            <h5>Mrs. Kathleen Rogers</h5>
+                            <h6>Director</h6>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                        
                         <div class="text-bottom">
                             <h5>Ms. Susan Hodge</h5>
-                            <h6>Member</h6>
+                            <h6>Director</h6>
                         </div>
                     </div>
                 </div>
@@ -100,12 +100,12 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-single text-center">
                         <figure>
-                             <a href="?person=michelle&type=board"><img src="Content/Images/personnel/michelle.jpg" alt="team"></a>
+                             <a href="?person=cherise&type=board"><img src="Content/Images/personnel/cherise.jpg" alt="team"></a>
                         </figure>
                       
                         <div class="text-bottom">
-                            <h5>Ms. Michelle Queeley</h5>
-                            <h6>Member</h6>
+                            <h5>Ms. Cherise Gumbs</h5>
+                            <h6>Director</h6>
                         </div>
                     </div>
                 </div>
